@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="resources/styles/base.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/styles/MeleeGame.css"/>
+
+    <script src='resources/js/ext/jquery-2.0.2.min.js'></script>
+
+    <script src='resources/js/bindAnimations.js'></script>
+    <script src='resources/js/animations.js'></script>
+    <script src='resources/js/main_js.js'></script>
+</head>
+<body>
+
+    <div class="leftCol">
+
+        <div class="leftSmashTag">
+            <span class="name fade_onLoad fade_onChange" streamData="p1_name"></span>
+        </div>
+
+        <div class="leftCharacter">
+            <span class="leftCharacter char fade_onLoad fade_onChange" streamData="p1_char"></span>
+        </div>
+
+        <div class="leftScore">
+            <span class="score fade_onLoad fade_onChange" streamData='p1_games'></span>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="roundboard">
+            <span class="round fade_onLoad fade_onChange" streamData="event_round"></span>
+        </div>
+    </div>
+
+    <div class="rightCol">
+
+        <div class="rightSmashTag">
+            <span class="name fade_onLoad fade_onChange" streamData="p2_name"></span>
+        </div>
+
+        <div class="rightScore">
+            <span class="score fade_onLoad fade_onChange" streamData="p2_games"></span>
+        </div>
+
+        <div class="rightCharacter">
+            <span class="char fade_onLoad fade_onChange" streamData="p2_char"></span>
+        </div>
+    </div>
+
+</body>
+</html>

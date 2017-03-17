@@ -1,0 +1,79 @@
+<!--<tab name='Top 8 Winners'>
+			<label x='10' y='10' width='100' height='15'>Winners Semis 1</label>
+				<lineEdit id='winners_1' dataSet='/dataSets/smash/players.csv' x='10' y='30' width='250' height='25'>Player 1 Name</lineEdit>
+					<button id='clear_winners_1' type='reset' x='265' y='30' width='50' height='25' tooltip='Clear Field' reset='winners_1'>Clear</button>
+				<lineEdit id='winners_2' dataSet='/dataSets/smash/players.csv' x='10' y='60' width='250' height='25'>Player 2 Name</lineEdit>
+					<button id='clear_winners_2' type='reset' x='265' y='60' width='50' height='25' tooltip='Clear Field' reset='winners_2'>Clear</button>
+				<line x="5" y="95" width="490" height="3" />
+			
+			<label x='10' y='100' width='100' height='15'>Winners Semis 2</label>
+				<lineEdit id='winners_3' dataSet='/dataSets/smash/players.csv' x='10' y='120' width='250' height='25'>Player 1 Name</lineEdit>
+					<button id='clear_winners_3' type='reset' x='265' y='120' width='50' height='25' tooltip='Clear Field' reset='winners_3'>Clear</button>
+				<lineEdit id='winners_4' dataSet='/dataSets/smash/players.csv' x='10' y='150' width='250' height='25'>Player 2 Name</lineEdit>
+					<button id='clear_winners_4' type='reset' x='265' y='150' width='50' height='25' tooltip='Clear Field' reset='winners_4'>Clear</button>
+				<line x="5" y="185" width="490" height="3" />
+				
+			<label x='10' y='190' width='100' height='15'>Winners Finals</label>
+				<lineEdit id='winners_5' dataSet='/dataSets/smash/players.csv' x='10' y='210' width='250' height='25'>Player 1 Name</lineEdit>
+					<button id='clear_winners_5' type='reset' x='265' y='210' width='50' height='25' tooltip='Clear Field' reset='winners_5'>Clear</button>
+				<lineEdit id='winners_6' dataSet='/dataSets/smash/players.csv' x='10' y='240' width='250' height='25'>Player 2 Name</lineEdit>
+					<button id='clear_winners_6' type='reset' x='265' y='240' width='50' height='25' tooltip='Clear Field' reset='winners_6'>Clear</button>
+				<line x="5" y="275" width="490" height="3" />
+				
+			<label x='10' y='280' width='100' height='15'>Grand Finals</label>
+				<lineEdit id='winners_7' dataSet='/dataSets/smash/players.csv' x='10' y='300' width='250' height='25'>Player 1 Name</lineEdit>
+					<button id='clear_winners_7' type='reset' x='265' y='300' width='50' height='25' tooltip='Clear Field' reset='winners_7'>Clear</button>
+				<lineEdit id='winners_8' dataSet='/dataSets/smash/players.csv' x='10' y='330' width='250' height='25'>Player 2 Name</lineEdit>
+					<button id='clear_winners_8' type='reset' x='265' y='330' width='50' height='25' tooltip='Clear Field' reset='winners_8'>Clear</button>
+				<line x="5" y="365" width="490" height="3" />
+				
+			<label x='10' y='370' width='100' height='15'>Champion</label>
+				<lineEdit id='winners_9' dataSet='/dataSets/smash/players.csv' x='10' y='390' width='250' height='25'>Player 1 Name</lineEdit>
+					<button id='clear_winners_9' type='reset' x='265' y='390' width='50' height='25' tooltip='Clear Field' reset='winners_9'>Clear</button>
+		</tab>
+		
+		
+		<tab name='Top 8 Losers'>
+			<label x='10' y='10' width='100' height='15'>Losers Top 8 - 1</label>
+				<lineEdit id='losers_1' dataSet='/dataSets/smash/players.csv' x='10' y='30' width='150' height='25'>Player 1 Name</lineEdit>
+					<button id='clear_losers_1' type='reset' x='165' y='30' width='50' height='25' tooltip='Clear Field' reset='losers_1'>Clear</button>
+				<lineEdit id='losers_2' dataSet='/dataSets/smash/players.csv' x='10' y='60' width='150' height='25'>Player 2 Name</lineEdit>
+					<button id='clear_losers_2' type='reset' x='165' y='60' width='50' height='25' tooltip='Clear Field' reset='losers_2'>Clear</button>
+			
+			<label x='250' y='10' width='100' height='15'>Losers Top 8 - 2</label>
+				<lineEdit id='losers_3' dataSet='/dataSets/smash/players.csv' x='250' y='30' width='150' height='25'>Player 1 Name</lineEdit>
+					<button id='clear_losers_3' type='reset' x='405' y='30' width='50' height='25' tooltip='Clear Field' reset='losers_3'>Clear</button>
+				<lineEdit id='losers_4' dataSet='/dataSets/smash/players.csv' x='250' y='60' width='150' height='25'>Player 2 Name</lineEdit>
+					<button id='clear_losers_4' type='reset' x='405' y='60' width='50' height='25' tooltip='Clear Field' reset='losers_4'>Clear</button>
+				
+				<line x="5" y="95" width="490" height="3" />
+				
+			<label x='10' y='100' width='100' height='15'>Losers Quarters - 1</label>
+				<lineEdit id='losers_5' dataSet='/dataSets/smash/players.csv' x='10' y='120' width='150' height='25'>Player 1 Name</lineEdit>
+					<button id='clear_losers_5' type='reset' x='165' y='120' width='50' height='25' tooltip='Clear Field' reset='losers_5'>Clear</button>
+				<lineEdit id='losers_6' dataSet='/dataSets/smash/players.csv' x='10' y='150' width='150' height='25'>Player 2 Name (Winners)</lineEdit>
+					<button id='clear_losers_6' type='reset' x='165' y='150' width='50' height='25' tooltip='Clear Field' reset='losers_6'>Clear</button>
+					
+			<label x='250' y='100' width='100' height='15'>Losers Quarters - 2</label>
+				<lineEdit id='losers_7' dataSet='/dataSets/smash/players.csv' x='250' y='120' width='150' height='25'>Player 1 Name</lineEdit>
+					<button id='clear_losers_7' type='reset' x='405' y='120' width='50' height='25' tooltip='Clear Field' reset='losers_7'>Clear</button>
+				<lineEdit id='losers_8' dataSet='/dataSets/smash/players.csv' x='250' y='150' width='150' height='25'>Player 2 Name (Winners)</lineEdit>
+					<button id='clear_losers_8' type='reset' x='405' y='150' width='50' height='25' tooltip='Clear Field' reset='losers_8'>Clear</button>
+					
+				<line x="5" y="185" width="490" height="3" />
+				
+			<label x='10' y='190' width='100' height='15'>Losers Semis</label>
+				<lineEdit id='losers_9' dataSet='/dataSets/smash/players.csv' x='10' y='210' width='250' height='25'>Player 1 Name</lineEdit>
+					<button id='clear_losers_9' type='reset' x='265' y='210' width='50' height='25' tooltip='Clear Field' reset='losers_9'>Clear</button>
+				<lineEdit id='losers_10' dataSet='/dataSets/smash/players.csv' x='10' y='240' width='250' height='25'>Player 2 Name</lineEdit>
+					<button id='clear_losers_10' type='reset' x='265' y='240' width='50' height='25' tooltip='Clear Field' reset='losers_10'>Clear</button>
+				
+				<line x="5" y="275" width="490" height="3" />
+				
+			<label x='10' y='280' width='100' height='15'>Losers Finals</label>
+				<lineEdit id='losers_11' dataSet='/dataSets/smash/players.csv' x='10' y='300' width='250' height='25'>Player 1 Name</lineEdit>
+					<button id='clear_losers_11' type='reset' x='265' y='300' width='50' height='25' tooltip='Clear Field' reset='losers_11'>Clear</button>
+				<lineEdit id='losers_12' dataSet='/dataSets/smash/players.csv' x='10' y='330' width='250' height='25'>Player 2 Name (Winners)</lineEdit>
+					<button id='clear_losers_12' type='reset' x='265' y='330' width='50' height='25' tooltip='Clear Field' reset='losers_12'>Clear</button>
+				
+		</tab>-->

@@ -1,0 +1,45 @@
+body{
+    font-weight: "bold";
+    font-family: "Gill Sans";
+    text-transform: uppercase
+    letter-spacing: 0.25em
+}
+
+div.leftCol{
+    float:left;
+    width:610px;
+    position:relative;
+}
+
+div.team1{
+    position: fixed;
+    margin-top: 440px;
+    margin-left: 10px;
+}
+
+div.team1Score{
+    position: fixed;
+    margin-top: 440px;
+    margin-left: 575px;
+}
+
+div.team2{
+    position: fixed;
+    margin-top: 825px;
+    margin-left: 10px;
+}
+
+div.team2Score{
+    position: fixed;
+    margin-top: 825px;
+    margin-left: 575px;
+}
+
+div.roundCol{
+    float:left;
+    width:1310px;
+    position:fixed;
+    margin-left:610px;
+    text-align:center;
+    margin-top:20px;
+}

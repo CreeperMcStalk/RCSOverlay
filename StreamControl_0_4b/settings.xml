@@ -1,0 +1,13 @@
+<!DOCTYPE StreamControl>
+<settings>
+ <altHotkeyHandling>0</altHotkeyHandling>
+ <challonge>
+  <apiKey>PjZCDa67bY1Znbqrbgbqnve6NsAkwcamO6ThWani</apiKey>
+  <organization>gmusmash</organization>
+  <username>haganbmj</username>
+ </challonge>
+ <format>3</format>
+ <layoutPath>layouts\smash_layout1.xml</layoutPath>
+ <outputPath></outputPath>
+ <useCDATA>0</useCDATA>
+</settings>

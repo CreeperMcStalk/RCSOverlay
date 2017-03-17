@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Gill Sans";
+    src: url('../fonts/GillSans.ttc');
+    font-weight: "normal";
+    font-style: "normal";
+}
+
+body{
+    width: 1920px; height: 1080px;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+    font-family: 'GillSans';
+    font-size:25pt;
+    text-shadow: 1px 1px 3px #000;
+    color: white;
+}
+
+t { /* TAGS? To be added when actually inputting player names... not sure I like that format. */
+	text-transform: none;
+	margin-right: 5px;
+	color: #33ccff ;
+	text-shadow: 1px 1px 3px #000;
+}
+
+rcs{ /* Recursion Colored Sponsor Tag */
+	text-transform: none;
+	margin-right: 5px;
+	color: #00b300;
+	text-shadow: 1px 1px 3px #000;
+}
