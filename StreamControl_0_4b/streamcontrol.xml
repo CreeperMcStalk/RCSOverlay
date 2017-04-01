@@ -1,6 +1,6 @@
 <!DOCTYPE StreamControl>
 <items>
- <timestamp>1489638484</timestamp>
+ <timestamp>1491015650</timestamp>
  <afk_mode>0</afk_mode>
  <b_p1_name>Cloud9</b_p1_name>
  <b_p1_team>t1</b_p1_team>
@@ -94,17 +94,17 @@
  <c2_stocks>20</c2_stocks>
  <crew1>University of Alabama </crew1>
  <crew2>Georgia State University</crew2>
- <event_comm>&lt;t> CKS &lt;/t> cookiE</event_comm>
- <event_comm2>Hero</event_comm2>
- <event_comm2_twitter></event_comm2_twitter>
- <event_comm_twitter>@clashKstudios</event_comm_twitter>
- <event_round>HELLO WORLD</event_round>
- <p1_char>Samus</p1_char>
- <p1_games>1</p1_games>
- <p1_name>&lt;t> RCS &lt;/t> KPAN</p1_name>
- <p2_char>Marth</p2_char>
- <p2_games>3</p2_games>
- <p2_name>&lt;t> RCS &lt;/t> DUBLAT</p2_name>
+ <event_comm>&lt;t> RCS &lt;/t> SleepyK &amp; </event_comm>
+ <event_comm2>BRIAN BUCKLEY</event_comm2>
+ <event_comm2_twitter>@Brian_Buckley</event_comm2_twitter>
+ <event_comm_twitter>@Sleepike &amp; </event_comm_twitter>
+ <event_round>NACL MARCH - GRAND FINALS - BO5</event_round>
+ <p1_char>Default</p1_char>
+ <p1_games>0</p1_games>
+ <p1_name>FLAMIN ROY [L]</p1_name>
+ <p2_char>Default</p2_char>
+ <p2_games>2</p2_games>
+ <p2_name>&lt;t> RCS &lt;/t> KPAN</p2_name>
  <t1_games>0</t1_games>
  <t2_games>0</t2_games>
  <team_mode>0</team_mode>

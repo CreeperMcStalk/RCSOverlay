@@ -1,8 +1,8 @@
 body{
-    font-weight: "bold";
+    font-weight: bold;
     font-family: "Gill Sans";
-    text-transform: uppercase
-    letter-spacing: 0.25em
+    text-transform: uppercase;
+    letter-spacing: 0.05em
 }
 
 div.leftCol{
@@ -13,13 +13,13 @@ div.leftCol{
 
 div.team1{
     position: fixed;
-    margin-top: 440px;
+    margin-top: 438px;
     margin-left: 10px;
 }
 
 div.team1Score{
     position: fixed;
-    margin-top: 440px;
+    margin-top: 438px;
     margin-left: 575px;
 }
 
