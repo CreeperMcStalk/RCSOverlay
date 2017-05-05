@@ -2,60 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f9c5ca-70e0-4aba-8118-e547892c0f41" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/F1Slide1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/F1Slide2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/F1Slide3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Function1BRB.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Function1BRBTop64.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Function1BRBWizzyKPAN.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Function1Doubles.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Function1DoublesMultiview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Function1LowerThird.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Function1MultiviewLeft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Function1MultiviewRight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Function1PlayerGameLeft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Function1PlayerGameRight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Function1Sponsor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Funtion1Singles.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Logos/Lab/PanelRight1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Logos/Lab/PanelRight2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Overlays/NaCl/MultiviewRight (1).png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Overlays/NaCl/NaClBRB.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Overlays/NaCl/NaClDoubles.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Overlays/NaCl/NaClLowerThirdMarc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Overlays/NaCl/NaClMultiviewLeft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Overlays/NaCl/NaClSingles.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Overlays/NaCl/NaClSingles2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Overlays/NaCl/PlayerGameLeft2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Overlays/NaCl/PlayerGameRight2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Overlays/Smash@Tech/SmashTechBRB.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Overlays/Smash@Tech/SmashTechDoublesMultiview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Overlays/Smash@Tech/SmashTechLowerThird (1).png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/images/Overlays/Smash@Tech/SmashTechLowerThird.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Function1.BPres" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MeleeCommentary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MeleeCommentary.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MeleeDoubles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MeleeGame.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NaClMarch.BPres" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SponsorsDoubles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SponsorsMulti.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SponsorsSingles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/styles/MeleeCommentary.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/images/MultiviewLeft.png" afterPath="$PROJECT_DIR$/resources/images/Overlays/Smash@Tech/MultiviewLeft.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/images/MultiviewRight.png" afterPath="$PROJECT_DIR$/resources/images/Overlays/Smash@Tech/MultiviewRight.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/images/PlayerGameLeft.png" afterPath="$PROJECT_DIR$/resources/images/Overlays/NaCl/PlayerGameLeft.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/images/PlayerGameRight.png" afterPath="$PROJECT_DIR$/resources/images/Overlays/NaCl/PlayerGameRight.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/images/SmashTechDoubles.png" afterPath="$PROJECT_DIR$/resources/images/Overlays/Smash@Tech/SmashTechDoubles.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/images/SmashTechSingles.png" afterPath="$PROJECT_DIR$/resources/images/Overlays/Smash@Tech/SmashTechSingles.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StreamControl_0_4b/layouts/dataSets/smash/players.csv" afterPath="$PROJECT_DIR$/StreamControl_0_4b/layouts/dataSets/smash/players.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StreamControl_0_4b/streamcontrol.json" afterPath="$PROJECT_DIR$/StreamControl_0_4b/streamcontrol.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StreamControl_0_4b/streamcontrol.xml" afterPath="$PROJECT_DIR$/StreamControl_0_4b/streamcontrol.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/styles/MeleeDoubles.css" afterPath="$PROJECT_DIR$/resources/styles/MeleeDoubles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/styles/MeleeGame.css" afterPath="$PROJECT_DIR$/resources/styles/MeleeGame.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/styles/base.css" afterPath="$PROJECT_DIR$/resources/styles/base.css" />
     </list>
     <ignored path="NewMelee.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,27 +37,27 @@
         <entry file="file://$PROJECT_DIR$/resources/styles/MeleeDoubles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+              <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeleeGame.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MeleeGame.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/styles/MeleeGame.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-732">
-              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="34">
+              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/styles/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            <state relative-caret-position="306">
+              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -161,9 +109,9 @@
         <option value="$PROJECT_DIR$/Commentary.html" />
         <option value="$PROJECT_DIR$/resources/styles/MeleeCommentary.css" />
         <option value="$PROJECT_DIR$/MeleeCommentary.html" />
+        <option value="$PROJECT_DIR$/resources/styles/base.css" />
         <option value="$PROJECT_DIR$/resources/styles/MeleeDoubles.css" />
         <option value="$PROJECT_DIR$/resources/styles/MeleeGame.css" />
-        <option value="$PROJECT_DIR$/resources/styles/base.css" />
       </list>
     </option>
   </component>
@@ -179,7 +127,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1452" />
+    <option name="width" value="1456" />
     <option name="height" value="876" />
   </component>
   <component name="ProjectView">
@@ -197,8 +145,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -245,6 +191,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,17 +280,18 @@
       <updated>1489628848024</updated>
       <workItem from="1489787056760" duration="1632000" />
       <workItem from="1490980622264" duration="2812000" />
+      <workItem from="1494004751334" duration="590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4444000" />
+    <option name="totallyTimeSpent" value="5034000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1452" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24025069" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23958333" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -380,6 +329,54 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/resources/styles/carousel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/styles/MeleeDoubles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/styles/MeleeGame.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/styles/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/styles/MeleeCommentary.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MeleeCommentary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/styles/carousel.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -524,14 +521,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commentary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Commentary.html" />
     <entry file="file://$PROJECT_DIR$/resources/styles/carousel.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -556,26 +546,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/styles/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/styles/MeleeDoubles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/styles/MeleeGame.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-732">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/styles/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        <state relative-caret-position="34">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding />
         </state>
       </provider>

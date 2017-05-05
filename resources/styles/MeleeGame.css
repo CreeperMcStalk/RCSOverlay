@@ -1,8 +1,8 @@
 body{
     font-family: "Gill Sans";
-	
+	font-weight: 200;
     text-transform: uppercase;
-    letter-spacing: 0.05em
+    letter-spacing: 2px;
 }
 
 /** COLUMN AREAS **/

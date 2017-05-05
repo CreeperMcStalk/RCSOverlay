@@ -2,7 +2,7 @@ body{
     font-weight: bold;
     font-family: "Gill Sans";
     text-transform: uppercase;
-    letter-spacing: 0.05em
+    letter-spacing: 2px;
 }
 
 div.leftCol{
