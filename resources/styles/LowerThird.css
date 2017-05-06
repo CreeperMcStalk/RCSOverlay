@@ -2,7 +2,7 @@ body{
     font-weight: bold;
     font-family: "Gill Sans";
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     background-image: url('../images/Function1LowerThird.png');
 }
 
@@ -15,7 +15,7 @@ div.round{
     position:fixed;
     margin-left: 200px;
     margin-top:800px;
-    font-size:59pt;
+    font-size:62pt;
 }
 
 div.event{

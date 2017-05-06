@@ -200,8 +200,9 @@ function storeXML(xmlSource) {
 	try {
 		var splits = xVars['event_round'].split('-');
 		xVars['round_split'] = splits[1].trim();
-		xVars['tourney_split'] = splits[0].trim();
+		xVars['tourney_split'] = splits[0].trim() + ' | ';
 		xVars['set_count_split'] = splits[2].trim();
+		xVars['location'] = 'ATLANTA, GA | MAY 6, 2017'.trim();
 	} catch (e) {}
 }
 
