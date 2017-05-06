@@ -2,9 +2,56 @@ body{
     font-weight: bold;
     font-family: "Gill Sans";
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 2px;
 }
 
+div.left{
+	position:relative;
+	float:left;
+	width:50%;
+	text-align:right;
+
+}
+
+div.right{
+	position:relative;
+	float:left;
+	width:50%;
+	text-align:left;
+}
+
+
+div.leftComm{
+	position:fixed;
+	margin-top:790px;
+	margin-right:20px;
+	font-size:28pt;
+}
+
+div.rightComm{
+	position:fixed;
+	margin-top:790px;
+	margin-left:20px;
+	font-size:28pt;
+}
+
+
+div.leftTwitter{
+	position: fixed;
+	margin-top:810px;
+	margin-right:20px;
+	font-size:20pt;
+}
+
+div.rightTwitter{
+	position:fixed;
+	margin-top:810px;
+	margin-left:20px;
+	font-size:20pt;
+}
+
+
+/*
 div.column{
 	width: 1000px;
 	float: left;
@@ -24,3 +71,4 @@ div.twitter{
 	font-size:24pt;
 	color:white;
 }
+*/
