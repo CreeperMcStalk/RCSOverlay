@@ -1,1 +1,22 @@
 resources/videos/*
+
+node_modules
+bower_components
+.DS_Store
+
+# IntelliJ
+.idea/
+*.ipr
+*.iws
+*.iml
+.idea_modules
+
+# Unless there's some relevant, I don't want all the garbage xsplit files.
+*.xml
+
+StreamControl_0_4b/*
+
+# Logs
+logs
+*.log
+npm-debug.log*
