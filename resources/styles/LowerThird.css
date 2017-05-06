@@ -1,0 +1,27 @@
+body{
+    font-weight: bold;
+    font-family: "Gill Sans";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: url('../images/Function1LowerThird.png');
+}
+
+div.column{
+    width: 1000px;
+    float: left;
+}
+
+div.round{
+    position:fixed;
+    margin-left: 200px;
+    margin-top:810px;
+    font-size:55pt;
+}
+
+div.event{
+    position:fixed;
+    margin-left:390px;
+    margin-top:905px;
+    font-size:24pt;
+    color:white;
+}
