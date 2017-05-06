@@ -3,8 +3,8 @@
 // 		updates/animations/etc.
 // It's a bit messy, but some sacrifices had to be made to get it to work
 //		with the older build of OBS, because it uses a shitty Netscape-based CLR Browser...
-// TextModifications allow you to append information to incoming content with a simple string 
-//		substitution. So far I've really only used this to map Strings to images in my resource 
+// TextModifications allow you to append information to incoming content with a simple string
+//		substitution. So far I've really only used this to map Strings to images in my resource
 //		directory. In this case, when the XML stores a characters name "Captain Falcon", that gets
 // 		altered to <img src='resources/icon_Captain Falcon.png'/> or whatever before it is injected.
 // Additionally, it's worth noting that I bind all the XML data to page attributes in the
@@ -35,7 +35,7 @@ stream_name = "ClashKingStudios";
 **/
 $(document).ready(function() {
 	loadJSON(source_json);
-	
+
 	initAnimations();
 	loadXML(modification_file, initTextModifications);
 });
@@ -45,7 +45,7 @@ function init2() {
 	var timeout = this.window.setInterval(function() {
 		loadXML(source_file, refreshContent);
 	}, 1000);
-	
+
 	if ($('#viewers').length) {
 		var timeout2 = this.window.setInterval(function() {
 			loadJSON(base_twitch_uri + stream_name, twitchPoll);
@@ -56,20 +56,20 @@ function init2() {
 }
 
 /**
-  *	Load + Process the XML data 
+  *	Load + Process the XML data
 **/
-function loadXML(target_file, callback) { 
-	/******* 
-		Can't use $.GET in the OBS CLR Browser (Netscape issues). Multiplatform seems fine with it (Chromium)? 
+function loadXML(target_file, callback) {
+	/*******
+		Can't use $.GET in the OBS CLR Browser (Netscape issues). Multiplatform seems fine with it (Chromium)?
 	*******/
-	/*$.get(target_file, function(data) { 
+	/*$.get(target_file, function(data) {
 		callback(data);
 	});*/
-	
+
 	/*$.ajax({
 		type : "GET",
 		dataType : "xml",
-		cache : false, 
+		cache : false,
 		async : true,
 		url : target_file
 	}).done(function(xml) {
@@ -79,21 +79,21 @@ function loadXML(target_file, callback) {
 	}).always(function() {
 		setTimeout("loadXML()", 1000);
 	});*/
-	
+
 	var xH = new XMLHttpRequest();
 	xH.overrideMimeType('text/xml');
 	xH.open('GET', target_file, true);
-	
-	try { 
-		xH.send(); 
-		
+
+	try {
+		xH.send();
+
 		xH.onreadystatechange = function() {
 			if (xH.readyState == 4) {
 				callback(xH.responseXML);
 			}
 		}
-	} catch (e) { 
-		console.log('>> Failed to load resource'); 
+	} catch (e) {
+		console.log('>> Failed to load resource');
 		callback(false);
 	}
 }
@@ -111,7 +111,7 @@ function loadJSON(target_file, callback) {
 			/*for (var key in resp) {
 				console.log(key, resp[key]);
 			}*/
-			
+
 			if (callback != null) {
 				callback(resp);
 			} else {
@@ -121,7 +121,7 @@ function loadJSON(target_file, callback) {
 	}
 
 	xH.open("GET", target_file, true);
-	
+
 	try {
 		xH.send();
 	} catch (e) {
@@ -132,21 +132,21 @@ function loadJSON(target_file, callback) {
 
 
 /**
-  *	Load + Process the TextModification XML file. 
+  *	Load + Process the TextModification XML file.
   * Persists the replacement String to memory, and never checks the file after the first iteration.
 **/
 var initTextModifications = function initTextModifications(response) {
 	if (response != false && response != null) {
-	
+
 		xmlItems = response.childNodes[1].children;
-		
-		for (var N in xmlItems) {			
-			if (xmlItems[N].nodeName != undefined) { 
+
+		for (var N in xmlItems) {
+			if (xmlItems[N].nodeName != undefined) {
 				xMods[xmlItems[N].nodeName] = xmlItems[N];
 			}
 		}
 	}
-		
+
 	init2();
 }
 
@@ -154,15 +154,12 @@ var initTextModifications = function initTextModifications(response) {
   *	Performs text replacements based on a generic {{replace}} criteria.
   * Just a messy, straight string replacement, returns the newly generated String.
 **/
-function textModification(xmlItem) {	
-	nodeName = xmlItem.nodeName;
-	textContent = xmlItem.textContent;
-	
-	if (xMods[nodeName] != null) {		
+function textModification(nodeName, textContent) {
+	if (xMods[nodeName] != null) {
 		replaceContent = xMods[nodeName];
 		textContent = replaceContent.textContent.replace('{{replace}}', textContent);
-	} 
-	
+	}
+
 	return textContent;
 }
 
@@ -173,7 +170,7 @@ function textModification(xmlItem) {
 **/
 var refreshContent = function refreshContent(response) {
 	var lastModified = response.getElementsByTagName("timestamp")[0].childNodes[0].textContent;
-	
+
 	if (	lastModified != lastModified_old	) {
 		lastModified_old = lastModified;
 		storeXML(response.childNodes[1].children);
@@ -193,12 +190,19 @@ function refreshContentJSON(response) {
 /**
   *	Store the XML data to local variables (xVars)
 **/
-function storeXML(xmlSource) { 
+function storeXML(xmlSource) {
 	for (var N in xmlSource) {
-		if (xmlSource[N].nodeName != undefined) { 
-			xVars[xmlSource[N].nodeName] = xmlSource[N];
+		if (xmlSource[N].nodeName != undefined) {
+			xVars[xmlSource[N].nodeName] = xmlSource[N].textContent;
 		}
 	}
+
+	try {
+		var splits = xVars['event_round'].split('-');
+		xVars['round_split'] = splits[1].trim();
+		xVars['tourney_split'] = splits[0].trim();
+		xVars['set_count_split'] = splits[2].trim();
+	} catch (e) {}
 }
 
 function storeJSON(jsonSource) {
@@ -215,29 +219,29 @@ function storeJSON(jsonSource) {
   * Replaces the xVarsOld file with the new content.
 **/
 function updateContent() {
-	for (var key in xVars) { 
-		if (key != 'timestamp' && (xVarsOld[key] == undefined || xVarsOld[key].textContent != xVars[key].textContent)) {
+	for (var key in xVars) {
+		if (key != 'timestamp' && (xVarsOld[key] == undefined || xVarsOld[key] != xVars[key])) {
 
-			doAnimation("*[streamData='" + key + "']", textModification(xVars[key]), (  xVarsOld[key] == undefined ? 'onLoad' : 'onChange'  )	);
-			
-			updateToggle(key, xVars[key].textContent);
+			doAnimation("*[streamData='" + key + "']", textModification(key, xVars[key]), (  xVarsOld[key] == undefined ? 'onLoad' : 'onChange'  )	);
+
+			updateToggle(key, xVars[key]);
 		}
 	}
-	
+
 	xVarsOld = jQuery.extend({}, xVars);
 }
 
 
-/** 
+/**
   * Request current Stream Details from Twitch API.
 **/
-function twitchPoll(resp) { 
+function twitchPoll(resp) {
 	num_viewers = "Offline";
-	
+
 	if (resp.stream != null) {
-		num_viewers = resp.stream.viewers + " Viewers";		
+		num_viewers = resp.stream.viewers + " Viewers";
 	}
-	
+
 	$("*[streamData='viewers']").html(num_viewers);
 }
 
@@ -245,7 +249,7 @@ function twitchPoll(resp) {
   *	Stores the XML data to both the HTML root tag and to each streamData associated tag.
   * For flexibility in CSS declarations and such.
 **/
-function updateToggle(key, key_value) { 
+function updateToggle(key, key_value) {
 	$('html').attr(key, key_value);
 	$("*[streamData='" + key + "']").attr("streamValue", key_value);
 }
@@ -256,54 +260,54 @@ function updateToggle(key, key_value) {
 
 
 /*$.fn.extend({
-	fixFontSize : function() { 
+	fixFontSize : function() {
 		//var boundingElement = arguments[0] ? arguments[0] : $(this).parent();
-		
+
 		// Store the original font-size if necessary.
 		if ( ($(this).attr("desiredFontSize")) == undefined ) {
 			console.log('in undefined check');
 			$(this).attr("desiredFontSize", $(this).css("font-size"));
 		}
-		
+
 		console.log($(this).attr("desiredFontSize"));
-		
+
 		// Reset the font-size back to the original declaration.
 		$(this).css("font-size", $(this).attr("desiredFontSize"));
-		
+
 		console.log( $(this)[0].scrollWidth , $(this).innerWidth() );
 		while ( $(this)[0].scrollWidth > $(this).innerWidth() ) {
 			var currentFontSize = parseInt( $(this).css("font-size") );
 			var currentFontUnit = $(this).css("font-size").replace(currentFontSize, "").trim();
-			
+
 			console.log(currentFontSize, currentFontUnit);
-			
+
 			$(this).css("font-size", (currentFontSize - 1) + currentFontUnit);
 		}
 	}
 });*/
 
-$.fn.fixFontSize = function() { 
+$.fn.fixFontSize = function() {
 
 	//console.log($(this));
-	
+
 	if ( $(this).is("[noFontFix]") ) {
 		return;
 	}
-	
+
 	if ( ($(this).attr("desiredFontSize")) == undefined ) {
 		//console.log('in undefined check');
 		$(this).attr("desiredFontSize", $(this).css("font-size"));
 	}
-	
+
 	//console.log($(this).attr("desiredFontSize"));
 	$(this).css("font-size", $(this).attr("desiredFontSize"));
 
 	while ( $(this).hasOverflown() ) {
 		var currentFontSize = parseInt( $(this).css("font-size") );
 		var currentFontUnit = $(this).css("font-size").replace(currentFontSize, "").trim();
-		
+
 		//console.log(currentFontSize, currentFontUnit);
-		
+
 		$(this).css("font-size", (currentFontSize - 1) + currentFontUnit);
 	}
 }
@@ -326,8 +330,8 @@ $.fn.hasOverflown = function () {
 /**
   *	Misc. Leading 0s on 2-digit numbers.
 **/
-function leadingZero(num) { 
-	return num < 10 ? "0" + num : num; 
+function leadingZero(num) {
+	return num < 10 ? "0" + num : num;
 }
 
 /**
@@ -338,7 +342,7 @@ var logger = function()
     var oldConsoleLog = null;
     var pub = {};
 
-    pub.enableLogger =  function enableLogger() 
+    pub.enableLogger =  function enableLogger()
                         {
                             if(oldConsoleLog == null)
                                 return;
@@ -361,39 +365,39 @@ var logger = function()
     return pub;
 }();
 
-/** Executed with stats.info(); 
+/** Executed with stats.info();
   * Generates a printout of relevant information.
 **/
 var stats = function() {
 	var pub = {};
-	
+
 	pub.info = function info() {
 		var returnLoggerToState = logger.statusLogger();
 		logger.enableLogger();
-		
+
 		console.group('Information');
 			console.log('Source File:\t', source_file);
 			console.log('Last Modified:\t', lastModified_old);
-			
+
 			console.log('xVars:\t', xVars);
-			console.log('xVarsOld:\t', xVarsOld);		
-			
+			console.log('xVarsOld:\t', xVarsOld);
+
 			console.log('Modification File:\t', modification_file);
 			console.log('xMods:\t', xMods);
 		console.groupEnd();
-			
+
 		returnLoggerToState ? logger.enableLogger() : logger.disableLogger();
 	};
-	
+
 	pub.timestamp = function timestamp() {
 		var returnLoggerToState = logger.statusLogger();
 		logger.enableLogger();
-		
+
 		console.group('Last Timestamp: ' + xVars['timestamp'].textContent);
 		console.groupEnd();
-		
+
 		returnLoggerToState ? logger.enableLogger() : logger.disableLogger();
 	}
-	
+
 	return pub;
 }();
