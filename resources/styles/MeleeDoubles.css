@@ -1,5 +1,5 @@
 body{
-    font-weight: bold;
+    font-weight: 200;
     font-family: "Gill Sans";
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -41,5 +41,6 @@ div.roundCol{
     position:fixed;
     margin-left:610px;
     text-align:center;
-    margin-top:20px;
+    margin-top:18px;
+    font-size:29pt;
 }

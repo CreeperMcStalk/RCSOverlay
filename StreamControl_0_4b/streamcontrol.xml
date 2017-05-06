@@ -1,6 +1,6 @@
 <!DOCTYPE StreamControl>
 <items>
- <timestamp>1493516575</timestamp>
+ <timestamp>1494043460</timestamp>
  <afk_mode>0</afk_mode>
  <b_p1_name>Cloud9</b_p1_name>
  <b_p1_team>t1</b_p1_team>
@@ -94,11 +94,11 @@
  <c2_stocks>20</c2_stocks>
  <crew1>University of Alabama </crew1>
  <crew2>Georgia State University</crew2>
- <event_comm>&lt;T>SS&lt;/T> FLOW &amp; </event_comm>
+ <event_comm>&lt;T>SS&lt;/T> FLOW</event_comm>
  <event_comm2>&lt;t>RCS&lt;/T> COOKIE</event_comm2>
  <event_comm2_twitter>@RCS_COOKIE</event_comm2_twitter>
  <event_comm_twitter>@THE_FLOW92 </event_comm_twitter>
- <event_round>NACL APRIL - GRAND FINALS - BO5</event_round>
+ <event_round>FUNCTION 2 - GRAND FINALS - BO5</event_round>
  <p1_char>Marth</p1_char>
  <p1_games>0</p1_games>
  <p1_name>&lt;t>ME&lt;/t>VRO &lt;L>[L]&lt;/L></p1_name>

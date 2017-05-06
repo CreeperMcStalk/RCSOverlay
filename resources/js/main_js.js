@@ -217,7 +217,7 @@ function storeJSON(jsonSource) {
 function updateContent() {
 	for (var key in xVars) { 
 		if (key != 'timestamp' && (xVarsOld[key] == undefined || xVarsOld[key].textContent != xVars[key].textContent)) {
-			
+
 			doAnimation("*[streamData='" + key + "']", textModification(xVars[key]), (  xVarsOld[key] == undefined ? 'onLoad' : 'onChange'  )	);
 			
 			updateToggle(key, xVars[key].textContent);

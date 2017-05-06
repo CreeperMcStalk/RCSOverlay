@@ -11,14 +11,19 @@
     <script src='resources/js/bindAnimations.js'></script>
     <script src='resources/js/animations.js'></script>
     <script src='resources/js/main_js.js'></script>
+    <script src="resources/js/common.js"></script>
 </head>
 <body>
+        <div class="">
+            <span class="fade_onLoad fade_onChange" streamData="event_round" id=""></span>
+        </div>
+
         <div class="round">
-            <span class="commName fade_onLoad fade_onChange" streamData="event_comm"></span><span class="commName fade_onChange fade_onLoad" streamData="event_comm2" noFontFix></span>
+            <span class="fade_onLoad fade_onChange" id="event_round"></span>
         </div>
 
         <div class="event">
-            <span class="twitter fade_onLoad fade_onChange" streamData="event_comm_twitter"></span><span class="twitter fade_onLoad fade_onChange" streamData="event_comm2_twitter"></span>
+            <span class="fade_onLoad fade_onChange"></span>
         </div>
 </body>
 </html>

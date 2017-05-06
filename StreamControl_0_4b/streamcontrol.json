@@ -92,11 +92,11 @@
     "c2_stocks": "20",
     "crew1": "University of Alabama ",
     "crew2": "Georgia State University",
-    "event_comm": "<T>SS</T> FLOW & ",
+    "event_comm": "<T>SS</T> FLOW",
     "event_comm2": "<t>RCS</T> COOKIE",
     "event_comm2_twitter": "@RCS_COOKIE",
     "event_comm_twitter": "@THE_FLOW92 ",
-    "event_round": "NACL APRIL - GRAND FINALS - BO5",
+    "event_round": "FUNCTION 2 - GRAND FINALS - BO5",
     "p1_char": "Marth",
     "p1_games": "0",
     "p1_name": "<t>ME</t>VRO <L>[L]</L>",
@@ -106,6 +106,6 @@
     "t1_games": "0",
     "t2_games": "0",
     "team_mode": "0",
-    "timestamp": "1493516575",
+    "timestamp": "1494043460",
     "toggle_crews": "0"
 }
