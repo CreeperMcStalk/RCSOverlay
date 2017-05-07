@@ -4,7 +4,11 @@ var JSON_PATH = JSON_PATH || './StreamControl_0_4b/streamcontrol.json';
 var app = new Vue({
   el: '#app',
   data: {
-    info: {},
+    info: {
+      // Setting a few default values for the flicker of time images take to load.
+      p1_char: 'Default',
+      p2_char: 'Default'
+    },
     timestamp: new Date()
   },
   computed: {
