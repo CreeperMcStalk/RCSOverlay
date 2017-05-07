@@ -17,13 +17,13 @@
 
     <div class="round">
       <transition name="fade" mode="out-in">
-        <span :key="info.round_split" v-html="info.round_split"></span>
+        <span :key="info.event_round" v-html="info.event_round"></span>
       </transition>
     </div>
 
     <div class="event">
       <transition name="fade" mode="out-in">
-        <span :key="info.tourney_split" v-html="info.tourney_split"></span>
+        <span :key="info.event_name" v-html="info.event_name"></span>
       </transition>
 
       <transition name="fade" mode="out-in">
