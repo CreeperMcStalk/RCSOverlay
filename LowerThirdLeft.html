@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Function Lower Third</title>
-    <link rel="stylesheet" type="text/css" href="resources/styles/base.css"/>
-    <link rel="stylesheet" type="text/css" href="resources/styles/LowerThird.css"/>
+  <meta charset="UTF-8">
+  <title>Function Lower Third</title>
+  <link rel="stylesheet" type="text/css" href="./node_modules/vue2-animate/dist/vue2-animate.css" />
+  <link rel="stylesheet" type="text/css" href="resources/styles/base.css" />
+  <link rel="stylesheet" type="text/css" href="resources/styles/LowerThird.css" />
 
-    <script src='resources/js/ext/jquery-2.0.2.min.js'></script>
-
-    <script src='resources/js/bindAnimations.js'></script>
-    <script src='resources/js/animations.js'></script>
-    <script src='resources/js/main_js.js'></script>
+  <script src="./node_modules/vue/dist/vue.js"></script>
+  <script src="./node_modules/axios/dist/axios.js"></script>
 </head>
-<body>
-        <div class="round">
-            <span class="fade_onLoad fade_onChange" streamData="round_split"></span>
-        </div>
 
-        <div class="event">
-           <span class="fade_onLoad fade_onChange" streamData="tourney_split"></span>
-            <span class="fade_onLoad fade_onChange" streamData="location"></span>
-        </div>
+<body>
+  <div id="app">
+
+    <div class="round">
+      <transition name="fade" mode="out-in">
+        <span :key="info.round_split" v-html="info.round_split"></span>
+      </transition>
+    </div>
+
+    <div class="event">
+      <transition name="fade" mode="out-in">
+        <span :key="info.tourney_split" v-html="info.tourney_split"></span>
+      </transition>
+
+      <transition name="fade" mode="out-in">
+        <span :key="info.location" v-html="info.location"></span>
+      </transition>
+    </div>
+
+  </div>
 </body>
+<!-- This needs to be loaded after the dom -->
+<script src="./resources/js/vue-main.js"></script>
+
 </html>

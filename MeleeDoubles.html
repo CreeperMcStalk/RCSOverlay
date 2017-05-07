@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="resources/styles/base.css"/>
-    <link rel="stylesheet" type="text/css" href="resources/styles/MeleeDoubles.css"/>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="./node_modules/vue2-animate/dist/vue2-animate.css" />
+  <link rel="stylesheet" type="text/css" href="resources/styles/base.css" />
+  <link rel="stylesheet" type="text/css" href="resources/styles/MeleeDoubles.css" />
 
-    <script src='resources/js/ext/jquery-2.0.2.min.js'></script>
-
-    <script src='resources/js/bindAnimations.js'></script>
-    <script src='resources/js/animations.js'></script>
-    <script src='resources/js/main_js.js'></script>
+  <script src="./node_modules/vue/dist/vue.js"></script>
+  <script src="./node_modules/axios/dist/axios.js"></script>
 </head>
+
 <body>
+  <div id="app">
 
     <div class="leftCol">
+      <div class="team1">
+        <transition name="fade" mode="out-in">
+          <span class="name" :key="info.p1_name" v-html="info.p1_name"></span>
+        </transition>
+      </div>
 
-        <div class="team1">
-            <span class="name fade_onLoad fade_onChange" streamData="p1_name"></span>
-        </div>
+      <div class="team1Score">
+        <transition name="fade" mode="out-in">
+          <span class="score" :key="info.p1_games" v-html="info.p1_games"></span>
+        </transition>
+      </div>
 
-        <div class="team1Score">
-            <span class="score fade_onLoad fade_onChange" streamData='p1_games'></span>
-        </div>
+      <div class="team2">
+        <transition name="fade" mode="out-in">
+          <span class="name" :key="info.p2_name" v-html="info.p2_name"></span>
+        </transition>
+      </div>
 
-        <div class="team2">
-            <span class="name fade_onLoad fade_onChange" streamData="p2_name"></span>
-        </div>
-
-        <div class="team2Score">
-            <span class="score fade_onLoad fade_onChange" streamData="p2_games"></span>
-        </div>
-
+      <div class="team2Score">
+        <transition name="fade" mode="out-in">
+          <span class="score" :key="info.p2_games" v-html="info.p2_games"></span>
+        </transition>
+      </div>
     </div>
 
     <div class="roundCol">
-        <span class="round fade_onLoad fade_onChange" streamData="event_round"></span>
+      <transition name="fade" mode="out-in">
+        <span class="round" :key="info.event_round" v-html="info.event_round"></span>
+      </transition>
     </div>
 
+  </div>
 </body>
+<!-- This needs to be loaded after the dom -->
+<script src="./resources/js/vue-main.js"></script>
+
 </html>

@@ -14,7 +14,8 @@ bower_components
 # Unless there's some relevant, I don't want all the garbage xsplit files.
 *.xml
 
-StreamControl_0_4b/*
+streamcontrol.json
+streamcontrol.xml
 
 # Logs
 logs
