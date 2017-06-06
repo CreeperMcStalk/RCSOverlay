@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f9c5ca-70e0-4aba-8118-e547892c0f41" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeleeGame.html" afterPath="$PROJECT_DIR$/MeleeGame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/vue-main.js" afterPath="$PROJECT_DIR$/resources/js/vue-main.js" />
     </list>
     <ignored path="NewMelee.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +25,7 @@
       <file leaf-file-name="vue-main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/vue-main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="1320">
               <caret line="88" column="46" lean-forward="true" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
               <folding />
             </state>
@@ -37,8 +35,8 @@
       <file leaf-file-name="MeleeGame.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MeleeGame.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state relative-caret-position="336">
+              <caret line="52" column="93" lean-forward="false" selection-start-line="52" selection-start-column="93" selection-end-line="52" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -300,12 +298,12 @@
       <workItem from="1494037214279" duration="2009000" />
       <workItem from="1494041230801" duration="3144000" />
       <workItem from="1494047090594" duration="1110000" />
-      <workItem from="1496715118562" duration="3289000" />
+      <workItem from="1496715118562" duration="3407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14586000" />
+    <option name="totallyTimeSpent" value="14704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -691,7 +689,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/vue-main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="1320">
           <caret line="88" column="46" lean-forward="true" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
           <folding />
         </state>
@@ -699,8 +697,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MeleeGame.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="336">
+          <caret line="52" column="93" lean-forward="false" selection-start-line="52" selection-start-column="93" selection-end-line="52" selection-end-column="93" />
           <folding />
         </state>
       </provider>
