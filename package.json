@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/BrandonCookeDev/RCSOverlay/issues"
   },
-  "homepage": "https://github.com/BrandonCookeDev/RCSOverlay#readme"
+  "homepage": "https://github.com/BrandonCookeDev/RCSOverlay#readme",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "bootstrap": "^3.3.7",
+    "vue": "^2.3.2",
+    "vue2-animate": "^1.0.4"
+  }
 }
