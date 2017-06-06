@@ -1,5 +1,5 @@
 var POLL_INTERVAL = 1000;
-var ROUND_INTERVAL = 2000;
+var ROUND_INTERVAL = 10000;
 var JSON_PATH = JSON_PATH || './StreamControl_0_4b/streamcontrol.json';
 
 var port         = 11769;

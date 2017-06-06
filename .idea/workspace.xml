@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="47f9c5ca-70e0-4aba-8118-e547892c0f41" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeleeGame.html" afterPath="$PROJECT_DIR$/MeleeGame.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/js/vue-main.js" afterPath="$PROJECT_DIR$/resources/js/vue-main.js" />
     </list>
     <ignored path="NewMelee.iws" />
@@ -23,21 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="vue-main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vue-main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/js/vue-main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+            <state relative-caret-position="450">
+              <caret line="88" column="46" lean-forward="true" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeleeGame.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MeleeGame.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MeleeGame.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+            <state relative-caret-position="225">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -60,7 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MeleeGame.html" />
         <option value="$PROJECT_DIR$/resources/styles/carasoule.css" />
         <option value="$PROJECT_DIR$/resources/js/carasoule.js" />
         <option value="$PROJECT_DIR$/SponsorsSingles.html" />
@@ -79,6 +79,7 @@
         <option value="$PROJECT_DIR$/resources/js/main_js.js" />
         <option value="$PROJECT_DIR$/resources/styles/LowerThird.css" />
         <option value="$PROJECT_DIR$/resources/js/vue-main.js" />
+        <option value="$PROJECT_DIR$/MeleeGame.html" />
       </list>
     </option>
   </component>
@@ -299,12 +300,12 @@
       <workItem from="1494037214279" duration="2009000" />
       <workItem from="1494041230801" duration="3144000" />
       <workItem from="1494047090594" duration="1110000" />
-      <workItem from="1496715118562" duration="2419000" />
+      <workItem from="1496715118562" duration="3289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13716000" />
+    <option name="totallyTimeSpent" value="14586000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -688,18 +689,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MeleeGame.html">
+    <entry file="file://$PROJECT_DIR$/resources/js/vue-main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        <state relative-caret-position="450">
+          <caret line="88" column="46" lean-forward="true" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/vue-main.js">
+    <entry file="file://$PROJECT_DIR$/MeleeGame.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+        <state relative-caret-position="225">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding />
         </state>
       </provider>
