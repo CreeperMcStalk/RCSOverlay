@@ -1,6 +1,6 @@
 <!DOCTYPE StreamControl>
 <items>
- <timestamp>1494125480</timestamp>
+ <timestamp>1496806630</timestamp>
  <afk_mode>0</afk_mode>
  <b_p1_name>Cloud9</b_p1_name>
  <b_p1_team>t1</b_p1_team>
@@ -10,6 +10,7 @@
  <b_p3_team>hide</b_p3_team>
  <b_p4_name></b_p4_name>
  <b_p4_team>hide</b_p4_team>
+ <best_of_x>5</best_of_x>
  <c1_p10_char>Default</c1_p10_char>
  <c1_p10_name></c1_p10_name>
  <c1_p10_out>0</c1_p10_out>
@@ -98,13 +99,16 @@
  <event_comm2>&lt;T>EGTV&lt;/T> CRUSH </event_comm2>
  <event_comm2_twitter>@EGTV_CRUSH</event_comm2_twitter>
  <event_comm_twitter>@SLEEPIKE</event_comm_twitter>
- <event_round>FUNCTION 2 - GRAND FINALS - BO5</event_round>
- <p1_char>Fox</p1_char>
+ <event_name></event_name>
+ <event_notice></event_notice>
+ <event_round>Grand Finals</event_round>
+ <p1_char>Default</p1_char>
  <p1_games>2</p1_games>
  <p1_name>DRUGGEDFOX</p1_name>
- <p2_char>Fox</p2_char>
+ <p2_char>Default</p2_char>
  <p2_games>0</p2_games>
- <p2_name>&lt;T>EGTV&lt;/T> CRUSH &lt;T>[L]&lt;/T></p2_name>
+ <p2_name>&lt;T>EGTV&lt;/T> R2DLiu &lt;T>[L]&lt;/T></p2_name>
+ <smashggUrl>https://smash.gg/tournament/function-1-recursion-regional/events/melee-singles/brackets/128148</smashggUrl>
  <t1_games>0</t1_games>
  <t2_games>0</t2_games>
  <team_mode>0</team_mode>

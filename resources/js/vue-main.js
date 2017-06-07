@@ -22,7 +22,10 @@ var app = new Vue({
 
         // Setting a few default values for the flicker of time images take to load.
         p1_char: 'Default',
-        p2_char: 'Default'
+        p2_char: 'Default',
+		
+		//URL for automated round pulling
+		smashggUrl: null
     },
     timestamp: new Date()
   },
@@ -47,8 +50,14 @@ var app = new Vue({
         .then(resp => { this.info = resp.data; })
         .catch(resp => { console.error(resp); });
     },
+	getTournamentName: function() {
+	  var sub;
+	  sub = this.info.smashggUrl.substring(this.info.smashggUrl.indexOf('/tournament/') + 1);
+	  sub = sub.substring(sub.indexOf('/') + 1, sub.indexOf('/events/'));
+	  return sub;
+	},
     initSmashGG: function(tournamentName){
-      var url = smashGGinit + tournamentName;
+      var url = smashGGinit + this.getTournamentName();
       axios.get(url)
           .then(function(res){
             if(!res.status == 200) console.error('Error initializing SmashGG tournament');
@@ -58,9 +67,9 @@ var app = new Vue({
             console.error('Error initializing SmashGG tournament');
           })
     },
-    fetchRoundData: function(tag1, tag2, tournamentName){
+    fetchRoundData: function(tag1, tag2){
       var data = {
-        tournament: tournamentName,
+        tournament: this.getTournamentName,
         tag1: tag1,
         tag2: tag2
       };
@@ -76,6 +85,7 @@ var app = new Vue({
           .catch(function(err){
               console.error('Error fetching SmashGG match');
           })
+	}
 
   },
   // Triggered when the vue instance is created, triggers the initial setup.
@@ -87,8 +97,7 @@ var app = new Vue({
     setInterval(() => { this.timestamp = new Date(); }, 1000);
     setInterval(() => {
         this.fetchRoundData(this.info.p1_name,
-                            this.info.p2_name,
-                            this.info.event_name);
+                            this.info.p2_name);
     }, ROUND_INTERVAL);
   }
 });
