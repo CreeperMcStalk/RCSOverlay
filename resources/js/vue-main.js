@@ -1,10 +1,10 @@
-var POLL_INTERVAL = 1000;
+var POLL_INTERVAL = 500;
 var ROUND_INTERVAL = 10000;
 var JSON_PATH = JSON_PATH || './StreamControl_0_4b/streamcontrol.json';
 
 var port         = 11769;
-var smashGGinit  = 'localhost:'+port+'/init/';
-var smashGGround = 'localhost:'+port+'/getMatch';
+var smashGGinit  = 'http://localhost:'+port+'/init/';
+var smashGGround = 'http://localhost:'+port+'/getMatch';
 
 var app = new Vue({
   el: '#app',
@@ -57,34 +57,38 @@ var app = new Vue({
 	  return sub;
 	},
     initSmashGG: function(tournamentName){
-      var url = smashGGinit + this.getTournamentName();
-      axios.get(url)
-          .then(function(res){
-            if(!res.status == 200) console.error('Error initializing SmashGG tournament');
-            else console.log('Initialized successfully');
-          })
-          .catch(function(err){
-            console.error('Error initializing SmashGG tournament');
-          })
+		if(this.info.smashggUrl){
+		  var url = smashGGinit + this.getTournamentName();
+		  axios.get(url)
+			  .then(function(res){
+				if(!res.status == 200) console.error('Error initializing SmashGG tournament');
+				else console.log('Initialized successfully');
+			  })
+			  .catch(function(err){
+				console.error('Error initializing SmashGG tournament');
+			  })
+		}
     },
     fetchRoundData: function(tag1, tag2){
-      var data = {
-        tournament: this.getTournamentName,
-        tag1: tag1,
-        tag2: tag2
-      };
+		if(this.info.smashggUrl){
+		  var data = {
+			tournament: this.getTournamentName(),
+			tag1: tag1,
+			tag2: tag2
+		  };
 
-      axios.post(smashGGround, data)
-          .then(function(res){
-              if(!res.status == 200) console.error('Error fetching SmashGG match');
-              else{
-                var match = res.data;
-                this.info.event_round = match.Round;
-              }
-          })
-          .catch(function(err){
-              console.error('Error fetching SmashGG match');
-          })
+		  axios.post(smashGGround, data)
+			  .then(function(res){
+				  if(!res.status == 200) console.error('Error fetching SmashGG match');
+				  else{
+					var match = res.data;
+					this.info.event_round = match.Round;
+				  }
+			  })
+			  .catch(function(err){
+				  console.error('Error fetching SmashGG match');
+			  })
+		}
 	}
 
   },

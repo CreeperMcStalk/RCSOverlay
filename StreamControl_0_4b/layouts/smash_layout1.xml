@@ -117,8 +117,9 @@
 
 	<tabSet x='0' y='265' width='500' height='700'>
 		<tab name='Event Details'>
+		<!--
 			<label x='10' y='10' width='100' height='14'>Tournament Name:</label>
-				<lineEdit id='event_name' x='115' y='5' width='375' height='25'>Tournament Name</lineEdit>
+				<lineEdit id='event_name' x='115' y='5' width='375' height='25'>Tournament Name</lineEdit>-->
 			<label x='10' y='40' width='100' height='14'>Message:</label>
 				<lineEdit id='event_notice' x='115' y='35' width='375' height='25'>Message to Display</lineEdit>
 			<label x='10' y='70' width='100' height='14'>Commentary:</label>
