@@ -6,10 +6,15 @@ var port         = 11769;
 var smashGGinit  = 'http://localhost:'+port+'/init/';
 var smashGGround = 'http://localhost:'+port+'/getMatch';
 
+var currentTournament = '';
+
 var app = new Vue({
   el: '#app',
   data: {
+    /* INFO OBJECT LINKS TO THE JSON CREATED BY STREAM CONTROL */
     info: {
+        event_countdown: 0,
+        event_notice: null,
         event_name: null,
         event_round: null,
         best_of_x: null,
@@ -56,7 +61,7 @@ var app = new Vue({
 	  sub = sub.substring(sub.indexOf('/') + 1, sub.indexOf('/events/'));
 	  return sub;
 	},
-    initSmashGG: function(tournamentName){
+    initSmashGG: function(){
 		if(this.info.smashggUrl){
 		  var url = smashGGinit + this.getTournamentName();
 		  axios.get(url)
@@ -89,16 +94,37 @@ var app = new Vue({
 				  console.error('Error fetching SmashGG match');
 			  })
 		}
-	}
+	},
+    checkTournamentChanged: function(){
+        if(this.info.smashggUrl != currentTournament) {
+            currentTournament = this.info.smashggUrl;
+            this.info.event_name = this.getTournamentName();
+            this.initSmashGG();
+        }
+    },
+    countdown: function(minutes){
+        if(minutes > 0) {
+            var millis = minutes * 60000;
+            $('#countdown')
+                .countdown(new Date(Date.now() + millis),
+                    function (e) {
+                        $(this).text(
+                            event.strftime('%H:%M:%S')
+                        );
+                    });
+        }
+    }
 
   },
   // Triggered when the vue instance is created, triggers the initial setup.
   created: function() {
     this.loadJSON();
-    this.initSmashGG(this.info.event_name);
 
-    setInterval(() => { this.loadJSON(); }, POLL_INTERVAL);
+    this.info.watch('smashggUrl', this.initSmashGG);
+    this.info.watch('event_countdown', this.countdown(this.info.event_countdown));
+
     setInterval(() => { this.timestamp = new Date(); }, 1000);
+    setInterval(() => { this.loadJSON(); }, POLL_INTERVAL);
     setInterval(() => {
         this.fetchRoundData(this.info.p1_name,
                             this.info.p2_name);
