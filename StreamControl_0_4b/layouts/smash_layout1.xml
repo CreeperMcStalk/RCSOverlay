@@ -104,8 +104,15 @@
 
 		<label x='10' y='205' width='120' height='20'>SmashGG URL</label>
 			<lineEdit id='smashggUrl' x='10' y='225' width='200' height='20'>Bracket URL</lineEdit>
+
+		<label x="10" y="230" width="120" height="20">Countdown Minutes</label>
+			<comboBox id="event_countdown" x="10" y="225" width="40" height="20">
+				<comboItem>PULL_ALL</comboItem><comboItem>AUTOMATE_ROUND</comboItem>
+			</comboBox>
+	<!--
 		<label x="10" y="230" width="120" height="20">Countdown Minutes</label>
 			<lineEdit id="event_countdown" x="10" y="225" width="40" height="20">Minutes Remaining</lineEdit>
+			-->
 		
 		<label x='255' y='180' width='40' height='14'>Best Of:</label>
 			<lineEdit id='best_of_x' x='300' y='175' width='190' height='20'>Best of X</lineEdit>

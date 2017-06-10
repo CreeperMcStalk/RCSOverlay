@@ -6,7 +6,7 @@ var tunnel = {
     data: {},
     evt: tunnelEvt,
     modes: ['AUTOMATE_ROUND', 'PULL_ALL'],
-    currentMode: 'PULL_ALL',
+    mode: 'PULL_ALL',
     getJSON: function(){
         return new Promise(function(resolve, reject){
             axios.get(JSON_PATH, { responseType: 'json' })
@@ -16,29 +16,30 @@ var tunnel = {
     },
     handlers: {
         AUTOMATE_ROUND: function(){
-            this.getJSON()
+            tunnel.getJSON()
                 .then(data => {
                     for(var key in data){
                         if(key === 'event_round') continue;
                         else this.data[key] = data.key;
                     }
-                    this.evt.notifyDataReady();
+                    tunnel.evt.notifyDataReady();
                 })
                 .catch(console.error)
         },
         PULL_ALL: function(){
-            this.getJSON()
+            tunnel.getJSON()
                 .then(data => {
-                    this.data = data;
-                    this.evt.notifyDataReady();
+                    tunnel.data = data;
+                    tunnel.evt.notifyDataReady();
                 })
                 .catch(console.error)
         }
     },
     run: function(){
-        this.handlers[this.mode];
+        this.handlers[this.mode]();
     }
 };
+
 
 tunnelEvt.notifyDataReady = function(){
     this.emit('dataReady');
