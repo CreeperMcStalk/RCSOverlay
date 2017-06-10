@@ -1,6 +1,8 @@
 /* DEPENDENCIES */
+/*
 if(!tunnel)
     console.error('json-tunnel is required for vue-main. Please make sure you\'ve imported it');
+*/
 
 var POLL_INTERVAL = 500;
 var ROUND_INTERVAL = 10000;
@@ -18,7 +20,7 @@ var app = new Vue({
   data: {
     /* INFO OBJECT LINKS TO THE JSON CREATED BY STREAM CONTROL */
     info: {
-        mode: 'PULL_ALL',
+        pull_mode: 'PULL_ALL',
         event_countdown: 0,
         event_notice: '',
         event_name: '',
@@ -51,10 +53,6 @@ var app = new Vue({
 
       'info.smashggUrl': function(newval, oldval){
           this.initSmashGG()
-      },
-
-      'info.switchMode': function(newval, oldval){
-          this.changeMode();
       }
   },
   computed: {
@@ -74,8 +72,8 @@ var app = new Vue({
   },
   methods: {
     changeMode: function(){
-      if(this.info.mode === 'PULL_ALL') this.info.mode = 'AUTOMATE_ROUND';
-      else mode = 'PULL_ALL';
+      if(this.info.pull_mode === 'PULL_ALL') this.info.pull_mode = 'AUTOMATE_ROUND';
+      else this.info.pull_mode = 'PULL_ALL';
     },
     loadJSON: function() {
       axios.get(JSON_PATH, { responseType: 'json' })
@@ -85,9 +83,11 @@ var app = new Vue({
     loadJSONWithoutRound: function(){
       axios.get(JSON_PATH, { responseType: 'json'})
           .then(resp => {
+			  var data = resp.data;
+			  var newData = {};
               for(var key in data) {
                   if (key === 'event_round') continue;
-                  else this.info[key] = data.key;
+                  else this.info[key] = data[key];
               }
           })
           .catch(console.error);
@@ -123,12 +123,13 @@ var app = new Vue({
 			tag2: tag2
 		  };
 
+		  var This = this;
 		  axios.post(smashGGround, data)
 			  .then(function(res){
 				  if(!res.status == 200) console.error('Error fetching SmashGG match');
 				  else{
 					var match = res.data;
-					this.info.event_round = match.Round;
+					This.info.event_round = match.Round;
 				  }
 			  })
 			  .catch(function(err){
@@ -169,8 +170,8 @@ var app = new Vue({
 
     setInterval(() => { this.timestamp = new Date(); }, 1000);
     setInterval(() => {
-        if(this.info.mode === 'PULL_ALL') this.loadJSON();
-        else if(this.info.mode === 'AUTOMATE_ROUND') this.loadJSONWithoutRound();
+        if(this.info.pull_mode === 'PULL_ALL') this.loadJSON();
+        else if(this.info.pull_mode === 'AUTOMATE_ROUND') this.loadJSONWithoutRound();
     }, POLL_INTERVAL);
   }
 });
