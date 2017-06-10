@@ -117,6 +117,11 @@ var app = new Vue({
 		  var tag2 = this.info.p2_name;
 		  var tournament = this.getTournamentName();
 
+		  if(tag1.indexOf('</t>'))
+		      tag1 = tag1.substring(tag1.indexOf('</t>') + '</t>'.length).trim();
+		  if(tag2.indexOf('</t>'))
+		      tag2 = tag2.substring(tag2.indexOf('</t>') + '</t>'.length).trim();
+
 		  var data = {
 			tournament: tournament,
 			tag1: tag1,
