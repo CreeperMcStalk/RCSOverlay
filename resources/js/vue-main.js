@@ -1,3 +1,7 @@
+/* DEPENDENCIES */
+if(!tunnel)
+    console.error('json-tunnel is required for vue-main. Please make sure you\'ve imported it');
+
 var POLL_INTERVAL = 500;
 var ROUND_INTERVAL = 10000;
 var JSON_PATH = JSON_PATH || './StreamControl_0_4b/streamcontrol.json';
@@ -33,6 +37,19 @@ var app = new Vue({
 		smashggUrl: null
     },
     timestamp: new Date()
+  },
+  watch: {
+      'info.p1_name': function(newval, oldval){
+
+      },
+
+      'info.p2_name': function(newval, oldval){
+
+      },
+
+      'info.smashggUrl': function(newval, oldval){
+          this.initSmashGG()
+      }
   },
   computed: {
     formattedDate: function() {
@@ -118,17 +135,19 @@ var app = new Vue({
   },
   // Triggered when the vue instance is created, triggers the initial setup.
   created: function() {
-    this.loadJSON();
 
-    this.info.watch('smashggUrl', this.initSmashGG);
-    this.info.watch('event_countdown', this.countdown(this.info.event_countdown));
+    tunnel.evt.on('dataReady', function(){
+        this.info = tunnel.data;
+    });
 
     setInterval(() => { this.timestamp = new Date(); }, 1000);
-    setInterval(() => { this.loadJSON(); }, POLL_INTERVAL);
+
+    /*
     setInterval(() => {
         this.fetchRoundData(this.info.p1_name,
                             this.info.p2_name);
     }, ROUND_INTERVAL);
+    */
   }
 });
 
