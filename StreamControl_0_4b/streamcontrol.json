@@ -100,10 +100,10 @@
     "event_name": "BMR2",
     "event_notice": "Top 32 Starting Soon!",
     "event_round": "Pools WF",
-    "p1_char": "Fox",
+    "p1_char": "Marth",
     "p1_games": "0",
     "p1_name": "<t>RCS</t> cookiE",
-    "p2_char": "Samus",
+    "p2_char": "Sheik",
     "p2_games": "0",
     "p2_name": "Gas$",
     "pull_mode": "PULL_ALL",
@@ -111,6 +111,6 @@
     "t1_games": "0",
     "t2_games": "0",
     "team_mode": "0",
-    "timestamp": "1498801816",
+    "timestamp": "1498808216",
     "toggle_crews": "0"
 }
