@@ -1,0 +1,144 @@
+html{
+    height:720px;
+    width:1280px;
+}
+
+body{
+    font-family: "Khand-SemiBold";
+    font-weight: 200;
+    /*text-transform: uppercase;*/
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 0px #000;
+    letter-spacing: .3pt;
+}
+
+t{
+  text-shadow: 0px 0px 0px #000;
+}
+
+/** COLUMN AREAS **/
+div.leftCol{
+    float:left;
+    width: 34%;
+}
+
+div.rightCol{
+    float:left;
+    width:66%;
+}
+
+/** SCOREBOARD **/
+div.roundboard{
+    float:none;
+    margin-top:10px;
+    margin-right:50px;
+    text-align:center;
+}
+
+div.leftplayer{
+    float:left;
+    margin-top:959px;
+    margin-left:24px;
+    width:37%;
+    text-align:center;
+}
+
+div.leftscore{
+    float:left;
+    margin-top:959px;
+    width:3%;
+    text-align:center;
+}
+
+div.centerspace{
+    float:left;
+    margin-top:959px;
+    width:12%;
+}
+
+div.rightscore{
+    float:left;
+    margin-top:959px;
+    margin-left:15px;
+    width:3%;
+    text-align: center;
+}
+
+div.rightplayer{
+    float:left;
+    margin-top:959px;
+    text-align:center;
+    width:36%;
+}
+
+
+
+/** NESTED COLUMN AREAS **/
+
+
+
+
+
+
+/** LEFT **/
+div.leftCharacter{
+    float: left;
+    margin-top: 100px;
+    margin-left:600px;
+    transform: scaleX(-1);
+    position:fixed;
+    z-index: -99999;
+}
+
+div.leftSmashTag{
+    width:305px;
+    position:fixed;
+    text-align:right;
+    margin-top:97px;
+    margin-left:600px;
+    font-size:21pt;
+}
+
+div.leftScore{
+    float: right;
+    margin-top:85px;
+    margin-left:289px;
+    font-size:42px;
+    font-weight:"bold";
+    position:fixed;
+}
+
+
+/** RIGHT **/
+div.rightCharacter{
+    float: left;
+    margin-top: 100px;
+    position:fixed;
+    z-index: -99999;
+}
+
+
+div.rightSmashTag{
+    width:260px;
+    position:fixed;
+    text-align: right;
+    margin-top:97px;
+    margin-right:50px;
+    font-size: 21pt;
+}
+
+div.rightScore{
+    float: left;
+    margin-top:85px;
+    font-size:42px;
+    position:fixed;
+}
+
+/** IMAGES **/
+img.leftCharacter{
+    transform: scaleX(-1);
+}
+
+img.character_icon{
+    height: 140px;
+}
