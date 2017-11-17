@@ -5,16 +5,30 @@
   font-style: normal;
 }
 
+@font-face{
+  font-family: "Khand-SemiBold";
+  src: url('../fonts/Khand-SemiBold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Khand-Light";
+  src: url('../fonts/Khand-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   width: 1920px;
   height: 1080px;
   margin: 0;
   overflow: hidden;
   position: relative;
-  font-family: 'GillSans';
+  font-family: 'Khand-SemiBold';
   font-size: 25pt;
   text-shadow: 1px 1px 3px #000;
-  color: white;
+  color: #515151;
 }
 
 t {

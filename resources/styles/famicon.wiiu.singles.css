@@ -1,8 +1,8 @@
 body{
     font-family: "Gill Sans";
 	font-weight: 200;
-    text-transform: uppercase;
     letter-spacing: 2px;
+    font-color:#515151;
 }
 
 /** ROW AREAS **/
@@ -14,46 +14,99 @@ div.nameRow{
     padding-right:500px;
 }
 
+div.topspace{
+    height:18px;
+}
+
 div.roundRow{
     float:top;
     height:20px;
-    background-color:red;
 }
-
 
 div.leftspace{
     float:left;
-    width:18%;
-    background-color:green;
+    width:20%;
 }
 
 div.leftinfo{
     float:left;
-    width:25%;
-    background-color: red;
+    width:23%;
     text-align:center;
+    padding-top:4px;
+    font-size:21pt;
 }
 
 div.leftscore{
     float:left;
-    width:1%;
+    width:2%;
+    padding-left:6px;
     text-align:center;
-    padding-left:50px;
-    background-color:tan;
 }
 
 div.centerspace{
     float:left;
-    width:8%;
-
-    background-color:indigo;
+    width:9%;
 }
 
 div.rightscore{
     float:left;
-    width:3%;
-    background-color:tan;
+    width:2%;
+    padding-left:6px;
+    text-align:center;
 }
+
+div.rightinfo{
+    float:left;
+    width:23%;
+    font-size:21pt;
+    padding-top:4px;
+    text-align: center;
+}
+
+div.rightspace{
+    float:left;
+    width:20%;
+}
+
+
+div.leftroundspace{
+    float: left;
+    height:28px;
+    width:23%;
+}
+
+div.leftround{
+    float: left;
+    font-size: 15pt;
+    height:28px;
+    width:20%;
+    text-align: center;
+    padding-top:5px;
+    font-weight:100;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+}
+
+div.roundcenterspace{
+    width:14%;
+    float:left;
+    height:28px;
+
+}
+
+div.tournamentround{
+    float: left;
+    font-size: 15pt;
+    height:28px;
+    width:20%;
+    text-align: center;
+    padding-top:5px;
+    font-weight:100;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+}
+
+
 
 
 /** COLUMN AREAS **/

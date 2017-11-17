@@ -15,25 +15,59 @@
 <body>
   <div id="app">
 
-  <div class="leftspace">
-  sdfasd
-  </div>
+  <div class="topspace">&nbsp;</div>
+
+  <div class="leftspace">&nbsp;</div>
 
   <div class="leftinfo">
-    Shoes
+    <transition name="fade" mode="out-in">
+      <span class="name" :key="info.p1_name" v-html="info.p1_name"></span>
+    </transition>
   </div>
 
   <div class="leftscore">
-    4
+    <transition name="fade" mode="out-in">
+      <span class="name" :key="info.p1_games" v-html="info.p1_games"></span>
+    </transition>
   </div>
 
   <div class="centerspace">
-  a
+   &nbsp;
   </div>
 
   <div class="rightscore">
-  7
+    <transition name="fade" mode="out-in">
+      <span class="name" :key="info.p2_games" v-html="info.p2_games"></span>
+    </transition>
   </div>
+
+  <div class="rightinfo">
+    <transition name="fade" mode="out-in">
+      <span class="name" :key="info.p2_name" v-html="info.p2_name"></span>
+    </transition>
+  </div>
+
+  <div class="rightspace">&nbsp;</div>
+
+  <div class="leftroundspace">
+    &nbsp;
+  </div>
+
+  <div class="leftround">
+    Grand Finals
+    <transition name="fade" mode="out-in">
+      <span class="name" :key="info.game_header" v-html="info.game_header"></span>
+    </transition>
+  </div>
+
+  <div class="roundcenterspace">
+    &nbsp;
+  </div>
+
+  <div class="tournamentround">
+    SuperFamiCon2017
+  </div>
+
 <!--
   <div class="nameRow">
     <span class="player1Col">
