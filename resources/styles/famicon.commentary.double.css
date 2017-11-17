@@ -1,0 +1,75 @@
+body{
+    font-weight: 600;
+    font-family: "Khand-SemiBold";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+	background-image: url('../images/Overlays/Famicon/Melee/LowerThird.png');
+	height:720px;
+	width:1280px;
+}
+
+div.left{
+	float:left;
+	width:50%;
+	text-align:right;
+	background-color: red;
+
+}
+
+div.right{
+	float:left;
+	width:50%;
+	text-align:left;
+	background-color: green;
+}
+
+
+div.leftComm{
+	margin-top:862px;
+	margin-right:70px;
+	font-size:30pt;
+}
+
+div.rightComm{
+	margin-top:862px;
+	margin-left:70px;
+	font-size:30pt;
+}
+
+
+div.leftTwitter{
+	/*margin-top:920px;*/
+	margin-top: 10px;
+	margin-right:70px;
+	font-size:20pt;
+}
+
+div.rightTwitter{
+	/*margin-top:920px;*/
+	margin-top: 10px;
+	margin-left:70px;
+	font-size:20pt;
+}
+
+
+/*
+div.column{
+	width: 1000px;
+	float: left;
+}
+
+div.commentators{
+	position:fixed;
+	margin-left: 200px;
+	margin-top:810px;
+	font-size:55pt;
+}
+
+div.twitter{
+	position:fixed;
+	margin-left:390px;
+	margin-top:905px;
+	font-size:24pt;
+	color:white;
+}
+*/
