@@ -1,85 +1,98 @@
+html{
+    height:720px;
+    width:1280px;
+}
+
 body{
-    font-family: "Gill Sans";
-	font-weight: 200;
-    text-transform: uppercase;
+    font-family: "Khand-SemiBold";
+    font-weight: 200;
+    /*text-transform: uppercase;*/
     letter-spacing: 2px;
+    text-shadow: 0px 0px 0px #000;
+    letter-spacing: .3pt;
+}
+
+t{
+  text-shadow: 0px 0px 0px #000;
 }
 
 /** COLUMN AREAS **/
-div.leftside{
-	left:0;
+div.leftCol{
+    float:left;
     width: 305px;
 }
 
 div.center{
-	left:0;
-    width:1310px;
+    float:left;
+    width:1306px;
     margin-left:305px;
 }
 
-div.rightside{
-	left:0;
-    width: 305px;
-}
+div.rightCol{
+    float:left;
+    width:305px;
 
+}
 
 /** SCOREBOARD **/
 div.roundboard{
     float:none;
-    margin-top:20px;
+    margin-top:10px;
     text-align:center;
 }
 
+/** NESTED COLUMN AREAS **/
 
 /** LEFT **/
-div.leftchar{
+div.leftCharacter{
     float: right;
-    margin-top: 950px;
+    margin-top: 100px;
     transform: scaleX(-1);
     position:fixed;
     z-index: -99999;
 }
 
-div.lefttag{
+div.leftSmashTag{
     width:305px;
     position:fixed;
-    text-align:center;
-    margin-top:945px;
+    text-align:left;
+    margin-top:97px;
+    margin-left:50px;
+    font-size:21pt;
 }
 
-div.leftscore{
+div.leftScore{
     float: right;
-    margin-top:1010px;
-    margin-left:259px;
-    font-size:55px;
+    margin-top:85px;
+    margin-left:289px;
+    font-size:42px;
     font-weight:"bold";
     position:fixed;
 }
 
 
 /** RIGHT **/
-div.rightchar{
+div.rightCharacter{
     float: left;
-    margin-top: 950px;
+    margin-top: 100px;
     position:fixed;
     z-index: -99999;
 }
 
 
-div.righttag{
-    width:305px;
+div.rightSmashTag{
+    width:260px;
     position:fixed;
-    text-align: center;
-    margin-top:945px;
-    font-size: 27pt;
+    text-align: right;
+    margin-top:97px;
+    margin-right:50px;
+    font-size: 21pt;
 }
 
-
-div.rightscore{
+div.rightScore{
     float: left;
-    margin-top:1010px;
-    margin-left:25px;
-    font-size:55px;
+    margin-top:85px;
+    font-size:42px;
     position:fixed;
 }
 
