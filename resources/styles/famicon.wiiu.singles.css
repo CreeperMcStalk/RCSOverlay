@@ -1,0 +1,172 @@
+body{
+    font-family: "Gill Sans";
+	font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/** ROW AREAS **/
+div.nameRow{
+    float:top;
+    padding-top:20px;
+    height:45px;
+    padding-left:40%;
+    padding-right:500px;
+}
+
+div.roundRow{
+    float:top;
+    height:20px;
+    background-color:red;
+}
+
+
+div.leftspace{
+    float:left;
+    width:18%;
+    background-color:green;
+}
+
+div.leftinfo{
+    float:left;
+    width:25%;
+    background-color: red;
+    text-align:center;
+}
+
+div.leftscore{
+    float:left;
+    width:1%;
+    text-align:center;
+    padding-left:50px;
+    background-color:tan;
+}
+
+div.centerspace{
+    float:left;
+    width:8%;
+
+    background-color:indigo;
+}
+
+div.rightscore{
+    float:left;
+    width:3%;
+    background-color:tan;
+}
+
+
+/** COLUMN AREAS **/
+div.leftColHalf{
+    float:left;
+    width:50%;
+    background-color:blue;
+}
+
+div.player1half{
+    width:50%;
+    text-align:right;
+}
+
+div.player2half{
+    width:50%;
+    text-align: left;
+}
+
+/** COLUMN AREAS **/
+div.leftCol{
+    float:left;
+    width: 305px;
+    background-color:green;
+}
+
+div.center{
+    float:left;
+    width:1310px;
+    margin-left:305px;
+}
+
+div.rightCol{
+    float:left;
+    width:305px;
+
+}
+
+/** SCOREBOARD **/
+div.roundboard{
+    float:none;
+    margin-top:20px;
+    text-align:center;
+}
+
+/** NESTED COLUMN AREAS **/
+
+/** LEFT **/
+div.leftCharacter{
+    float: right;
+    margin-top: 950px;
+    transform: scaleX(-1);
+    position:fixed;
+    z-index: -99999;
+}
+
+div.leftSmashTag{
+    width:305px;
+    position:fixed;
+    text-align:center;
+    margin-top:945px;
+}
+
+div.leftScore{
+    float: right;
+    margin-top:1010px;
+    margin-left:259px;
+    font-size:55px;
+    font-weight:"bold";
+    position:fixed;
+}
+
+
+/** RIGHT **/
+div.rightCharacter{
+    float: left;
+    margin-top: 950px;
+    position:fixed;
+    z-index: -99999;
+}
+
+
+div.rightSmashTag{
+    width:305px;
+    position:fixed;
+    text-align: center;
+    margin-top:945px;
+    font-size: 27pt;
+}
+
+/*
+div.rightSmashTag{
+    float: left;
+    text-align: center;
+    margin-top:945px;
+    font-size: 27pt;
+    position:fixed;
+}
+*/
+
+div.rightScore{
+    float: left;
+    margin-top:1010px;
+    margin-left:25px;
+    font-size:55px;
+    position:fixed;
+}
+
+/** IMAGES **/
+img.leftCharacter{
+    transform: scaleX(-1);
+}
+
+img.character_icon{
+    height: 140px;
+}

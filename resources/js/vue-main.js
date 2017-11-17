@@ -113,8 +113,8 @@ var app = new Vue({
     },
     fetchRoundData: function(){
 		if(this.info.smashggUrl){
-		  var tag1 = this.info.p1_name;
-		  var tag2 = this.info.p2_name;
+		  var tag1 = this.info.p1_name.trim();
+		  var tag2 = this.info.p2_name.trim();
 		  var tournament = this.getTournamentName();
 
 		  if(tag1.indexOf('</t>'))

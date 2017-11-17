@@ -1,0 +1,93 @@
+body{
+    font-family: "Gill Sans";
+	font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/** COLUMN AREAS **/
+div.leftside{
+	left:0;
+    width: 305px;
+}
+
+div.center{
+	left:0;
+    width:1310px;
+    margin-left:305px;
+}
+
+div.rightside{
+	left:0;
+    width: 305px;
+}
+
+
+/** SCOREBOARD **/
+div.roundboard{
+    float:none;
+    margin-top:20px;
+    text-align:center;
+}
+
+
+/** LEFT **/
+div.leftchar{
+    float: right;
+    margin-top: 950px;
+    transform: scaleX(-1);
+    position:fixed;
+    z-index: -99999;
+}
+
+div.lefttag{
+    width:305px;
+    position:fixed;
+    text-align:center;
+    margin-top:945px;
+}
+
+div.leftscore{
+    float: right;
+    margin-top:1010px;
+    margin-left:259px;
+    font-size:55px;
+    font-weight:"bold";
+    position:fixed;
+}
+
+
+/** RIGHT **/
+div.rightchar{
+    float: left;
+    margin-top: 950px;
+    position:fixed;
+    z-index: -99999;
+}
+
+
+div.righttag{
+    width:305px;
+    position:fixed;
+    text-align: center;
+    margin-top:945px;
+    font-size: 27pt;
+}
+
+
+div.rightscore{
+    float: left;
+    margin-top:1010px;
+    margin-left:25px;
+    font-size:55px;
+    position:fixed;
+}
+
+/** IMAGES **/
+img.leftCharacter{
+    transform: scaleX(-1);
+}
+
+img.character_icon{
+    height: 140px;
+}
