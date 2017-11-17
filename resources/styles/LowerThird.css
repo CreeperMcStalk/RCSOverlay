@@ -1,9 +1,9 @@
 body{
     font-weight: bold;
-    font-family: "Gill Sans";
+    font-family: "Khand Medium";
     text-transform: uppercase;
     letter-spacing: 3px;
-    background-image: url('../images/Function1LowerThird.png');
+    background-image: url('C:/Users/RCScookiE/Documents/RCSOverlay/resources/images/Overlays/TO12/TO12LowerThirdLeft1.png');
 }
 
 div.column{
@@ -14,14 +14,14 @@ div.column{
 div.round{
     position:fixed;
     margin-left: 200px;
-    margin-top:805px;
+    margin-top:795px;
     font-size:62pt;
 }
 
 div.event{
     position:fixed;
     margin-left:390px;
-    margin-top:905px;
+    margin-top:900px;
     font-size:24pt;
     color:white;
 }

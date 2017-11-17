@@ -67,7 +67,7 @@ var app = new Vue({
              zeroPad(this.timestamp.getSeconds());
     },
     game_header: function() {
-      return this.info.event_name + ' - ' + this.info.event_round + ' - ' + this.info.best_of_x;
+      return this.info.event_round + ' - ' + this.info.best_of_x;
     }
   },
   methods: {

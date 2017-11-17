@@ -1,6 +1,6 @@
 body{
     font-weight: 200;
-    font-family: "Gill Sans";
+    font-family: "Khand Medium";
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -13,26 +13,30 @@ div.leftCol{
 
 div.team1{
     position: fixed;
-    margin-top: 438px;
+    margin-top: 432px;
     margin-left: 10px;
+    color: #3e354d;
 }
 
 div.team1Score{
     position: fixed;
-    margin-top: 438px;
+    margin-top: 432px;
     margin-left: 575px;
+    color: #3e354d;
 }
 
 div.team2{
     position: fixed;
-    margin-top: 825px;
+    margin-top: 822px;
     margin-left: 10px;
+    color: #3e354d;
 }
 
 div.team2Score{
     position: fixed;
-    margin-top: 825px;
+    margin-top: 822px;
     margin-left: 575px;
+    color: #3e354d;
 }
 
 div.roundCol{
@@ -41,6 +45,6 @@ div.roundCol{
     position:fixed;
     margin-left:610px;
     text-align:center;
-    margin-top:18px;
+    margin-top:15px;
     font-size:27pt;
 }
