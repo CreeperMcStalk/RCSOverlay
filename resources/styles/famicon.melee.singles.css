@@ -54,6 +54,7 @@ div.leftCharacter{
     float: right;
     margin-top: 95px;
     position:fixed;
+    transform: scaleX(-1);
     margin-left: 3px;
     z-index: -99999;
 }
@@ -82,7 +83,6 @@ div.rightCharacter{
     float: left;
     margin-top: 95px;
     margin-left:265px;
-    transform: scaleX(-1);
     position:fixed;
     z-index: -99999;
 }
