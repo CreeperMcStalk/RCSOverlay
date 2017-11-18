@@ -46,3 +46,79 @@ div.righttwitter{
 	margin-top:643px;
 	margin-left:835px;
 }
+
+
+
+/** NEW **/
+div.leftSpace{
+	float:left;
+	width:19%;
+	margin-top:609px;
+	font-size:18pt;
+}
+
+div.leftComm{
+	float:left;
+	text-align: center;
+	margin-top: 609px;
+	font-size:18pt;
+	width:25%;
+}
+
+div.center{
+	float:left;
+	text-align:center;
+	width:12%;
+	margin-top: 609px;
+	font-size:18pt;
+}
+
+div.rightComm{
+	float:left;
+	text-align:center;
+	margin-top:609px;
+	font-size:18pt;
+	width:25%;
+}
+
+div.rightSpace{
+	float:left;
+	text-align:center:
+	margin-top:609px;
+	font-size:18pt;
+	width:19%;
+}
+
+div.leftSpace2{
+	float:left;
+	text-align:center:
+	font-size:18pt;
+	width:19%;
+}
+
+div.leftTwitter{
+	color:#0084b4;
+	float:left;
+	text-align:center:
+	font-size:13pt;
+	width:18%;
+}
+
+div.centerTwitterSpace{
+	color:#0084b4;
+	float:left;
+	text-align:center:
+	font-size:13pt;
+	width:20%;
+
+}
+
+div.rightTwitter{
+	color:#0084b4;
+	float:left;
+	text-align:center:
+	font-size:13pt;
+	width:13%;
+}
+
+

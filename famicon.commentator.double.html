@@ -15,25 +15,31 @@
 <body>
   <div id="app">
 
+  <div class="leftSpace"> &nbsp; </div>
 
-  <div class="leftcomm">
-      <transition name="fade" mode="out-in">
-        <span class="name" :key="info.event_comm" v-html="info.event_comm" ></span>
-      </transition>
-    </div>
+  <div class="leftComm">
+    <transition name="fade" mode="out-in">
+      <span class="name" :key="info.event_comm" v-html="info.event_comm" ></span>
+    </transition>
+  </div>
+
+  <div class="center"> &nbsp; </div>
+
+  <div class="rightComm">
+    <transition name="fade" mode="out-in">
+      <span class="name" :key="info.event_comm2" v-html="info.event_comm2" ></span>
+    </transition>
+  </div>
+
+  <div class="rightSpace"> &nbsp; </div>
+
+  <div class="leftSpace2"> &nbsp; </div>
 
   <div class="lefttwitter">
       <transition name="fade" mode="out-in">
         <span class="name" :key="info.event_comm_twitter" v-html="info.event_comm_twitter"></span>
       </transition>
     </div>
-
-
-  <div class="rightcomm">
-    <transition name="fade" mode="out-in">
-      <span class="name" :key="info.event_comm2" v-html="info.event_comm2" ></span>
-    </transition>
-  </div>
 
   <div class="righttwitter">
     <transition name="fade" mode="out-in">
