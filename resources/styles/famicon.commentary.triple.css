@@ -1,7 +1,7 @@
 body{
 	font-weight: 600pt;
     font-family: "Khand-SemiBold";
-	background-image: url('../images/Overlays/Famicon/Melee/LowerThird.png');
+	background-image: url('../images/Overlays/Famicon/Melee/LowerThirdTricast.png');
 	height:720px;
 	width:1280px;
 	letter-spacing: .5pt;
@@ -12,10 +12,11 @@ t{
 	text-shadow: none;
 }
 
+
 div.leftcomm{
 	position:fixed;
 	margin-top:609px;
-	margin-left:310px;
+	margin-left:185px;
 	text-align:center;
 	font-size:18pt;
 }
@@ -26,15 +27,31 @@ div.lefttwitter{
 	font-size:13pt;
 	text-align:center;
 	margin-top:643px;
-	margin-left:350px;
+	margin-left:190px;
 }
 
+div.centercomm{
+	position:fixed;
+	text-align:center;
+	font-size:18pt;
+	margin-top:609px;
+	margin-left:585px;
+}
+
+div.centertwitter{
+	color:#0084b4;
+	position:fixed;
+	text-align:center;
+	font-size:13pt;
+	margin-top:643px;
+	margin-left:590px;
+}
 
 div.rightcomm{
 	position:fixed;
 	text-align:center;
 	font-size:18pt;
-	margin-left:830px;
+	margin-left:1000px;
 	margin-top:609px;
 }
 
@@ -44,5 +61,7 @@ div.righttwitter{
 	text-align:center;
 	font-size:13pt;
 	margin-top:643px;
-	margin-left:835px;
+	margin-left:1005px;
 }
+
+

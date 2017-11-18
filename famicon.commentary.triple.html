@@ -6,7 +6,7 @@
   <title>Title</title>
   <link rel="stylesheet" type="text/css" href="./node_modules/vue2-animate/dist/vue2-animate.css" />
   <link rel="stylesheet" type="text/css" href="./resources/styles/base.css" />
-  <link rel="stylesheet" type="text/css" href="./resources/styles/famicon.commentary.double.css" />
+  <link rel="stylesheet" type="text/css" href="./resources/styles/famicon.commentary.triple.css" />
 
   <script src="./node_modules/vue/dist/vue.js"></script>
   <script src="./node_modules/axios/dist/axios.js"></script>
@@ -28,16 +28,27 @@
       </transition>
     </div>
 
+  <div class="centercomm">
+    <transition name="fade" mode="out-in">
+        <span class="name" :key="info.event_comm2" v-html="info.event_comm2" ></span>
+    </transition>
+  </div>
+
+  <div class="centertwitter">
+    <transition name="fade" mode="out-in">
+      <span class="name" :key="info.event_comm2_twitter" v-html="info.event_comm2_twitter" ></span>
+    </transition>
+  </div>
 
   <div class="rightcomm">
     <transition name="fade" mode="out-in">
-      <span class="name" :key="info.event_comm2" v-html="info.event_comm2" ></span>
+      <span class="name" :key="info.event_comm3" v-html="info.event_comm3" ></span>
     </transition>
   </div>
 
   <div class="righttwitter">
     <transition name="fade" mode="out-in">
-      <span class="name" :key="info.event_comm2_twitter" v-html="info.event_comm2_twitter"></span>
+      <span class="name" :key="info.event_comm3_twitter" v-html="info.event_comm3_twitter"></span>
     </transition>
   </div>
 

@@ -6,8 +6,19 @@
 			<label x='10' y='15' width='40' height='14'>Name:</label>
 				<lineEdit id='p1_name' dataSet='/dataSets/smash/players.csv' dataField='1' x='55' y='10' width='170' height='20'>Player 1 Name</lineEdit>
 			<label x='10' y='40' width='40' height='14'>Char:</label>
-				<comboBox id="p1_char" x='55' y='35' width='170' height='20'>
+				<comboBox id="p1_char" x='55' y='35' width='50' height='20'>
 					<comboItem>Default</comboItem><comboItem>No Icon</comboItem><comboItem>Team Red</comboItem><comboItem>Team Blue</comboItem><comboItem>Team Green</comboItem><comboItem>Bowser</comboItem><comboItem>Captain Falcon</comboItem><comboItem>Doctor Mario</comboItem><comboItem>Donkey Kong</comboItem><comboItem>Falco</comboItem><comboItem>Fox</comboItem><comboItem>Ganondorf</comboItem><comboItem>Ice Climbers</comboItem><comboItem>Jigglypuff</comboItem><comboItem>Kirby</comboItem><comboItem>Link</comboItem><comboItem>Luigi</comboItem><comboItem>Mario</comboItem><comboItem>Marth</comboItem><comboItem>Mewtwo</comboItem><comboItem>Mr. Game &amp; Watch</comboItem><comboItem>Ness</comboItem><comboItem>Peach</comboItem><comboItem>Pichu</comboItem><comboItem>Pikachu</comboItem><comboItem>Roy</comboItem><comboItem>Samus</comboItem><comboItem>Sheik</comboItem><comboItem>Yoshi</comboItem><comboItem>Young Link</comboItem><comboItem>Zelda</comboItem>
+				</comboBox>
+				<comboBox id="p1_char_color" x="135" y="35" width="60" height="20">
+					<comboItem>Default</comboItem>
+					<comboItem>Black</comboItem>
+					<comboItem>Blue</comboItem>
+					<comboItem>Red</comboItem>
+					<comboItem>Green</comboItem>
+					<comboItem>Pink</comboItem>
+					<comboItem>Yellow</comboItem>
+					<comboItem>White</comboItem>
+					<comboItem>Purple</comboItem>
 				</comboBox>
 			<label x='10' y='65' width='40' height='14'>Games:</label>
 				<spinBox id='p1_games' x='55' y='60' width='110' height='25' maximum='999'/>
@@ -18,8 +29,19 @@
 			<label x='10' y='10' width='40' height='14'>Name:</label>
 				<lineEdit id='p2_name' dataSet='/dataSets/smash/players.csv' dataField='1' x='55' y='10' width='170' height='20'>Player 2 Name</lineEdit>
 			<label x='10' y='40' width='40' height='14'>Char:</label>
-				<comboBox id="p2_char" x='55' y='35' width='170' height='20'>
+				<comboBox id="p2_char" x='55' y='35' width='50' height='20'>
 					<comboItem>Default</comboItem><comboItem>No Icon</comboItem><comboItem>Team Red</comboItem><comboItem>Team Blue</comboItem><comboItem>Team Green</comboItem><comboItem>Bowser</comboItem><comboItem>Captain Falcon</comboItem><comboItem>Doctor Mario</comboItem><comboItem>Donkey Kong</comboItem><comboItem>Falco</comboItem><comboItem>Fox</comboItem><comboItem>Ganondorf</comboItem><comboItem>Ice Climbers</comboItem><comboItem>Jigglypuff</comboItem><comboItem>Kirby</comboItem><comboItem>Link</comboItem><comboItem>Luigi</comboItem><comboItem>Mario</comboItem><comboItem>Marth</comboItem><comboItem>Mewtwo</comboItem><comboItem>Mr. Game &amp; Watch</comboItem><comboItem>Ness</comboItem><comboItem>Peach</comboItem><comboItem>Pichu</comboItem><comboItem>Pikachu</comboItem><comboItem>Roy</comboItem><comboItem>Samus</comboItem><comboItem>Sheik</comboItem><comboItem>Yoshi</comboItem><comboItem>Young Link</comboItem><comboItem>Zelda</comboItem>
+				</comboBox>
+				<comboBox id="p2_char_color" x="135" y="35" width="60" height="20">
+					<comboItem>Default</comboItem>
+					<comboItem>Black</comboItem>
+					<comboItem>Blue</comboItem>
+					<comboItem>Red</comboItem>
+					<comboItem>Green</comboItem>
+					<comboItem>Pink</comboItem>
+					<comboItem>Yellow</comboItem>
+					<comboItem>White</comboItem>
+					<comboItem>Purple</comboItem>
 				</comboBox>
 			<label x='10' y='65' width='40' height='14'>Games:</label>
 				<spinBox id='p2_games' x='55' y='60' width='110' height='25' maximum='999'/>
