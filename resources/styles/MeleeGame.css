@@ -47,7 +47,6 @@ div.leftSmashTag{
     text-align:center;
     margin-top:941px;
     font-size: 27pt;
-    color: #3e354d;
 }
 
 div.leftScore{
@@ -57,7 +56,6 @@ div.leftScore{
     font-size:55px;
     font-weight:"bold";
     position:fixed;
-    color: #3e354d;
 }
 
 
@@ -76,7 +74,6 @@ div.rightSmashTag{
     text-align: center;
     margin-top:941px;
     font-size: 27pt;
-    color: #3e354d;
 }
 
 /*
@@ -86,7 +83,6 @@ div.rightSmashTag{
     margin-top:945px;
     font-size: 27pt;
     position:fixed;
-    color: #3e354d;
 }
 */
 
@@ -96,7 +92,6 @@ div.rightScore{
     margin-left:25px;
     font-size:55px;
     position:fixed;
-    color: #3e354d;
 }
 
 /** IMAGES **/
