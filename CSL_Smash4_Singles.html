@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="./resources/styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="./node_modules/vue2-animate/dist/vue2-animate.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/styles/base.css" />
+
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script src="./node_modules/axios/dist/axios.js"></script>
+
     <style>
         html{
             background-image: url('./resources/images/Overlays/CSL/CSLWiiUGame.png');
@@ -13,9 +19,84 @@
             width: 1280px;
             font-family: 'Khand Medium';
         }
+
+        .name{
+            color: white;
+            font-size: 14pt;
+        }
+        .score{
+            padding-top:18px;
+
+            font-size:20pt;
+            text-shadow: 2px 2px darkgrey;
+            color:yellow;
+        }
+        .player1Score{
+            position: fixed;
+            margin-left: 182px;
+        }
+        .player2Score{
+            position: fixed;
+            padding-left:775px;
+        }
+
+        div.content {
+            display: flex;
+            flex-direction: column;
+        }
+        div.content>div.board{
+
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: space-between;
+            width:650px;
+            padding-left:310px;
+            padding-top:24px;
+        }
+
     </style>
 </head>
 <body>
+    <div id="app">
+        <div class="score player1Score" id="score1wiiu">
+            <transition name="fade" mode="out-in">
+                <span :key="info.p1_games" v-html="info.p1_games"></span>
+            </transition>
+        </div>
 
+        <div class="score player2Score" id="score2wiiu">
+            <transition name="fade" mode="out-in">
+                <span :key="info.p2_games" v-html="info.p2_games"></span>
+            </transition>
+        </div>
+
+
+        <div class="content">
+            <div class="board">
+                <div class="name player1Name">
+                    <transition name="fade" mode="out-in" class="item">
+                        <span :key="info.p1_name" v-html="info.p1_name">GAwes</span>
+                    </transition>
+                </div>
+
+                <div class="name round">
+                    <transition name="fade" mode="out-in" class="item">
+                        <span :key="info.event_round" v-html="info.event_round">Round</span>
+                    </transition>
+                </div>
+
+                <div class="name player2Name">
+                    <transition name="fade" mode="out-in" class="item">
+                        <span :key="info.p2_name" v-html="info.p2_name">CAUP</span>
+                    </transition>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<!-- This needs to be loaded after the dom -->
+<script src="./resources/js/vue-main.js"></script>
+
 </html>

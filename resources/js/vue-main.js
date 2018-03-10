@@ -56,10 +56,26 @@ var app = new Vue({
       },
 
       'info.p1_games': function(newval, oldval){
-          if(newval >= 10)
-              document.getElementById('score1').setAttribute('style', 'padding-left:290px;');
-          else
-              document.getElementById('score1').setAttribute('style', 'padding-left:300px;');
+
+          try {
+              var isWiiU = document.querySelectorAll("#score1wiiu");
+
+              if(isWiiU.length > 0){
+                  if (newval >= 10)
+                      document.getElementById('score1wiiu').setAttribute('style', 'margin-left:472px;');
+                  else
+                      document.getElementById('score1wiiu').setAttribute('style', 'margin-left:482px;');
+              }
+              else {
+                  if (newval >= 10)
+                      document.getElementById('score1').setAttribute('style', 'padding-left:290px;');
+                  else
+                      document.getElementById('score1').setAttribute('style', 'padding-left:300px;');
+              }
+          }
+          catch(e){
+            console.error(e);
+          }
       }
   },
   computed: {
