@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f9c5ca-70e0-4aba-8118-e547892c0f41" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSL_Comm.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSL_Smash4_Singles.html" afterPath="$PROJECT_DIR$/CSL_Smash4_Singles.html" />
     </list>
     <ignored path="NewMelee.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CSL_Comm.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CSL_Comm.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSL_Comm.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -75,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CSL_Smash4_Singles.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CSL_Smash4_Singles.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CSL_Smash4_Singles.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+            <state relative-caret-position="205">
+              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -145,11 +145,11 @@
         <option value="$PROJECT_DIR$/MeleeGame.html" />
         <option value="$PROJECT_DIR$/StreamControl_0_4b/layouts/smash_layout1.xml" />
         <option value="$PROJECT_DIR$/resources/styles/base.css" />
-        <option value="$PROJECT_DIR$/CSL_Smash4_Singles.html" />
         <option value="$PROJECT_DIR$/resources/js/vue-main.js" />
         <option value="$PROJECT_DIR$/StreamControl_0_4b/streamcontrol.json" />
         <option value="$PROJECT_DIR$/CSL_Melee_Singles.html" />
         <option value="$PROJECT_DIR$/CSL_Comm.html" />
+        <option value="$PROJECT_DIR$/CSL_Smash4_Singles.html" />
       </list>
     </option>
   </component>
@@ -335,12 +335,12 @@
       <workItem from="1496715118562" duration="3407000" />
       <workItem from="1496965437046" duration="9550000" />
       <workItem from="1497044618031" duration="7788000" />
-      <workItem from="1520659800546" duration="7675000" />
+      <workItem from="1520659800546" duration="8757000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39717000" />
+    <option name="totallyTimeSpent" value="40799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -677,14 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSL_Smash4_Singles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/vue-main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -731,6 +723,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSL_Smash4_Singles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding />
         </state>
       </provider>
