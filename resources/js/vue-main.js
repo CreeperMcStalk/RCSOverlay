@@ -53,6 +53,13 @@ var app = new Vue({
 
       'info.smashggUrl': function(newval, oldval){
           this.initSmashGG()
+      },
+
+      'info.p1_games': function(newval, oldval){
+          if(newval >= 10)
+              document.getElementById('score1').setAttribute('style', 'padding-left:290px;');
+          else
+              document.getElementById('score1').setAttribute('style', 'padding-left:300px;');
       }
   },
   computed: {

@@ -19,23 +19,26 @@
   font-style: normal;
 }
 
+/*
 body {
   width: 1920px;
   height: 1080px;
   margin: 0;
   overflow: hidden;
   position: relative;
-  font-family: 'Lemon Milk';
+  font-family: 'Khand Medium';
   font-size: 25pt;
   text-shadow: 1px 1px 3px #000;
   color: white;
 }
+*/
 
 t {
   /* TAGS? To be added when actually inputting player names... not sure I like that format. */
   text-transform: none;
   margin-right: 5px;
-  color: #419bf4;
+  color: orange;
+  /*color: #419bf4; */
   /*color: #33ccff ; */
   /*LIGHT BLUE */
   text-shadow: 1px 1px 3px #000;
