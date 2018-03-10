@@ -15,28 +15,24 @@ div.team1{
     position: fixed;
     margin-top: 432px;
     margin-left: 10px;
-    color: #3e354d;
 }
 
 div.team1Score{
     position: fixed;
     margin-top: 432px;
     margin-left: 575px;
-    color: #3e354d;
 }
 
 div.team2{
     position: fixed;
     margin-top: 822px;
     margin-left: 10px;
-    color: #3e354d;
 }
 
 div.team2Score{
     position: fixed;
     margin-top: 822px;
     margin-left: 575px;
-    color: #3e354d;
 }
 
 div.roundCol{

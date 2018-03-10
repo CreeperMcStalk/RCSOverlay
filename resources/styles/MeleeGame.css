@@ -28,6 +28,7 @@ div.roundboard{
     float:none;
     margin-top:16px;
     text-align:center;
+    kerning: 10pt;
 }
 
 /** NESTED COLUMN AREAS **/
