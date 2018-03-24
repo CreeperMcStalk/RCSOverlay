@@ -37,9 +37,9 @@ var app = new Vue({
         p1_char: 'Default',
         p2_char: 'Default',
 		
-		//URL for automated round pulling
-		smashggUrl: null
-    },
+		    //  URL for automated round pulling
+		    smashggUrl: null
+    },  
     timestamp: new Date()
   },
   watch: {

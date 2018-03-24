@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./node_modules/vue2-animate/dist/vue2-animate.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/styles/base.css" />
+
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script src="./node_modules/axios/dist/axios.js"></script>
+
+    <style>
+    html{
+    	/*background-image: url('./resources/images/Overlays/CSL/CSLMeleeGame.png');*/
+        background-repeat:no-repeat;
+        background-size:cover;
+        height: 720px;
+        width: 1280px;
+        font-family: 'Khand Medium';
+    }
+    .name{
+        color: white;
+        font-size: 14pt;
+    }		
+    .score{
+        color: white;
+        font-size: 14pt;
+    }	
+    div.container{
+    	height: 720px;
+        width: 1280px;
+    	background-color:black;
+    	opacity:.4;
+    	margin: 0 auto;
+    }
+    table.crews{
+    	border-collapse: separate;
+    	border-spacing: 10px;
+    	text-align: center;
+    	opacity: 1;
+    	font-size: 48pt;
+    }
+    </style>
+
+</head>
+<body>
+	<div id="app">
+		<div class="container">
+			<table class="crews">
+				<tr>
+					<th>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.crew1" v-html="info.crew1"></span>
+			                </transition>
+						</div>
+					</th>
+					<th>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c1_stocks" v-html="info.c1_stocks"></span>
+			                </transition>
+						</div>
+					</th>
+					<th>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.crew2" v-html="info.crew2"></span>
+			                </transition>
+						</div>
+					</th>
+					<th>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c2_stocks" v-html="info.c2_stocks"></span>
+			                </transition>
+						</div>
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c1_p1_name" v-html="info.c1_p1_name"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="score">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c1_p1_score" v-html="info.c1_p1_score"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c2_p1_name" v-html="info.c2_p1_name"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="score">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c2_p1_score" v-html="info.c2_p1_score"></span>
+			                </transition>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c2_p1_name" v-html="info.c1_p2_name"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="score">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c1_p2_score" v-html="info.c1_p2_score"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c2_p2_name" v-html="info.c2_p2_name"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="score">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c2_p2_score" v-html="info.c2_p2_score"></span>
+			                </transition>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c1_p3_name" v-html="info.c1_p3_name"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c1_p3_score" v-html="info.c1_p3_score"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c2_p3_name" v-html="info.c2_p3_name"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c2_p3_score" v-html="info.c2_p3_score"></span>
+			                </transition>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c1_p4_name" v-html="info.c1_p4_name"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c1_p4_score" v-html="info.c1_p4_score"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c2_p4_name" v-html="info.c2_p4_name"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c2_p4_score" v-html="info.c2_p4_score"></span>
+			                </transition>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c1_p5_name" v-html="info.c1_p5_name"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c1_p5_score" v-html="info.c1_p5_score"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c2_p5_name" v-html="info.c2_p5_name"></span>
+			                </transition>
+						</div>
+					</td>
+					<td>
+						<div class="name">
+							<transition name="fade" mode="out-in">
+			                    <span :key="info.c2_p5_score" v-html="info.c2_p5_score"></span>
+			                </transition>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+
+<!-- This needs to be loaded after the dom -->
+<script src="./resources/js/vue-main.js"></script>
+
+</html>
