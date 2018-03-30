@@ -1,0 +1,100 @@
+[1mdiff --git a/StreamControl_0_4b/layouts/dataSets/smash/players.csv b/StreamControl_0_4b/layouts/dataSets/smash/players.csv[m
+[1mindex b2e9564..c213ae9 100644[m
+[1m--- a/StreamControl_0_4b/layouts/dataSets/smash/players.csv[m
+[1m+++ b/StreamControl_0_4b/layouts/dataSets/smash/players.csv[m
+[36m@@ -768,7 +768,7 @@[m [mHAN,[m
+ ZRIDER,[m
+ <T>NIMBUS</T>HAN,[m
+ DCW,[m
+[31m-GILGADU,[m
+[32m+[m[32mGILGADU,@GILGADU_SSBM[m
+ CARDDSD,[m
+ LOWQUALITYJPEG,[m
+ <T>NIMBUS</T>JPEG,[m
+[36m@@ -1157,3 +1157,46 @@[m [mDAVEMON & <T>LAB</T> HT,[m
+ <t>SS</T> COLBOL & FLOTUS,[m
+ DAVEMON & <T>LAB</T> HT [L],[m
+ S0ft,[m
+[32m+[m[32m<t> FRD </T> TM12,[m
+[32m+[m[32mGk,[m
+[32m+[m[32m<T>CR2</T> RUSH,[m
+[32m+[m[32m<T>UGL</T> FLAMINROY,[m
+[32m+[m[32mSUBTLE T,[m
+[32m+[m[32m<T>CR2</T> DP'S MARIO,[m
+[32m+[m[32mSTRUGGLE WARRIOR,[m
+[32m+[m[32mOHANTHEMAN,[m
+[32m+[m[32mSycorax,[m
+[32m+[m[32mLoper & Ice Age,[m
+[32m+[m[32mDraven & Dog,[m
+[32m+[m[32mLoper & Ice Age (GREEN),[m
+[32m+[m[32mDraven & Dog (BLUE),[m
+[32m+[m[32mDUSK & AUSTINTACIOUS,[m
+[32m+[m[32mSOAP & DANDY,[m
+[32m+[m[32mDUSK & DANDY,[m
+[32m+[m[32mDUSK & DANDY (BLUE),[m
+[32m+[m[32mSOAP & AUSTINTACIOUS (green),[m
+[32m+[m[32mwHAT & tm12 (BLUE),[m
+[32m+[m[32mGAWES & FOCUS (green),[m
+[32m+[m[32mcameron,@dontcallmeslips[m
+[32m+[m[32mTal,heck[m
+[32m+[m[32mslips,@dontcallmeslips[m
+[32m+[m[32mshades,@dontcallmeslips[m
+[32m+[m[32mXIF & SYCORAX,[m
+[32m+[m[32mCOLBOL & FLOW,[m
+[32m+[m[32mXIF & SYCORAX (GREEN),[m
+[32m+[m[32mCOLBOL & FLOW (RED),[m
+[32m+[m[32mFLAMINROY & NICABOY,[m
+[32m+[m[32mNICABOY & FLAMINROY (GREEN),[m
+[32m+[m[32mSOAP & AUSTINTACIOUS (RED),[m
+[32m+[m[32mFULLMETAL & S0FT,[m
+[32m+[m[32mFLOTUS & DASHDANCEDAN,[m
+[32m+[m[32mFULLMETAL & S0FT (RED),[m
+[32m+[m[32mAUSTINTACIOUS & SOAP (GREEN),[m
+[32m+[m[32mNICABOY & FLAMINROY (RED),[m
+[32m+[m[32mFLOW & COLBOL (GREEN),[m
+[32m+[m[32mFLOW & COLBOL (GREEN) [W],[m
+[32m+[m[32mC$,[m
+[32m+[m[32mMR SPEEDMAN,[m
+[32m+[m[32m<T>UGL</T>FLAMINROY,[m
+[32m+[m[32m<T>LAB</T> FULLMETAL,[m
+[32m+[m[32myort,[m
+[1mdiff --git a/StreamControl_0_4b/streamcontrol.json b/StreamControl_0_4b/streamcontrol.json[m
+[1mindex ca12b93..7ddec20 100644[m
+[1m--- a/StreamControl_0_4b/streamcontrol.json[m
+[1m+++ b/StreamControl_0_4b/streamcontrol.json[m
+[36m@@ -93,24 +93,24 @@[m
+     "c2_stocks": "",[m
+     "crew1": "",[m
+     "crew2": "",[m
+[31m-    "event_comm": "<T> FRD </t> Xif",[m
+[31m-    "event_comm2": "<T>FRD</T> Animal Companion",[m
+[31m-    "event_comm2_twitter": "@TheNumberXLVII",[m
+[31m-    "event_comm_twitter": "@TheXif",[m
+[32m+[m[32m    "event_comm": "RJW",[m
+[32m+[m[32m    "event_comm2": "ANIMAL COMPANION",[m
+[32m+[m[32m    "event_comm2_twitter": "",[m
+[32m+[m[32m    "event_comm_twitter": "@_SHARKDAD",[m
+     "event_name": "We Tech Those 12",[m
+     "event_notice": "",[m
+     "event_round": "GRAND FINALS",[m
+[31m-    "p1_char": "Fox",[m
+[31m-    "p1_games": "2",[m
+[31m-    "p1_name": "<t>SS</T> COLBOL",[m
+[31m-    "p2_char": "Sheik",[m
+[31m-    "p2_games": "0",[m
+[31m-    "p2_name": "<T>LAB</T>HT [L]",[m
+[32m+[m[32m    "p1_char": "Falco",[m
+[32m+[m[32m    "p1_games": "0",[m
+[32m+[m[32m    "p1_name": "YORT [L]",[m
+[32m+[m[32m    "p2_char": "Fox",[m
+[32m+[m[32m    "p2_games": "2",[m
+[32m+[m[32m    "p2_name": "<T>SS</T>COLBOL",[m
+     "pull_mode": "PULL_ALL",[m
+     "smashggUrl": "",[m
+     "t1_games": "0",[m
+     "t2_games": "0",[m
+     "team_mode": "0",[m
+[31m-    "timestamp": "1519529888",[m
+[32m+[m[32m    "timestamp": "1521943827",[m
+     "toggle_crews": "0"[m
+ }[m
