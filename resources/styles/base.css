@@ -19,13 +19,20 @@
   font-style: normal;
 }
 
+@font-face{
+  font-family: "Big Noodle";
+  src: url('../fonts/big_noodle_titling.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   width: 1920px;
   height: 1080px;
   margin: 0;
   overflow: hidden;
   position: relative;
-  font-family: 'Lemon Milk';
+  font-family: 'Big Noodle';
   font-size: 25pt;
   text-shadow: 1px 1px 3px #000;
   color: white;
