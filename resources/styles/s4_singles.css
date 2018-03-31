@@ -1,28 +1,65 @@
 html{
-    background-image: url('C:\\Users\\RCScookiE\\Documents\\RCSOverlay\\resources\\images\\Overlays\\Smash4Arca\\GuaranteedGame.png');
     text-align: center;
 }
 
 .player{
     position:fixed;
-    margin-top: 45px;
-    font-size: 30pt;
+    margin-top: 43px;
+
+    font-size: 32pt;
+    font-color: #fdf8ea;
 }
 
 .score{
+    top: 0;
     position:fixed;
-    margin-top: 19px;
+    margin-top: 38px;
 
     font-size: 40pt;
-    color: grey;
+    color: #393939;
     text-shadow: 0;
 }
 
 .info{
-    font-size:16pt;
+    top: 0;
+    position:fixed;
+    margin-top: 93px;
+
+    font-size:18pt;
+    font-color: #e3e3e3;
 }
 
+div.container{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+div.players{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 43px;
+    margin-right:50px;
+    width: 46%;
+
+    font-size: 32pt;
+    font-color: #fdf8ea;
+}
+
+div.infos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+
+    font-size:18pt;
+    font-color: #e3e3e3;
+}
+
+
+
 div.player1{
+    text-align: center;
     margin-left: 525px;
 }
 
@@ -39,13 +76,9 @@ div.player2score{
 }
 
 div.round{
-    position:fixed;
-    margin-left: 600px;
-    margin-top: 95px;
+    margin-left: 575px;
 }
 
 div.bracket{
-    position:fixed;
-    margin-left: 1200px;
-    margin-top: 95px;
+    margin-left: 1175px;
 }

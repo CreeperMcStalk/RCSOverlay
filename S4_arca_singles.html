@@ -14,14 +14,7 @@
 
 <body>
   <div id="app">
-
-    <div class="scoreboard">
-        <div class="player1 player">
-            <transition name="fade" mode="out-in">
-                <span class="name" :key="info.p1_name" v-html="info.p1_name"></span>
-            </transition>
-        </div>
-
+    <!-- FIXED -->
         <div class="player1score score">
             <transition name="fade" mode="out-in">
                 <span class="score" :key="info.p1_games" v-html="info.p1_games"></span>
@@ -31,12 +24,6 @@
         <div class="player2score score">
             <transition name="fade" mode="out-in">
                 <span class="score" :key="info.p2_games" v-html="info.p2_games"></span>
-            </transition>
-        </div>
-
-        <div class="player2 player">
-            <transition name="fade" mode="out-in">
-                <span class="name" :key="info.p2_name" v-html="info.p2_name"></span>
             </transition>
         </div>
 
@@ -50,6 +37,22 @@
             <transition name="fade" mode="out-in">
                 <span class="bracket" :key="info.bracket" v-html="info.bracket"></span>
             </transition>
+        </div>
+    <!-- FIXED -->
+
+    <div class="container">
+        <div class='players'>
+            <div>
+                <transition name="fade" mode="out-in">
+                    <span class="name" :key="info.p1_name" v-html="info.p1_name"></span>
+                </transition>
+            </div>
+
+            <div>
+                <transition name="fade" mode="out-in">
+                    <span class="name" :key="info.p2_name" v-html="info.p2_name"></span>
+                </transition>
+            </div>
         </div>
     </div>
 
