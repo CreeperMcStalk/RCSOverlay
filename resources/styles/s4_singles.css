@@ -4,11 +4,16 @@ html{
 }
 
 .player{
-    font-size: 24pt;
+    position:fixed;
+    margin-top: 45px;
+    font-size: 30pt;
 }
 
 .score{
-    font-size: 24pt;
+    position:fixed;
+    margin-top: 19px;
+
+    font-size: 40pt;
     color: grey;
     text-shadow: 0;
 }
@@ -18,34 +23,29 @@ html{
 }
 
 div.player1{
-    position:fixed;
-    margin-left: 500px;
-}
-
-div.player1score{
-    position:fixed;
-    margin-left: 700px;
+    margin-left: 525px;
 }
 
 div.player2{
-    position:fixed;
-    margin-left: 1100px;
+    margin-left: 1300px;
+}
+
+div.player1score{
+    margin-left: 780px;
 }
 
 div.player2score{
-    position:fixed;
-    margin-left: 900 px;
-
+    margin-left: 1115px;
 }
 
 div.round{
     position:fixed;
-    margin-left: 450px;
-    margin-top: 100px;
+    margin-left: 600px;
+    margin-top: 95px;
 }
 
 div.bracket{
     position:fixed;
-    margin-left: 850px;
-    margin-top: 100px;
+    margin-left: 1200px;
+    margin-top: 95px;
 }
