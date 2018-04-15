@@ -20,20 +20,25 @@
                         <span class="name" :key="crew.name" v-html="crew.name"></span>
                     </transition>
                 </div>
+                
+                <hr/>
 
                 <div class="players">
-                    <table>
-                        <tr>
-                            <th>Player</th>
-                            <th>Stocks</th>
-                        </tr>
+                    <table class="crewTable">
                         <tr v-for="player in crew.players">
                             <td>
                                 <transition name="fade" mode="out-in">
                                     <span class="name" :key="player.name" v-html="player.name"></span>
                                 </transition>
                             </td>
-                            <td>
+                            <td class="character">
+                                <transition name="fade" mode="out-in">
+                                    <span class="name" :key="player.character">
+                                        <img class="character_icon" height="85" :src="'../resources/images/Characters/icons/' + player.character + 'Default.png'"/>
+                                    </span>
+                                </transition>
+                            </td>
+                            <td class="score">
                                 <transition name="fade" mode="out-in">
                                     <span class="name" :key="player.score" v-html="player.score"></span>
                                 </transition>

@@ -142,10 +142,13 @@ var app = new Vue({
 
     },
     char_1_img: function(){
-        return IMAGES_DIR + '/Characters/' + this.info.p1_char + '.png'
+        return IMAGES_DIR + '/Characters/' + this.info.p1_char + '.png';
     }, 
     char_2_img: function(){
-        return IMAGES_DIR + '/Characters/' + this.info.p2_char + '.png'
+        return IMAGES_DIR + '/Characters/' + this.info.p2_char + '.png';
+    },
+    char_icon: function(name){
+        return IMAGES_DIR + '/Characters/icons/' + name  + 'Default.png';
     }
   },
   methods: {

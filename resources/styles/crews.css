@@ -1,21 +1,44 @@
 html{
+    font-family: "Khand Medium";
     background-color: black;
     opacity: 0.4;
 }
 
 div.container{
+    margin-top: 100px;
     display: flex;
     align-content: center;
+    justify-content: space-between;
 }
 
 div.crew{
     opacity:1;
     height:70%;
-    width:35%;
+    width:45%;
     
     border-color:white;
     border-radius: 5px;
 
+    margin: 0 auto;
+    background-color: teal;
+}
+
+.title{
+    text-align: center;
+    font-size: 56pt;
+}
+
+table.crewTable{
+    margin: 0 auto;
+    font-size: 48pt;
+}
+
+th, td {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+td.score{
     text-align: center;
 }
 
