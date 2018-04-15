@@ -40,12 +40,28 @@ div.players{
     display:flex;
     justify-content: space-between;
     margin-top: 43px;
-    margin-right:50px;
-    width: 46%;
+    /* DOUBLES */
+    width: 57%;
+
+    /* SINGLES */
+    /*width: 46%;
+*/
+    font-size: 32pt;
+    font-color: #fdf8ea;
+}
+
+div.playercol{
+    position:fixed;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 44px;
+    width: 25%;
 
     font-size: 32pt;
     font-color: #fdf8ea;
 }
+
 
 div.infos{
     display: flex;
@@ -60,11 +76,11 @@ div.infos{
 
 div.player1{
     text-align: center;
-    margin-left: 525px;
+    margin-left: 325px;
 }
 
 div.player2{
-    margin-left: 1300px;
+    margin-left: 1110px;
 }
 
 div.player1score{

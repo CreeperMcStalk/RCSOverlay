@@ -38,7 +38,8 @@ var app = new Vue({
         p2_char: 'Default',
 		
 		//URL for automated round pulling
-        smashggUrl: null
+        smashggUrl: null,
+        bracket: "smash.gg/gas4arcadian"
         
     },
     timestamp: new Date()
