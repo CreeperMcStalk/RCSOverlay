@@ -15,11 +15,30 @@
 <body>
   <div id="app">
 
+    <div class="playercol player1">
+      <transition name="fade" mode="out-in">
+        <span class="name" :key="info.p1_name" v-html="info.p1_name"></span>
+      </transition>
+    </div>
+
+    <div class="roundcol round">
+      <transition name="fade" mode="out-in">
+        <span class="name" :key="game_header" v-html="game_header"></span>
+      </transition>
+    </div>
+
+    <div class="playercol player2">
+      <transition name="fade" mode="out-in">
+        <span class="name" :key="info.p2_name" v-html="info.p2_name"></span>
+      </transition>
+    </div>
+
+<!--
+
+
     <div class="left">
       <div class="leftPlayer">
-        <transition name="fade" mode="out-in">
-          <span class="name" :key="info.p1_name" v-html="info.p1_name"></span>
-        </transition>
+        
       </div>
 
       <div class="leftCharacter">
@@ -37,7 +56,6 @@
       </div>
     </div>
 
-<!--
     <div class="center">
       <div class="roundboard">
         <transition name="fade" mode="out-in">
