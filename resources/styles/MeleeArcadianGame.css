@@ -1,0 +1,24 @@
+body{
+    font-family: "Khand Medium";
+	font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+div.left{
+    position: fixed;
+    
+    left:0;
+    width: 305px;
+
+    display:flex;
+    align-items: center;
+
+    background-color: green;
+}
+
+div.leftPlayer{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
