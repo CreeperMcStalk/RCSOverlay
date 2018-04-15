@@ -26,3 +26,6 @@ npm-debug.log*
 *.BPres
 
 RoundResolver/SmashRoundResolver/node_modules
+
+./*.xml
+./OverlayFiles/*.xml

@@ -4,6 +4,12 @@ if(!tunnel)
     console.error('json-tunnel is required for vue-main. Please make sure you\'ve imported it');
 */
 
+/** FILE SYSTEMS */
+const RESOURCES_DIR = '../resources'
+const IMAGES_DIR    = RESOURCES_DIR + '/images';
+const FONTS_DIR     = RESOURCES_DIR + '/fonts';
+const STYLES_DIR    = RESOURCES_DIR + '/styles';
+const VIDEOS_DIR    = RESOURCES_DIR + '/videos';
 
 var POLL_INTERVAL = 500;
 var ROUND_INTERVAL = 10000;
@@ -128,6 +134,18 @@ var app = new Vue({
                 ]
             )
         ]
+    },
+    score_1_img: function(){
+        
+    },
+    score_2_img: function(){
+
+    },
+    char_1_img: function(){
+        return IMAGES_DIR + '/Characters/' + this.info.p1_char + '.png'
+    }, 
+    char_2_img: function(){
+        return IMAGES_DIR + '/Characters/' + this.info.p2_char + '.png'
     }
   },
   methods: {
