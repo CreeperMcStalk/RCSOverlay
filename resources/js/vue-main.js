@@ -4,9 +4,10 @@ if(!tunnel)
     console.error('json-tunnel is required for vue-main. Please make sure you\'ve imported it');
 */
 
+
 var POLL_INTERVAL = 500;
 var ROUND_INTERVAL = 10000;
-var JSON_PATH = JSON_PATH || './StreamControl_0_4b/streamcontrol.json';
+var JSON_PATH = JSON_PATH || '../StreamControl_0_4b/streamcontrol.json';
 
 var port         = 11769;
 var smashGGinit  = 'http://localhost:'+port+'/init/';
@@ -14,7 +15,31 @@ var smashGGround = 'http://localhost:'+port+'/getMatch';
 
 var currentTournament = '';
 
+/**
+ * Data Object to encapsulate player data
+ */
+class Player{
+    constructor(name, score, character, isOut){
+        this.name = name;
+        this.score = score;
+        this.character = character;
+        this.isOut = isOut;
+    }
+}
 
+/**
+ * Data Object for encapsulating Crew information
+ */
+class Crew{
+    constructor(name, players){
+        this.name = name;
+        this.players = players;
+    }
+}
+
+/**
+ * Vue Application
+ */
 var app = new Vue({
   el: '#app',
   data: {
@@ -38,7 +63,8 @@ var app = new Vue({
         p2_char: 'Default',
 		
 		//URL for automated round pulling
-		smashggUrl: null
+        smashggUrl: null
+        
     },
     timestamp: new Date()
   },
@@ -68,6 +94,40 @@ var app = new Vue({
     },
     game_header: function() {
       return this.info.event_round + ' - ' + this.info.best_of_x;
+    },
+    get_crews: function(){
+        return [
+            new Crew(
+                this.info.crew1,
+                [
+                    new Player(this.info.c1_p1_name, this.info.c1_p1_score, this.info.c1_p1_char, this.info.c1_p1_out),
+                    new Player(this.info.c1_p2_name, this.info.c1_p2_score, this.info.c1_p2_char, this.info.c1_p2_out),
+                    new Player(this.info.c1_p3_name, this.info.c1_p3_score, this.info.c1_p3_char, this.info.c1_p3_out),
+                    new Player(this.info.c1_p4_name, this.info.c1_p4_score, this.info.c1_p4_char, this.info.c1_p4_out),
+                    new Player(this.info.c1_p5_name, this.info.c1_p5_score, this.info.c1_p5_char, this.info.c1_p5_out),
+                    new Player(this.info.c1_p6_name, this.info.c1_p6_score, this.info.c1_p6_char, this.info.c1_p6_out),
+                    new Player(this.info.c1_p7_name, this.info.c1_p7_score, this.info.c1_p7_char, this.info.c1_p7_out),
+                    new Player(this.info.c1_p8_name, this.info.c1_p8_score, this.info.c1_p8_char, this.info.c1_p8_out),
+                    new Player(this.info.c1_p9_name, this.info.c1_p9_score, this.info.c1_p9_char, this.info.c1_p9_out),
+                    new Player(this.info.c1_p10_name, this.info.c1_10p_score, this.info.c1_p10_char, this.info.c1_p10_out)
+                ]
+            ),
+            new Crew(
+                this.info.crew2,
+                [
+                    new Player(this.info.c2_p1_name, this.info.c2_p1_score, this.info.c2_p1_char, this.info.c2_p1_out),
+                    new Player(this.info.c2_p2_name, this.info.c2_p2_score, this.info.c2_p2_char, this.info.c2_p2_out),
+                    new Player(this.info.c2_p3_name, this.info.c2_p3_score, this.info.c2_p3_char, this.info.c2_p3_out),
+                    new Player(this.info.c2_p4_name, this.info.c2_p4_score, this.info.c2_p4_char, this.info.c2_p4_out),
+                    new Player(this.info.c2_p5_name, this.info.c2_p5_score, this.info.c2_p5_char, this.info.c2_p5_out),
+                    new Player(this.info.c2_p6_name, this.info.c2_p6_score, this.info.c2_p6_char, this.info.c2_p6_out),
+                    new Player(this.info.c2_p7_name, this.info.c2_p7_score, this.info.c2_p7_char, this.info.c2_p7_out),
+                    new Player(this.info.c2_p8_name, this.info.c2_p8_score, this.info.c2_p8_char, this.info.c2_p8_out),
+                    new Player(this.info.c2_p9_name, this.info.c2_p9_score, this.info.c2_p9_char, this.info.c2_p9_out),
+                    new Player(this.info.c2_p10_name, this.info.c2_10p_score, this.info.c2_p10_char, this.info.c2_p10_out)
+                ]
+            )
+        ]
     }
   },
   methods: {

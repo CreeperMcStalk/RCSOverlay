@@ -1,0 +1,24 @@
+html{
+    background-color: black;
+    opacity: 0.4;
+}
+
+div.container{
+    display: flex;
+    align-content: center;
+}
+
+div.crew{
+    opacity:1;
+    height:70%;
+    width:35%;
+    
+    border-color:white;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+div.crew.players{
+    
+}
