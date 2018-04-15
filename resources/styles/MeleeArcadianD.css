@@ -5,6 +5,28 @@ body{
     letter-spacing: 2pt;
 }
 
+dix.fixed{
+    position: absolute;
+}
+
+img.score{
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+
+img.score1{
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+
+img.score2{
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+
 div.playercol{
     position:fixed;
     display: flex;
@@ -35,14 +57,14 @@ div.player1{
 }
 
 div.player2{
-    margin-top: 388px;
+    margin-top: 489px;
     text-align: center;
     left:0;
 }
 
 div.round{
     text-align: center;
-    margin-top: 968px;
+    margin-top: 1020px;
     right:0;
     margin-right:457px;
 }

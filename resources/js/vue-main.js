@@ -135,11 +135,17 @@ var app = new Vue({
             )
         ]
     },
-    score_1_img: function(){
-        
+    score_1_img_S: function(){
+        return IMAGES_DIR + '/Scores/Singles/' + this.info.p1_games + "L.png";
     },
-    score_2_img: function(){
-
+    score_2_img_S: function(){
+        return IMAGES_DIR + '/Scores/Singles/' + this.info.p2_games + "R.png";
+    },
+    score_1_img_D: function(){
+        return IMAGES_DIR + '/Scores/Doubles/' + this.info.p1_games + 'T.png'
+    },
+    score_2_img_D: function(){
+        return IMAGES_DIR + '/Scores/Doubles/' + this.info.p2_games + 'B.png'
     },
     char_1_img: function(){
         return IMAGES_DIR + '/Characters/' + this.info.p1_char + '.png';

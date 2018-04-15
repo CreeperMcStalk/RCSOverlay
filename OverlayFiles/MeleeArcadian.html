@@ -20,25 +20,25 @@
         <span class="name" :key="info.p1_name" v-html="info.p1_name"></span>
       </transition>
     </div>
-
-    <div class="imagecol score1">
+    <div class="fixed">
       <transition name="fade" mode="out-in">
-        <img class="character_icon" :src="score_1_img"/>
+          <span class="name" :key="info.p1_games">  
+              <img class="score" :src="'../resources/images/Scores/Singles/' + info.p1_games + 'L.png'"/>
+          </span>
       </transition>
     </div>
-
     <div class="roundcol round">
       <transition name="fade" mode="out-in">
         <span class="name" :key="game_header" v-html="game_header"></span>
       </transition>
     </div>
-
-    <div class="imagecol score2">
+    <div class="fixed">
       <transition name="fade" mode="out-in">
-        <img class="character_icon" :src="score_2_img"/>
+          <span class="name" :key="info.p2_games">  
+              <img class="score" :src="'../resources/images/Scores/Singles/' + info.p2_games + 'R.png'"/>
+          </span>
       </transition>
     </div>
-
     <div class="playercol player2">
       <transition name="fade" mode="out-in">
         <span class="name" :key="info.p2_name" v-html="info.p2_name"></span>

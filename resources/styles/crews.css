@@ -4,6 +4,10 @@ html{
     opacity: 0.4;
 }
 
+body{
+    opacity: 1;
+}
+
 div.container{
     margin-top: 100px;
     display: flex;
@@ -12,7 +16,6 @@ div.container{
 }
 
 div.crew{
-    opacity:1;
     height:70%;
     width:45%;
     

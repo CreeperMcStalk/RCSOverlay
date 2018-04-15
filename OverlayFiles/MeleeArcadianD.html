@@ -21,9 +21,14 @@
       </transition>
     </div>
 
-    <div class="imagecol score1">
+    <div class="fixed">
       <transition name="fade" mode="out-in">
-        <img class="character_icon" :src="score_1_img"/>
+          <span class="name" :key="info.p1_games">  
+            <!--
+              <img class="score" :src="'../resources/images/Scores/Doubles/' + info.p1_games + 'L.png'"/>
+            -->
+            <img class="score" :src="score_1_img_D" />
+          </span>
       </transition>
     </div>
 
@@ -33,9 +38,11 @@
       </transition>
     </div>
 
-    <div class="imagecol score2">
+    <div class="fixed">
       <transition name="fade" mode="out-in">
-        <img class="character_icon" :src="score_2_img"/>
+          <span class="name" :key="info.p2_games">  
+              <img class="score" :src="'../resources/images/Scores/Doubles/' + info.p2_games + 'B.png'"/>
+          </span>
       </transition>
     </div>
 

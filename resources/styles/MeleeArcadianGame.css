@@ -5,6 +5,29 @@ body{
     letter-spacing: 2pt;
 }
 
+dix.fixed{
+    position: absolute;
+}
+
+img.score{
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+
+img.score1{
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+
+img.score2{
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+
+
 div.playercol{
     position:fixed;
     display: flex;
