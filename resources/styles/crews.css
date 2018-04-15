@@ -1,15 +1,13 @@
 html{
     font-family: "Khand Medium";
-    background-color: black;
-    opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.7)
 }
 
 body{
-    opacity: 1;
+
 }
 
 div.container{
-    margin-top: 100px;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -23,7 +21,6 @@ div.crew{
     border-radius: 5px;
 
     margin: 0 auto;
-    background-color: teal;
 }
 
 .title{
@@ -33,12 +30,12 @@ div.crew{
 
 table.crewTable{
     margin: 0 auto;
-    font-size: 48pt;
+    font-size: 42pt;
 }
 
 th, td {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 td.score{

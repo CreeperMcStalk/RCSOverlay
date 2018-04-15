@@ -37,9 +37,10 @@ class Player{
  * Data Object for encapsulating Crew information
  */
 class Crew{
-    constructor(name, players){
+    constructor(name, players, score){
         this.name = name;
         this.players = players;
+        this.score = score;
     }
 }
 
@@ -134,6 +135,46 @@ var app = new Vue({
                 ]
             )
         ]
+    },
+    get_crew1_stocks_left: function(){
+        var scores1 = [
+            parseInt(this.info.c1_p1_score), 
+            parseInt(this.info.c1_p2_score), 
+            parseInt(this.info.c1_p3_score), 
+            parseInt(this.info.c1_p4_score), 
+            parseInt(this.info.c1_p5_score), 
+            parseInt(this.info.c1_p6_score), 
+            parseInt(this.info.c1_p7_score), 
+            parseInt(this.info.c1_p8_score), 
+            parseInt(this.info.c1_p9_score), 
+            parseInt(this.info.c1_10p_score)
+        ]
+
+        var sum = 0;
+        scores1.forEach(score => {
+            sum += score;
+        })
+        return sum;
+    },
+    get_crew2_stocks_left: function(){
+        var scores2 = [
+            parseInt(this.info.c2_p1_score), 
+            parseInt(this.info.c2_p2_score), 
+            parseInt(this.info.c2_p3_score), 
+            parseInt(this.info.c2_p4_score), 
+            parseInt(this.info.c2_p5_score), 
+            parseInt(this.info.c2_p6_score), 
+            parseInt(this.info.c2_p7_score), 
+            parseInt(this.info.c2_p8_score), 
+            parseInt(this.info.c2_p9_score), 
+            parseInt(this.info.c2_10p_score)
+        ]
+
+        var sum = 0;
+        scores2.forEach(score => {
+            sum += score;
+        })
+        return sum;
     },
     score_1_img_S: function(){
         return IMAGES_DIR + '/Scores/Singles/' + this.info.p1_games + "L.png";
