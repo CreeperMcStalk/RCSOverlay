@@ -12,7 +12,7 @@ bower_components
 .idea_modules
 
 # Unless there's some relevant, I don't want all the garbage xsplit files.
-*.xml
+.xml
 
 streamcontrol.json
 streamcontrol.xml

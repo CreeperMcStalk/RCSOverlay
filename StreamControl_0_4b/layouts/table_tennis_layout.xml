@@ -1,0 +1,41 @@
+<!DOCTYPE StreamControlLayout>
+<layout width='700' height='500' tabbed='0'>
+    <tabSet x='0' y='0' width='500' height='170'>
+        <tab="Scoreboard">
+            <!-- who is serving the ball? -->
+            <radioGroup id='is_serving'>
+                <radioButton 
+                    x='0' y='10'
+                    width='70' height='20'
+                    value='P1'>P1
+                </radioButton>
+                <radioButton
+                    x='0' y='40'
+                    width='70' height='20'
+                    value='P2'>P@
+                </radioButton>
+            </radioGroup>
+            
+            <!-- player names -->
+            <label x='10' y='15' width='40' height='14'>Player1:</label>
+            <label x='10' y='40' width='40' height='14'>Player2:</label>
+
+            <lineEdit id='p1_name' 
+                dataSets='/dataSets/tabletennis/players.csv'
+                x='55' y='15' 
+                width='170' height='20'> Player1 Name
+            </lineEdit>
+
+            <lineEdit id='p2_name'
+                dataSets='/dataSets/tabletennis/players.csv'
+                x='55' y='40' 
+                width='170' height='20'> Player2 Name
+            </lineEdit>
+
+            <!-- player scores -->
+            <label x='200' y='5' height='14' width='40'>Total</label>
+            
+            
+        </tab>
+    </tabSet>
+</layout>
