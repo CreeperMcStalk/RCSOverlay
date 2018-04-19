@@ -1,6 +1,6 @@
 <!DOCTYPE StreamControlLayout>
-<layout width='700' height='500' tabbed='0'>
-    <tabSet x='0' y='0' width='700' height='700'>
+<layout width='700' height='250' tabbed='0'>
+    <tabSet x='0' y='0' width='700' height='250'>
         <tab name="Scoreboard">
             <!-- who is serving the ball? -->
             <label x='10' y='5' width='75' height='14'>Serving?</label>
@@ -18,8 +18,8 @@
             </radioGroup>
             
             <!-- player names -->
-            <label x='35' y='25' width='40' height='14'>Player1:</label>
-            <label x='35' y='60' width='40' height='14'>Player2:</label>
+            <label x='30' y='25' width='40' height='14'>Player1:</label>
+            <label x='30' y='60' width='40' height='14'>Player2:</label>
 
             <lineEdit id='p1_name' 
                 dataSets='/dataSets/tabletennis/players.csv'
