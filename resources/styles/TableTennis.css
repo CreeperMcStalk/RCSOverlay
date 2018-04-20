@@ -124,7 +124,71 @@ div.p2_set1{
     margin-top: 50px;
 }
 
+/* Set 2 */
+div.set2_1{
+    position: fixed;
+    display: flex;
+    justify-content: center;
 
+    width: 3%;
+    height: 9%;
+
+    margin-top:825px;
+    margin-left:550px;
+
+    color:white;
+}
+
+div.set2_2{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    width: 3%;
+    height: 9%;
+
+    margin-top:825px;
+    margin-left:548px;
+
+    color:white;
+}
+
+div.p1_set2{
+    position: fixed;
+    margin-top: 5px;
+}
+
+div.p2_set2{
+    position: fixed;
+    margin-top: 50px;
+}
+
+/* Set 3 */
+div.set3{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    width: 3%;
+    height: 9%;
+
+    margin-top:825px;
+    margin-left:583px;
+
+    color:white;
+}
+
+div.p1_set3{
+    position: fixed;
+    margin-top: 5px;
+}
+
+div.p2_set3{
+    position: fixed;
+    margin-top: 50px;
+}
+
+/* All Sets */
 div.sets1{
     position: fixed;
     display: flex;
@@ -135,6 +199,56 @@ div.sets1{
 
     margin-top:825px;
     margin-left:560px;
+
+    color:white;
+}
+
+div.p1_sets{
+    position: fixed;
+    margin-top: 5px;
+}
+
+div.p2_sets{
+    position: fixed;
+    margin-top: 50px;
+}
+
+
+div.sets2{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    width: 3%;
+    height: 9%;
+
+    margin-top:825px;
+    margin-left:595px;
+
+    color:white;
+}
+
+div.p1_sets{
+    position: fixed;
+    margin-top: 5px;
+}
+
+div.p2_sets{
+    position: fixed;
+    margin-top: 50px;
+}
+
+
+div.sets3{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    width: 3%;
+    height: 9%;
+
+    margin-top:825px;
+    margin-left:628px;
 
     color:white;
 }
