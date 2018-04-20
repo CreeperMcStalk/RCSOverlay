@@ -16,7 +16,7 @@
             <div class="serving_container">
                 <div class="p1serving">
                     <transition name="slide-fade" mode="out-in">
-                        <span class="dot" :key="info.is_servingP1" v-if="info.is_serving == 'P1'"></span>
+                        <span class="dot" :key="info.is_serving" v-if="info.is_serving == 'P1'"></span>
                     </transition>
                 </div>
 
@@ -82,5 +82,5 @@
     </body>
 
     <!-- This needs to be loaded after the dom -->
-    <script src="../resources/js/vue-main.js"></script>
+    <script src="../resources/js/vue-main.minimal.js"></script>
 </html>
