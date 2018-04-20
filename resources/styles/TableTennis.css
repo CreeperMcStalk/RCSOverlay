@@ -1,0 +1,58 @@
+html{
+    letter-spacing: 3px;
+}
+
+div.player_container{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+
+    width: 14%;
+    height: 7%;
+
+    margin-top:825px;
+    margin-left:250px;
+    
+    color:white;
+}
+
+div.player1{
+    position: fixed;
+    margin-top: 5px;
+}
+
+div.player2{
+    position:fixed;
+    margin-top: 47px;
+}
+
+
+div.playercol{
+    position:fixed;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 39px;
+    width: 13%;
+
+    font-size: 24pt;
+    font-color: #fdf8ea;
+}
+
+
+div.player{
+    position:fixed;
+    
+
+    margin-top:825px;
+    margin-left:250px;
+
+    background-color: teal;
+
+    width: 5%;
+    height: 5%;
+}
+
+div.serving_container{
+
+}

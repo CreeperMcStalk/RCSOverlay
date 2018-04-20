@@ -102,80 +102,6 @@ var app = new Vue({
     game_header: function() {
       return this.info.event_round + ' - ' + this.info.best_of_x;
     },
-    get_crews: function(){
-        return [
-            new Crew(
-                this.info.crew1,
-                [
-                    new Player(this.info.c1_p1_name, this.info.c1_p1_score, this.info.c1_p1_char, this.info.c1_p1_out),
-                    new Player(this.info.c1_p2_name, this.info.c1_p2_score, this.info.c1_p2_char, this.info.c1_p2_out),
-                    new Player(this.info.c1_p3_name, this.info.c1_p3_score, this.info.c1_p3_char, this.info.c1_p3_out),
-                    new Player(this.info.c1_p4_name, this.info.c1_p4_score, this.info.c1_p4_char, this.info.c1_p4_out),
-                    new Player(this.info.c1_p5_name, this.info.c1_p5_score, this.info.c1_p5_char, this.info.c1_p5_out),
-                    new Player(this.info.c1_p6_name, this.info.c1_p6_score, this.info.c1_p6_char, this.info.c1_p6_out),
-                    new Player(this.info.c1_p7_name, this.info.c1_p7_score, this.info.c1_p7_char, this.info.c1_p7_out),
-                    new Player(this.info.c1_p8_name, this.info.c1_p8_score, this.info.c1_p8_char, this.info.c1_p8_out),
-                    new Player(this.info.c1_p9_name, this.info.c1_p9_score, this.info.c1_p9_char, this.info.c1_p9_out),
-                    new Player(this.info.c1_p10_name, this.info.c1_10p_score, this.info.c1_p10_char, this.info.c1_p10_out)
-                ]
-            ),
-            new Crew(
-                this.info.crew2,
-                [
-                    new Player(this.info.c2_p1_name, this.info.c2_p1_score, this.info.c2_p1_char, this.info.c2_p1_out),
-                    new Player(this.info.c2_p2_name, this.info.c2_p2_score, this.info.c2_p2_char, this.info.c2_p2_out),
-                    new Player(this.info.c2_p3_name, this.info.c2_p3_score, this.info.c2_p3_char, this.info.c2_p3_out),
-                    new Player(this.info.c2_p4_name, this.info.c2_p4_score, this.info.c2_p4_char, this.info.c2_p4_out),
-                    new Player(this.info.c2_p5_name, this.info.c2_p5_score, this.info.c2_p5_char, this.info.c2_p5_out),
-                    new Player(this.info.c2_p6_name, this.info.c2_p6_score, this.info.c2_p6_char, this.info.c2_p6_out),
-                    new Player(this.info.c2_p7_name, this.info.c2_p7_score, this.info.c2_p7_char, this.info.c2_p7_out),
-                    new Player(this.info.c2_p8_name, this.info.c2_p8_score, this.info.c2_p8_char, this.info.c2_p8_out),
-                    new Player(this.info.c2_p9_name, this.info.c2_p9_score, this.info.c2_p9_char, this.info.c2_p9_out),
-                    new Player(this.info.c2_p10_name, this.info.c2_10p_score, this.info.c2_p10_char, this.info.c2_p10_out)
-                ]
-            )
-        ]
-    },
-    get_crew1_stocks_left: function(){
-        var scores1 = [
-            parseInt(this.info.c1_p1_score), 
-            parseInt(this.info.c1_p2_score), 
-            parseInt(this.info.c1_p3_score), 
-            parseInt(this.info.c1_p4_score), 
-            parseInt(this.info.c1_p5_score), 
-            parseInt(this.info.c1_p6_score), 
-            parseInt(this.info.c1_p7_score), 
-            parseInt(this.info.c1_p8_score), 
-            parseInt(this.info.c1_p9_score), 
-            parseInt(this.info.c1_10p_score)
-        ]
-
-        var sum = 0;
-        scores1.forEach(score => {
-            sum += score;
-        })
-        return sum;
-    },
-    get_crew2_stocks_left: function(){
-        var scores2 = [
-            parseInt(this.info.c2_p1_score), 
-            parseInt(this.info.c2_p2_score), 
-            parseInt(this.info.c2_p3_score), 
-            parseInt(this.info.c2_p4_score), 
-            parseInt(this.info.c2_p5_score), 
-            parseInt(this.info.c2_p6_score), 
-            parseInt(this.info.c2_p7_score), 
-            parseInt(this.info.c2_p8_score), 
-            parseInt(this.info.c2_p9_score), 
-            parseInt(this.info.c2_10p_score)
-        ]
-
-        var sum = 0;
-        scores2.forEach(score => {
-            sum += score;
-        })
-        return sum;
-    },
     score_1_img_S: function(){
         return IMAGES_DIR + '/Scores/Singles/' + this.info.p1_games + "L.png";
     },
@@ -199,14 +125,62 @@ var app = new Vue({
     }
   },
   methods: {
+    getScoreboardType: function(){
+        if(this.info.set7 == '1')
+            return 'set7';
+        else if(this.info.set6 == '1')
+            return 'set6';
+        else if(this.info.set5 == '1')
+            return 'set5';
+        else if(this.info.set4 == '1')
+            return 'set4';
+        else if(this.info.set3 == '1')
+            return 'set3';
+        else if(this.info.set2 == '1')
+            return 'set2';
+        else if(this.info.set1 == '1')
+            return 'set1';
+        else
+            return 'set0';
+    },
+    tableTennisScoreboard: function(){
+        var path = '../resources/videos/table-tennis/scoreboards/ScoreMulti_' + this.getScoreboardType();
+        if(this.info.isSetPoint){
+            path += '_SetPoint';
+            switch(this.info.setPointPlayer){
+                case 1:
+                    path += '_P1';
+                    break;
+                case 2:
+                    path += '_P2';
+                    break;
+                default:
+                    console.error('Got unknown setPointPlayer: ' + this.info.setPointPlayer);
+            }
+        }
+        path += '.mov';
+        this.info.scoreboardType = path;
+        return path;
+    },
     changeMode: function(){
       if(this.info.pull_mode === 'PULL_ALL') this.info.pull_mode = 'AUTOMATE_ROUND';
       else this.info.pull_mode = 'PULL_ALL';
     },
     loadJSON: function() {
-      axios.get(JSON_PATH, { responseType: 'json' })
-        .then(resp => { this.info = resp.data; })
-        .catch(resp => { console.error(resp); });
+        fetch(JSON_PATH)
+            .then(r => r.json())
+            .then(json => {
+                this.info = json
+            })
+            .catch(err => console.error(err));
+      /*  axios.get(JSON_PATH, { responseType: 'json' })
+        .then(resp => { 
+            this.info = resp.data; 
+        })
+        .catch(resp => { 
+            console.error(resp); 
+        });
+        */
     },
     loadJSONWithoutRound: function(){
       axios.get(JSON_PATH, { responseType: 'json'})
@@ -293,6 +267,7 @@ var app = new Vue({
   },
   // Triggered when the vue instance is created, triggers the initial setup.
   created: function() {
+    this.info.scoreboardType = 'set0';
     this.loadJSON();
 
     /*
@@ -305,6 +280,8 @@ var app = new Vue({
     setInterval(() => {
         if(this.info.pull_mode === 'PULL_ALL') this.loadJSON();
         else if(this.info.pull_mode === 'AUTOMATE_ROUND') this.loadJSONWithoutRound();
+
+        this.tableTennisScoreboard();
     }, POLL_INTERVAL);
   }
 });

@@ -13,12 +13,30 @@
     <body>
         <div id="app">
             hello world
+            
+            <div class="player_container">
+                <div class="player1">
+                    <transition name="fadeLeft" mode="out-in">
+                        <span class="name" :key="info.p1_name" v-html="info.p1_name"></span>
+                    </transition>
+                </div>
+
+                <div class="player2">
+                    <transition name="fadeLeft" mode="out-in">
+                        <span class="name" :key="info.p2_name" v-html="info.p2_name"></span>
+                    </transition>
+                </div>
+
+            </div>
+            
             <!--
             <video src='"../resources/videos/table-tennis/ScoreMulti" + info.scoreboardChoice + ".mov"' height='100%' width='100%'></video>
-            -->
+            
             <div :key="info.scoreboardType">
-                <video :src='info.scoreboardType' height="100%" width="100%"></video>
+                <video src="ScoreMulti_set1.mov" height="100%" width="100%"></video>
             </div>
+            -->
+            
         </div>
     </body>
 
