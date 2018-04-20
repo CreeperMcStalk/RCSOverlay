@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" type="text/css" href="../node_modules/vue2-animate/dist/vue2-animate.css" />
+        <link rel="stylesheet" type="text/css" href="../resources/styles/base.css" />
+        <link rel="stylesheet" type="text/css" href="../resources/styles/TableTennisMU.css" />
+      
+        <script src="../node_modules/vue/dist/vue.js"></script>
+        <script src="../node_modules/axios/dist/axios.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            
+            <transition name='fade' mode='out'>
+                <div class="mu_container" id='mu_container'>
+                    <div class="mu_title">
+                        <transition name="slide-fade" mode='out-in'>
+                            <span :key="info.mu_title" v-html="info.mu_title"></span>
+                        </transition>
+                    </div>
+                    
+                    <div class="mu_round">
+                        <transition name="slide-fade" mode='out-in'>
+                            <span :key="info.mu_round" v-html="info.mu_round"></span>
+                        </transition>
+                    </div>
+
+                    <div class="mu_player1">
+                        <transition name="slide-fade" mode='out-in'>
+                            <span :key="info.p1_name" v-html="info.p1_name"></span>
+                        </transition>
+                    </div>
+
+                    <div class="mu_player2">
+                        <transition name="slide-fade" mode='out-in'>
+                            <span :key="info.p2_name" v-html="info.p2_name"></span>
+                        </transition>
+                    </div>
+
+                    <div class="mu_location">
+                        <transition name="slide-fade" mode='out-in'>
+                            <span :key="info.mu_location" v-html="info.mu_location"></span>
+                        </transition>
+                    </div>
+                </div>
+            </transition>
+            
+        </div>
+    </body>
+
+
+    <!-- This needs to be loaded after the dom -->
+    <script src="../resources/js/vue-main.js"></script>
+</html>

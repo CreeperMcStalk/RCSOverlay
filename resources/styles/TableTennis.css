@@ -32,7 +32,7 @@ div.player_container{
     width: 14%;
     height: 7%;
 
-    margin-top:825px;
+    margin-top:873px;
     margin-left:250px;
     
     color:white;
@@ -54,7 +54,7 @@ div.playercol{
     display: flex;
     justify-content: center;
 
-    margin-top: 39px;
+    margin-top: 35px;
     width: 13%;
 
     font-size: 24pt;
@@ -66,7 +66,7 @@ div.player{
     position:fixed;
     
 
-    margin-top:825px;
+    margin-top:875px;
     margin-left:250px;
 
     background-color: teal;
@@ -83,7 +83,7 @@ div.serving_container{
     width: 3%;
     height: 9%;
 
-    margin-top:825px;
+    margin-top:873px;
     margin-left:200px;
     
     color:white;
@@ -108,7 +108,7 @@ div.set1{
     width: 3%;
     height: 9%;
 
-    margin-top:825px;
+    margin-top:873px;
     margin-left:518px;
 
     color:white;
@@ -116,12 +116,12 @@ div.set1{
 
 div.p1_set1{
     position: fixed;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 div.p2_set1{
     position: fixed;
-    margin-top: 50px;
+    margin-top: 48px;
 }
 
 /* Set 2 */
@@ -133,8 +133,8 @@ div.set2_1{
     width: 3%;
     height: 9%;
 
-    margin-top:825px;
-    margin-left:550px;
+    margin-top:873px;
+    margin-left:553px;
 
     color:white;
 }
@@ -147,7 +147,7 @@ div.set2_2{
     width: 3%;
     height: 9%;
 
-    margin-top:825px;
+    margin-top:873px;
     margin-left:548px;
 
     color:white;
@@ -155,12 +155,12 @@ div.set2_2{
 
 div.p1_set2{
     position: fixed;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 div.p2_set2{
     position: fixed;
-    margin-top: 50px;
+    margin-top: 48px;
 }
 
 /* Set 3 */
@@ -172,7 +172,7 @@ div.set3{
     width: 3%;
     height: 9%;
 
-    margin-top:825px;
+    margin-top:873px;
     margin-left:583px;
 
     color:white;
@@ -180,12 +180,12 @@ div.set3{
 
 div.p1_set3{
     position: fixed;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 div.p2_set3{
     position: fixed;
-    margin-top: 50px;
+    margin-top: 48px;
 }
 
 /* All Sets */
@@ -197,22 +197,11 @@ div.sets1{
     width: 3%;
     height: 9%;
 
-    margin-top:825px;
+    margin-top:873px;
     margin-left:560px;
 
     color:white;
 }
-
-div.p1_sets{
-    position: fixed;
-    margin-top: 5px;
-}
-
-div.p2_sets{
-    position: fixed;
-    margin-top: 50px;
-}
-
 
 div.sets2{
     position: fixed;
@@ -222,22 +211,11 @@ div.sets2{
     width: 3%;
     height: 9%;
 
-    margin-top:825px;
+    margin-top:873px;
     margin-left:595px;
 
     color:white;
 }
-
-div.p1_sets{
-    position: fixed;
-    margin-top: 5px;
-}
-
-div.p2_sets{
-    position: fixed;
-    margin-top: 50px;
-}
-
 
 div.sets3{
     position: fixed;
@@ -247,18 +225,18 @@ div.sets3{
     width: 3%;
     height: 9%;
 
-    margin-top:825px;
-    margin-left:628px;
+    margin-top:873px;
+    margin-left:625px;
 
     color:white;
 }
 
 div.p1_sets{
     position: fixed;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 div.p2_sets{
     position: fixed;
-    margin-top: 50px;
+    margin-top: 48px;
 }

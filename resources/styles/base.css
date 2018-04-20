@@ -19,13 +19,20 @@
   font-style: normal;
 }
 
+@font-face{
+  font-family: "AvantGardeITC";
+  src: url('../fonts/texgyreadventor-regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   width: 1920px;
   height: 1080px;
   margin: 0;
   overflow: hidden;
   position: relative;
-  font-family: 'Khand Medium';
+  font-family: 'AvantGardeITC';
   font-size: 25pt;
   text-shadow: 1px 1px 3px #000;
   color: white;
