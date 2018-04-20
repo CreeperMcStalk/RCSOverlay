@@ -1,0 +1,150 @@
+html{
+    letter-spacing: 3px;
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+    transition: all .3s ease;
+    transition-delay: .9s;
+  }
+  .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+
+.dot:before {
+    content: ' \25CF';
+    font-size: 30px;
+    color: white;
+    
+  }
+
+div.player_container{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+
+    width: 14%;
+    height: 7%;
+
+    margin-top:825px;
+    margin-left:250px;
+    
+    color:white;
+}
+
+div.player1{
+    position: fixed;
+    margin-top: 5px;
+}
+
+div.player2{
+    position:fixed;
+    margin-top: 47px;
+}
+
+
+div.playercol{
+    position:fixed;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 39px;
+    width: 13%;
+
+    font-size: 24pt;
+    font-color: #fdf8ea;
+}
+
+
+div.player{
+    position:fixed;
+    
+
+    margin-top:825px;
+    margin-left:250px;
+
+    background-color: teal;
+
+    width: 5%;
+    height: 5%;
+}
+
+div.serving_container{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+
+    width: 3%;
+    height: 9%;
+
+    margin-top:825px;
+    margin-left:200px;
+    
+    color:white;
+}
+
+div.p1serving{
+    position: fixed;
+    margin-top: 3px;
+}
+
+div.p2serving{
+    position: fixed;
+    margin-top: 45px;
+}
+
+/* Set 1 */
+div.set1{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    width: 3%;
+    height: 9%;
+
+    margin-top:825px;
+    margin-left:518px;
+
+    color:white;
+}
+
+div.p1_set1{
+    position: fixed;
+    margin-top: 5px;
+}
+
+div.p2_set1{
+    position: fixed;
+    margin-top: 50px;
+}
+
+
+div.sets1{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    width: 3%;
+    height: 9%;
+
+    margin-top:825px;
+    margin-left:560px;
+
+    color:white;
+}
+
+div.p1_sets{
+    position: fixed;
+    margin-top: 5px;
+}
+
+div.p2_sets{
+    position: fixed;
+    margin-top: 50px;
+}
