@@ -18,20 +18,44 @@
             </radioGroup>
             
             <!-- player names -->
-            <label x='30' y='25' width='40' height='14'>Player1:</label>
-            <label x='30' y='60' width='40' height='14'>Player2:</label>
+            <label x='30' y='25' width='40' height='14'>P1:</label>
+            <label x='30' y='60' width='40' height='14'>P2:</label>
 
             <lineEdit id='p1_name' 
                 dataSets='/dataSets/tabletennis/players.csv'
-                x='80' y='20' 
+                x='55' y='20' 
                 width='170' height='20'> Player1 Name
             </lineEdit>
 
             <lineEdit id='p2_name'
                 dataSets='/dataSets/tabletennis/players.csv'
-                x='80' y='55' 
+                x='55' y='55' 
                 width='170' height='20'> Player2 Name
             </lineEdit>
+
+            <!-- Set Points -->
+            <label 
+                x='200' y='5'
+                width='100' height='20'> Set Point?
+            </label>
+
+            <radioGroup id='is_setPoint'>
+                <radioButton
+                    x='235' y='20'
+                    width='70' height='20'
+                    value='P1'>
+                </radioButton>
+                <radioButton
+                    x='235' y='35'
+                    height='70' width='20'
+                    value='P2'>
+                </radioButton>
+                <radioButton
+                    x='235' y='90'
+                        width='100' height='20'
+                        value='0'> No Set pt?
+                </radioButton>
+            </radioGroup>
 
             <!-- player scores -->
             <label x='275' y='0' height='14' width='40'>Sets</label>
@@ -127,42 +151,42 @@
             <label x='525' y='0' height='14' width='40'>Set5</label>
             <label x='575' y='0' height='14' width='40'>Set6</label>
             <label x='625' y='0' height='14' width='40'>Set7</label>
-            -->
+            
             <label
                 x='250' y='90'
                 height='14' width='100'> Show Set? </label>
-
-            <checkBox id="is_set1"
+            -->
+            <checkBox id="set1"
                 x='325' y='75'
                 height='50' width='50'>
             </checkBox>
 
-            <checkBox id="is_set2"
+            <checkBox id="set2"
                 x='375' y='75'
                 height='50' width='50'>
             </checkBox>
 
-            <checkBox id="is_set3"
+            <checkBox id="set3"
                 x='425' y='75'
                 height='50' width='50'>
             </checkBox>
 
-            <checkBox id="is_set4"
+            <checkBox id="set4"
                 x='475' y='75'
                 height='50' width='50'>
             </checkBox>
 
-            <checkBox id="is_set5"
+            <checkBox id="set5"
                 x='525' y='75'
                 height='50' width='50'>
             </checkBox>
 
-            <checkBox id="is_set6"
+            <checkBox id="set6"
                 x='575' y='75'
                 height='50' width='50'>
             </checkBox>
 
-            <checkBox id="is_set7"
+            <checkBox id="set7"
                 x='625' y='75'
                 height='50' width='50'>
             </checkBox>

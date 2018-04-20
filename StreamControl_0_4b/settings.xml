@@ -3,6 +3,6 @@
  <altHotkeyHandling>0</altHotkeyHandling>
  <format>2</format>
  <layoutPath>layouts\table_tennis_layout.xml</layoutPath>
- <outputPath></outputPath>
+ <outputPath>..\OverlayFiles\</outputPath>
  <useCDATA>0</useCDATA>
 </settings>
