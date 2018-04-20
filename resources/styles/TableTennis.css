@@ -188,6 +188,54 @@ div.p2_set3{
     margin-top: 48px;
 }
 
+/* Set 4 */
+div.set4{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    width: 3%;
+    height: 9%;
+
+    margin-top:873px;
+    margin-left:618px;
+
+    color:white;
+}
+div.p1_set4{
+    position: fixed;
+    margin-top: 6px;
+}
+
+div.p2_set4{
+    position: fixed;
+    margin-top: 48px;
+}
+
+/* Set 5 */
+div.set5{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    width: 3%;
+    height: 9%;
+
+    margin-top:873px;
+    margin-left:653px;
+
+    color:white;
+}
+div.p1_set5{
+    position: fixed;
+    margin-top: 6px;
+}
+
+div.p2_set5{
+    position: fixed;
+    margin-top: 48px;
+}
+
 /* All Sets */
 div.sets1{
     position: fixed;
@@ -227,6 +275,34 @@ div.sets3{
 
     margin-top:873px;
     margin-left:625px;
+
+    color:white;
+}
+
+div.sets4{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    width: 3%;
+    height: 9%;
+
+    margin-top:873px;
+    margin-left:655px;
+
+    color:white;
+}
+
+div.sets5{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    width: 3%;
+    height: 9%;
+
+    margin-top:873px;
+    margin-left:695px;
 
     color:white;
 }
