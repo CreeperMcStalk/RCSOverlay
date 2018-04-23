@@ -19,6 +19,7 @@
   "dependencies": {
     "axios": "^0.16.1",
     "bootstrap": "^3.3.7",
+    "react-seed": "0.0.16",
     "vue": "^2.3.2",
     "vue2-animate": "^1.0.4"
   }
