@@ -1,1 +1,9 @@
-<comboItem>PandaGlobal</comboItem><comboItem>Allegiance</comboItem><comboItem>Alliance</comboItem><comboItem>Recursion</comboItem><comboItem>SmashStudios</comboItem><comboItem>EG</comboItem><comboItem>Misfits</comboItem><comboItem>EchoFox</comboItem><comboItem>Liquid</comboItem>
+PandaGlobal
+Allegiance
+Alliance
+Recursion
+SmashStudios
+EG
+Misfits
+EchoFox
+Liquid

@@ -1,5 +1,5 @@
 {
-    "best_of_x": "",
+    "best_of_x": "5",
     "c1_p10_char": "Default",
     "c1_p10_name": "",
     "c1_p10_out": "0",
@@ -90,14 +90,14 @@
     "event_comm_twitter": "",
     "event_name": "",
     "event_notice": "",
-    "event_round": "",
-    "p1_char": "Default",
+    "event_round": "Grand Finals",
+    "p1_char": "Doctor Mario",
     "p1_char_s4": "Default",
     "p1_country": "",
     "p1_country_s4": "USA",
     "p1_games": "0",
     "p1_games_s4": "0",
-    "p1_name": "Ned Bigby",
+    "p1_name": "Hello",
     "p1_name_s4": "Mr R",
     "p1_port_color": "Red",
     "p1_port_color_s4": "Blue",
@@ -138,6 +138,6 @@
     "p4_port_color_s4": "Red",
     "p4_sponsor_image": "",
     "p4_sponsor_image_s4": "",
-    "timestamp": "1527268982",
+    "timestamp": "1527275266",
     "toggle_crews": "0"
 }

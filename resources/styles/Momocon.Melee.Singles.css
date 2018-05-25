@@ -1,31 +1,57 @@
 div.playercol{
     position:fixed;
     display: flex;
-    justify-content: center;
 
-    margin-top: 39px;
     width: 13%;
-
-    font-size: 24pt;
-    font-color: #fdf8ea;
 }
 
-div.left_player{
-
-}
-
-div.right_player{
-    
-}
 
 div.roundcol{
     position: fixed;
     display: flex;
     justify-content: center;
 
-    margin-top: 39px;
-    width: 20%;
+    margin-top:24px;
+    margin-left: 769px;;
 
-    font-size: 24pt;
-    font-color: #fdf8ea;
+    width: 20%;
+    color:  #f5cb0d;
+    letter-spacing: 0pt;
+    font-weight: bold;
+    font-size:19pt;
+    text-shadow: 1ch;
+}
+
+
+div.leftPlayer{
+    position: fixed;
+    margin-left: 395px;
+    margin-top: 1028px;
+    justify-content: left;
+}
+
+div.rightPlayer{
+    position: fixed;
+    margin-left: 1450px;
+    margin-top: 1028px;
+    justify-content: right;
+}
+
+div.leftScore{
+    position: fixed;
+    margin-left: 755px;
+    margin-top: 1015px;
+    justify-content: left;
+}
+
+div.rightScore{
+    position: fixed;
+    margin-left: 1135px;
+    margin-top: 1015px;
+    justify-content: right;
+}
+
+div.score{
+    font-size: 32pt;
+    font-weight: 100;
 }
