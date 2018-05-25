@@ -68,6 +68,9 @@ var app = new Vue({
         // Setting a few default values for the flicker of time images take to load.
         p1_char: 'Default',
         p2_char: 'Default',
+
+        leftCharacterVideo: '',
+        rightCharacterVideo: '',
 		
 		//URL for automated round pulling
         smashggUrl: null
@@ -76,6 +79,14 @@ var app = new Vue({
     timestamp: new Date()
   },
   watch: {
+    'info.p1_char': function(newval, oldval){
+        this.info.leftCharacterVideo = 
+          'https://www.dropbox.com/home/Momocon%202018%20Source?preview=' + newval + '.webm'
+    },
+    'info.p2_char': function(newval, oldvar){
+        this.info.rightCharacterVideo =
+          'https://www.dropbox.com/home/Momocon%202018%20Source?preview=' + newval + '.webm'
+    }
   },
   computed: {
     formattedDate: function() {

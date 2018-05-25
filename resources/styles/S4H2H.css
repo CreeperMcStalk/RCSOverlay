@@ -1,0 +1,25 @@
+div.left{
+    float:left;
+    width:50%;
+    height:100%;
+    background-color: red;
+}
+
+div.right{
+    float:left;
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+}
+
+video.character{
+    width:100%;
+
+}
+
+video.reverse
+{
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
