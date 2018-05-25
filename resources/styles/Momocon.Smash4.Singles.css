@@ -26,7 +26,17 @@ div.round{
     font-size: 16pt;
     text-align: right;
     margin-left: 695px;
-    margin-top: 98px;
+    margin-top: 97px;
+    font-weight: 100;
+}
+
+div.tournament-section{
+    position: fixed;
+    color:  #f5cb0d;
+    font-size: 16pt;
+    text-align: left;
+    margin-left: 1165px;
+    margin-top: 97px;
     font-weight: 100;
 }
 
