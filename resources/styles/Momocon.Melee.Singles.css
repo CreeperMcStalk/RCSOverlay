@@ -1,0 +1,31 @@
+div.playercol{
+    position:fixed;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 39px;
+    width: 13%;
+
+    font-size: 24pt;
+    font-color: #fdf8ea;
+}
+
+div.left_player{
+
+}
+
+div.right_player{
+    
+}
+
+div.roundcol{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 39px;
+    width: 20%;
+
+    font-size: 24pt;
+    font-color: #fdf8ea;
+}
