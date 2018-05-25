@@ -1,6 +1,6 @@
 Bayonetta			
 Bowser	            
-Bowser Jr.			
+Bowser Jr		
 Captain Falcon	    
 Charizard			
 Cloud				
@@ -8,7 +8,7 @@ Corrin
 Dark Pit			
 Diddy Kong			
 Donkey Kong	        
-Dr. Mario		    
+Dr Mario		    
 Duck Hunt			
 Falco		        
 Fox         	    
@@ -35,7 +35,7 @@ Mewtwo
 Mii Brawler			
 Mii Gunner			
 Mii Swordfighter	
-Mr. Game & Watch	
+Mr Game and Watch	
 Ness	            
 Olimar			    
 Pac-Man				
@@ -45,7 +45,7 @@ Pichu
 Pikachu	            
 Pit			        
 Pokémon Trainer		
-R.O.B.			    
+ROB			    
 Robin				
 Rosalina			
 Roy		            

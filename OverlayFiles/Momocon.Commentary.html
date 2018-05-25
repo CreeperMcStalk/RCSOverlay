@@ -6,7 +6,7 @@
   <title>Title</title>
   <link rel="stylesheet" type="text/css" href="../node_modules/vue2-animate/dist/vue2-animate.css" />
   <link rel="stylesheet" type="text/css" href="../resources/styles/base.css" />
-  <link rel="stylesheet" type="text/css" href="../resources/styles/Momocon.LowerThird.css" />
+  <link rel="stylesheet" type="text/css" href="../resources/styles/Momocon.Commentary.css" />
 
   <script src="../node_modules/vue/dist/vue.js"></script>
   <script src="../node_modules/axios/dist/axios.js"></script>
@@ -15,19 +15,28 @@
 <body>
   <div id="app">
     <div class='container'>
-        <div class="lowerThirdL1 skewed">
+        
+        <div class="container left skewed-rev">
             <transition name="fade" mode="out-in">
-                <span class="round" :key="info.lower_third_l1" v-html="info.lower_third_l1"></span>
+                <span class="round" :key="info.event_comm" v-html="info.event_comm"></span>
             </transition>
         </div>
-        <div class='lowerThirdL2 skewed'>
+
+        <div class="container right skewed">
             <transition name="fade" mode="out-in">
-                <span class="round" :key="info.lower_third_l2" v-html="info.lower_third_l2"></span>
+                <span class="round" :key="info.event_comm2" v-html="info.event_comm2"></span>
             </transition>
         </div>
-        <div class='lowerThirdL3 skewed'>
+
+        <div class="container leftTwitter skewed-rev">
             <transition name="fade" mode="out-in">
-                <span class="round" :key="info.lower_third_l3" v-html="info.lower_third_l3"></span>
+                <span class="round" :key="info.event_comm_twitter" v-html="info.event_comm_twitter"></span>
+            </transition>
+        </div>
+
+        <div class="container rightTwitter skewed">
+            <transition name="fade" mode="out-in">
+                <span class="round" :key="info.event_comm2_twitter" v-html="info.event_comm2_twitter"></span>
             </transition>
         </div>
 
