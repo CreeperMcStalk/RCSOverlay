@@ -31,6 +31,14 @@
       </transition>
     </div>
 
+    <div class="leftPort">
+      <transition name="fade" mode="out-in">
+        <span class="leftCharacter gradient-container" :key="info.p1_port_s4">
+          <span ></span>
+        </span>
+      </transition>
+    </div>
+
     <div class="leftScore skewed-rev score">
       <transition name="fade" mode="out-in">
         <span class="score" :key="info.p1_games_s4" v-html="info.p1_games_s4"></span>

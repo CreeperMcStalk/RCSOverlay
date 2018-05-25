@@ -1,0 +1,19 @@
+div.container{
+    float: left;
+    width: 45%;
+
+    margin-top:800px;
+    margin-left: 25px;
+}
+
+div.lowerThirdL1{
+    font-size: 55pt;
+}
+
+div.lowerThirdL2{
+    font-size: 32pt;
+}
+
+div.lowerThirdL3{
+    font-size: 24pt;
+}

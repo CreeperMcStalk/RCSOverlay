@@ -112,6 +112,9 @@ var app = new Vue({
     this.loadJSON();
     setInterval(() => { this.timestamp = new Date(); }, 1000);
     setInterval(this.loadJSON, POLL_INTERVAL);
+  },
+  portClass: function(left_right, color){
+    return color + '-' + left_right;
   }
 });
 

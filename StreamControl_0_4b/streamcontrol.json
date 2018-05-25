@@ -91,7 +91,10 @@
     "event_name": "Momocon Top 8",
     "event_notice": "",
     "event_round": "Grand",
-    "p1_char": "Doctor Mario",
+    "lower_third_l1": "Line 1",
+    "lower_third_l2": "Line 2",
+    "lower_third_l3": "Line 3",
+    "p1_char": "Default",
     "p1_char_s4": "Default",
     "p1_country": "",
     "p1_country_s4": "USA",
@@ -100,7 +103,7 @@
     "p1_name": "Helloafasfasf",
     "p1_name_s4": "Mr R",
     "p1_port_color": "Red",
-    "p1_port_color_s4": "Blue",
+    "p1_port_color_s4": "Red",
     "p1_sponsor_image": "",
     "p1_sponsor_image_s4": "",
     "p2_char": "Default",
@@ -138,6 +141,6 @@
     "p4_port_color_s4": "Red",
     "p4_sponsor_image": "",
     "p4_sponsor_image_s4": "",
-    "timestamp": "1527282222",
+    "timestamp": "1527287088",
     "toggle_crews": "0"
 }
