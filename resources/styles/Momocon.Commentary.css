@@ -44,15 +44,16 @@ div.right{
 div.leftTwitter{
     position: fixed;
     text-align: right;
-    margin-left: 300px;
+    margin-left: 635px;
     font-size:16pt;
-    margin-top: 5px;
+    margin-top: 503px;
     letter-spacing: 0pt;
 }
 div.rightTwitter{
     position: fixed;
     text-align: left;
     font-size:16pt;
-    margin-top: 5px;
+    margin-top: 503px;
+    margin-left: 1165px;
     letter-spacing: 0pt;
 }

@@ -91,9 +91,9 @@
     "event_name": "Momocon Top 8",
     "event_notice": "",
     "event_round": "Grand",
-    "lower_third_l1": "Line 1",
-    "lower_third_l2": "Line 2",
-    "lower_third_l3": "Line 3",
+    "lower_third_l1": "Smash 4 Singles",
+    "lower_third_l2": "Winners Finals",
+    "lower_third_l3": "Presented by Smash Studios",
     "p1_char": "Default",
     "p1_char_s4": "Bayonetta",
     "p1_country": "",
@@ -141,6 +141,6 @@
     "p4_port_color_s4": "Red",
     "p4_sponsor_image": "",
     "p4_sponsor_image_s4": "",
-    "timestamp": "1527290531",
+    "timestamp": "1527291424",
     "toggle_crews": "0"
 }

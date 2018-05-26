@@ -27,8 +27,8 @@
 }
 
 @font-face{
-  font-family: "MilfordCondensed";
-  src: url('../fonts/MILF____.TTF');
+  font-family: "OPTIAlternate";
+  src: url('../fonts/OPTIAlternateThree.otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -81,6 +81,13 @@ rcs {
   /*color: yellow;*/
   color: #33ccff ; 
   text-shadow: 1px 1px 3px #000;
+}
+
+.skewed-slight{
+  -moz-transform:    skew(-5deg, 0deg);
+  -o-transform:      skew(-5deg, 0deg);
+  -webkit-transform: skew(-5deg, 0deg);
+  transform:         skew(-5deg, 0deg);
 }
 
 .skewed {
