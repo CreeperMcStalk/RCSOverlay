@@ -45,11 +45,12 @@
       </transition>
     </div>
 
-
-    <div class="round skewed-rev ">
-      <transition name="fade" mode="out-in">
-        <span class="round" :key="info.event_round" v-html="info.event_round"></span>
-      </transition>
+    <div class='roundcol'>
+      <div class="round skewed-rev ">
+        <transition name="fade" mode="out-in">
+          <span class="round" :key="info.event_round" v-html="info.event_round"></span>
+        </transition>
+      </div>
     </div>
 
     <div class="tournament-section skewed">

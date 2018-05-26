@@ -7,6 +7,7 @@ div.playercol{
 div.roundcol{
     position: fixed;
     display: flex;
+    justify-content: center;
 
 }
 
@@ -49,7 +50,7 @@ div.rightPlayer{
 
 div.leftScore{
     position: fixed;
-    margin-left: 772px;
+    margin-left: 773px;
     margin-top: 35px;
     text-align: left;
 }
