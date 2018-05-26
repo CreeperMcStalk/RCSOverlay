@@ -111,16 +111,28 @@ var app = new Vue({
       return SMASH4_CHAR_DIR + this.info.p4_char_s4 + '.png';
     },
     p1_port_img: function(){
-      return PORT_DIR + this.info.p1_port + '.png';
+      return PORT_DIR + this.info.p1_port_color + '.png';
     },
     p2_port_img: function(){
-      return PORT_DIR + this.info.p2_port + '.png';
+      return PORT_DIR + this.info.p2_port_color + '.png';
     },
     p3_port_img: function(){
-      return PORT_DIR + this.info.p3_port + '.png';
+      return PORT_DIR + this.info.p3_port_color + '.png';
     },
     p4_port_img: function(){
-      return PORT_DIR + this.info.p4_port + '.png';
+      return PORT_DIR + this.info.p4_port_color + '.png';
+    },
+    p1_port_img_s4: function(){
+      return PORT_DIR + this.info.p1_port_color_s4 + '.png';
+    },
+    p2_port_img_s4: function(){
+      return PORT_DIR + this.info.p2_port_color_s4 + '.png';
+    },
+    p3_port_img_s4: function(){
+      return PORT_DIR + this.info.p3_port_color_s4 + '.png';
+    },
+    p4_port_img_s4: function(){
+      return PORT_DIR + this.info.p4_port_color_s4 + '.png';
     },
     formattedDate: function() {
       return months[this.timestamp.getMonth() + 1] + ' ' +

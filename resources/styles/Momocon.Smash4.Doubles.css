@@ -37,13 +37,13 @@ div.leftPlayer1{
     position: fixed;
     margin-left: 500px;
     margin-top: 40px;
-    font-size: 18pt;
+    font-size: 15pt;
 }
 div.leftPlayer2{
     position: fixed;
     margin-left: 513px;
-    margin-top: 80px;
-    font-size: 18pt;
+    margin-top: 85px;
+    font-size: 15pt;
 }
 
 div.rightPlayer1{
@@ -51,15 +51,15 @@ div.rightPlayer1{
     margin-left: 1167px;
     margin-top: 40px;
     text-align: right;
-    font-size: 18pt;
+    font-size: 15pt;
     width: 13%;
 }
 div.rightPlayer2{
     position: fixed;
     margin-left: 1155px;
-    margin-top: 80px;
+    margin-top: 85px;
     text-align: right;
-    font-size: 18pt;
+    font-size: 15pt;
     width: 13%;
 }
 
@@ -79,6 +79,38 @@ div.rightScore{
 
 div.leftCharacter{
     position: fixed;
+
+    margin-top: 35px;
+    margin-left: 650px;
+
+    z-index: -1;
+
+}
+div.leftCharacter2{
+    position: fixed;
+    
+    margin-top: 78px;
+    margin-left: 665px;
+    z-index: -1;
+}
+
+div.rightCharacter{
+    position: fixed;
+    margin-top: 35px;
+    margin-left: 1190px;
+    z-index: -1;
+
+}
+div.rightCharacter2{
+    position: fixed;
+    margin-top: 78px;
+    margin-left: 1175px;
+    z-index: -1;
+}
+
+img.characterIcon{
+    
+    height: 35px;
 }
 
 div.leftPort1{
