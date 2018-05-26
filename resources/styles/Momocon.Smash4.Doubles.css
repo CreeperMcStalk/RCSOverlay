@@ -7,6 +7,7 @@ div.playercol{
 div.roundcol{
     position: fixed;
     display: flex;
+    justify-content: center;
 
 }
 
@@ -15,8 +16,8 @@ div.round{
     color:  #f5cb0d;
     font-size: 16pt;
     text-align: right;
-    margin-left: 695px;
-    margin-top: 97px;
+    margin-left: 700px;
+    margin-top: 127px;
     font-weight: 100;
 }
 
@@ -25,38 +26,51 @@ div.tournament-section{
     color:  #f5cb0d;
     font-size: 16pt;
     text-align: left;
-    margin-left: 1165px;
-    margin-top: 97px;
+    margin-left: 1160px;
+    margin-top: 127px;
     font-weight: 100;
 }
 
-div.leftPlayer{
+div.leftPlayer1{
     position: fixed;
-    margin-left: 430px;
+    margin-left: 500px;
     margin-top: 40px;
-    justify-content: left;
-    font-size: 24pt;
+    font-size: 18pt;
+}
+div.leftPlayer2{
+    position: fixed;
+    margin-left: 513px;
+    margin-top: 80px;
+    font-size: 18pt;
 }
 
-div.rightPlayer{
+div.rightPlayer1{
     position: fixed;
-    margin-left: 1235px;
+    margin-left: 1167px;
     margin-top: 40px;
     text-align: right;
-    font-size: 24pt;
+    font-size: 18pt;
+    width: 13%;
+}
+div.rightPlayer2{
+    position: fixed;
+    margin-left: 1155px;
+    margin-top: 80px;
+    text-align: right;
+    font-size: 18pt;
     width: 13%;
 }
 
 div.leftScore{
     position: fixed;
-    margin-left: 772px;
+    margin-left: 762px;
     margin-top: 35px;
     text-align: left;
 }
 
 div.rightScore{
     position: fixed;
-    margin-left: 1108px;
+    margin-left: 1119px;
     margin-top: 35px;
     justify-content: right;
 }

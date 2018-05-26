@@ -6,7 +6,7 @@
   <title>Title</title>
   <link rel="stylesheet" type="text/css" href="../node_modules/vue2-animate/dist/vue2-animate.css" />
   <link rel="stylesheet" type="text/css" href="../resources/styles/base.css" />
-  <link rel="stylesheet" type="text/css" href="../resources/styles/Momocon.Smash4.Singles.css" />
+  <link rel="stylesheet" type="text/css" href="../resources/styles/Momocon.Smash4.Doubles.css" />
 
   <script src="../node_modules/vue/dist/vue.js"></script>
   <script src="../node_modules/axios/dist/axios.js"></script>
@@ -15,7 +15,7 @@
 <body>
   <div id="app">
 
-    <div class="leftPlayer">
+    <div class="leftPlayer1">
       <div class="skewed-rev">
         <transition name="fade" mode="out-in">
           <span class="name " :key="info.p1_name_s4" v-html="info.p1_name_s4"></span>
@@ -23,10 +23,18 @@
       </div>
     </div>
 
+    <div class="leftPlayer2">
+        <div class="skewed-rev">
+            <transition name="fade" mode="out-in">
+            <span class="name " :key="info.p3_name_s4" v-html="info.p3_name_s4"></span>
+            </transition>
+        </div>
+    </div>
+
     <div class="leftCharacter">
       <transition name="fade" mode="out-in">
         <span class="leftCharacter char" :key="info.p1_char_s4">
-          <img class="character_icon" :src="char_1_img_s4"/>
+          <img class="character_icon" :src="'..\\Overlays\\Characters\\' + info.p1_char_s4 + '.png'"/>
         </span> 
       </transition>
     </div>
@@ -45,11 +53,12 @@
       </transition>
     </div>
 
-
-    <div class="round skewed-rev ">
-      <transition name="fade" mode="out-in">
-        <span class="round" :key="info.event_round" v-html="info.event_round"></span>
-      </transition>
+    <div class="roundcol">
+        <div class="round skewed-rev ">
+        <transition name="fade" mode="out-in">
+            <span class="round" :key="info.event_round" v-html="info.event_round"></span>
+        </transition>
+        </div>
     </div>
 
     <div class="tournament-section skewed">
@@ -59,12 +68,19 @@
     </div>
 
 
-    <div class="rightPlayer">
+    <div class="rightPlayer1">
       <div class="skewed">
         <transition name="fade" mode="out-in">
           <span class="name" :key="info.p2_name_s4" v-html="info.p2_name_s4" ></span>
         </transition>
       </div>
+    </div>
+    <div class="rightPlayer2">
+    <div class="skewed">
+        <transition name="fade" mode="out-in">
+        <span class="name" :key="info.p4_name_s4" v-html="info.p4_name_s4" ></span>
+        </transition>
+    </div>
     </div>
 
     <div class="rightScore score skewed">

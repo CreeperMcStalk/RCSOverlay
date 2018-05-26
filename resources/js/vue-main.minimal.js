@@ -11,6 +11,10 @@ const FONTS_DIR     = RESOURCES_DIR + '/fonts';
 const STYLES_DIR    = RESOURCES_DIR + '/styles';
 const VIDEOS_DIR    = RESOURCES_DIR + '/videos';
 
+const CHARACTER_DIR = '..\\Overlays\\Characters'
+const MELEE_CHAR_DIR = CHARACTER_DIR + '\\Melee\\';
+const SMASH4_CHAR_DIR = CHARACTER_DIR + '\\Smash 4\\';
+
 var POLL_INTERVAL = 500;
 var ROUND_INTERVAL = 10000;
 var JSON_PATH = JSON_PATH || '../StreamControl_0_4b/streamcontrol.json';
@@ -79,16 +83,32 @@ var app = new Vue({
     timestamp: new Date()
   },
   watch: {
-    'info.p1_char': function(newval, oldval){
-        this.info.leftCharacterVideo = 
-          'https://www.dropbox.com/home/Momocon%202018%20Source?preview=' + newval + '.webm'
-    },
-    'info.p2_char': function(newval, oldvar){
-        this.info.rightCharacterVideo =
-          'https://www.dropbox.com/home/Momocon%202018%20Source?preview=' + newval + '.webm'
-    }
   },
   computed: {
+    char_1_img: function(){
+      return MELEE_CHAR_DIR + this.info.p1_char + '.png';
+    },
+    char_2_img: function(){
+      return MELEE_CHAR_DIR + this.info.p2_char + '.png';
+    },
+    char_3_img: function(){
+      return MELEE_CHAR_DIR + this.info.p3_char + '.png';
+    },
+    char_4_img: function(){
+      return MELEE_CHAR_DIR + this.info.p4_char + '.png';
+    },
+    char_1_img_s4: function(){
+      return SMASH4_CHAR_DIR + this.info.p1_char_s4 + '.png';
+    },
+    char_2_img_s4: function(){
+      return SMASH4_CHAR_DIR + this.info.p2_char_s4 + '.png';
+    },
+    char_3_img_s4: function(){
+      return SMASH4_CHAR_DIR + this.info.p3_char_s4 + '.png';
+    },
+    char_4_img_s4: function(){
+      return SMASH4_CHAR_DIR + this.info.p4_char_s4 + '.png';
+    },
     formattedDate: function() {
       return months[this.timestamp.getMonth() + 1] + ' ' +
              this.timestamp.getDate() + ', ' +
