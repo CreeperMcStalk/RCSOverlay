@@ -26,9 +26,19 @@
     <div class="leftCharacter">
       <transition name="fade" mode="out-in">
         <span class="leftCharacter char" :key="info.p1_char">
+          <span :key="info.p1_char" v-html="info.p1_char"></span>
           <img class="character_icon" :src="char_1_img" onerror='this.style.display = "none"'/>
         </span>
       </transition>
+    </div>
+    
+    <div class='leftPort'>
+      <transition name="fade" mode="out-in">
+          <span class="leftCharacter char" :key="info.p1_char">
+              <span :key="info.p1_port" v-html="info.p1_port"></span>
+            <img class="character_icon" :src="p1_port_img" onerror='this.style.display = "none"'/>
+          </span>
+        </transition>
     </div>
 
       <div class="leftScore skewed-rev score">

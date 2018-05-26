@@ -11,7 +11,8 @@ const FONTS_DIR     = RESOURCES_DIR + '/fonts';
 const STYLES_DIR    = RESOURCES_DIR + '/styles';
 const VIDEOS_DIR    = RESOURCES_DIR + '/videos';
 
-const CHARACTER_DIR = '../Overlays/Characters'
+const CHARACTER_DIR = '../../Overlays/Characters'
+const PORT_DIR = '../../Overlays/Ports/';
 const MELEE_CHAR_DIR = CHARACTER_DIR + '/Melee/';
 const SMASH4_CHAR_DIR = CHARACTER_DIR + '/Smash 4/';
 
@@ -108,6 +109,18 @@ var app = new Vue({
     },
     char_4_img_s4: function(){
       return SMASH4_CHAR_DIR + this.info.p4_char_s4 + '.png';
+    },
+    p1_port_img: function(){
+      return PORT_DIR + this.info.p1_port + '.png';
+    },
+    p2_port_img: function(){
+      return PORT_DIR + this.info.p2_port + '.png';
+    },
+    p3_port_img: function(){
+      return PORT_DIR + this.info.p3_port + '.png';
+    },
+    p4_port_img: function(){
+      return PORT_DIR + this.info.p4_port + '.png';
     },
     formattedDate: function() {
       return months[this.timestamp.getMonth() + 1] + ' ' +
