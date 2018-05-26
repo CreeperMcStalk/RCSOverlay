@@ -16,9 +16,11 @@ div.round{
     color:  #f5cb0d;
     font-size: 16pt;
     text-align: right;
-    margin-left: 700px;
+    width:20%;
+    margin-left: 375px;
     margin-top: 127px;
     font-weight: 100;
+    letter-spacing: -1pt;
 }
 
 div.tournament-section{
@@ -76,6 +78,22 @@ div.rightScore{
 }
 
 div.leftCharacter{
+    position: fixed;
+}
+
+div.leftPort1{
+    position: fixed;
+}
+
+div.leftPort2{
+    position: fixed;
+}
+
+div.rightPort1{
+    position: fixed;
+}
+
+div.rightPort2{
     position: fixed;
 }
 

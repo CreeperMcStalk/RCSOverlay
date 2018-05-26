@@ -88,3 +88,20 @@ div.leftPort{
 div.rightPort{
     position:fixed;
 }
+
+
+div.leftPort1{
+    position: fixed;
+}
+
+div.leftPort2{
+    position: fixed;
+}
+
+div.rightPort1{
+    position: fixed;
+}
+
+div.rightPort2{
+    position: fixed;
+}

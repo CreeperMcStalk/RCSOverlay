@@ -11,9 +11,9 @@ const FONTS_DIR     = RESOURCES_DIR + '/fonts';
 const STYLES_DIR    = RESOURCES_DIR + '/styles';
 const VIDEOS_DIR    = RESOURCES_DIR + '/videos';
 
-const CHARACTER_DIR = '..\\Overlays\\Characters'
-const MELEE_CHAR_DIR = CHARACTER_DIR + '\\Melee\\';
-const SMASH4_CHAR_DIR = CHARACTER_DIR + '\\Smash 4\\';
+const CHARACTER_DIR = '../Overlays/Characters'
+const MELEE_CHAR_DIR = CHARACTER_DIR + '/Melee/';
+const SMASH4_CHAR_DIR = CHARACTER_DIR + '/Smash 4/';
 
 var POLL_INTERVAL = 500;
 var ROUND_INTERVAL = 10000;
