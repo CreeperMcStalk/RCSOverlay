@@ -26,7 +26,7 @@
     <div class="leftCharacter">
       <transition name="fade" mode="out-in">
         <span class="leftCharacter char" :key="info.p1_char_s4">
-          <img class="character_icon" :src="char_1_img_s4"/>
+          <img class="character_icon" :src="'..\\Overlays\\Characters\\Smash 4\\' + info.p1_char_s4 + '.png'"/>
         </span> 
       </transition>
     </div>
@@ -77,7 +77,7 @@
     <div class="rightCharacter">
       <transition name="fade" mode="out-in">
         <span class="char" :key="info.p2_char_s4">
-          <img class="character_icon" :src="'..\\Overlays\\Characters\\' + info.p2_char_s4 + '.png'"/>
+          <img class="character_icon" :src="'..\\Overlays\\Characters\\Smash 4\\' + info.p2_char_s4 + '.png'"/>
         </span>
       </transition>
     </div>
