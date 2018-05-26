@@ -115,18 +115,37 @@ img.characterIcon{
 
 div.leftPort1{
     position: fixed;
+    margin-top: 35px;
+    margin-left: 656px;;
+    z-index: -2;
+
 }
 
 div.leftPort2{
     position: fixed;
+
+    margin-top: 78px;
+    margin-left: 671px;
+    z-index: -2;
+
 }
 
 div.rightPort1{
     position: fixed;
+
+    margin-top: 35px;
+    margin-left: 1175px;
+    z-index: -2;
+
 }
 
 div.rightPort2{
     position: fixed;
+
+    margin-top: 78px;
+    margin-left: 1160px;
+    z-index: -2;
+
 }
 
 div.rightCharacter{

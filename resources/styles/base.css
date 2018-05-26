@@ -10,6 +10,15 @@
   opacity: 0;
 }
 
+img.reverse{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
 @font-face {
   font-family: "Gill Sans";
   src: url('../fonts/GillSans.ttc');
