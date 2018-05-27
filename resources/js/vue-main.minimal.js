@@ -11,6 +11,7 @@ const FONTS_DIR     = RESOURCES_DIR + '/fonts';
 const STYLES_DIR    = RESOURCES_DIR + '/styles';
 const VIDEOS_DIR    = RESOURCES_DIR + '/videos';
 
+//These paths are relative to the Overlay file
 const CHARACTER_DIR = '../../Overlays/Characters'
 const PORT_DIR = '../../Overlays/Ports/';
 const MELEE_CHAR_DIR = CHARACTER_DIR + '/Melee/';

@@ -32,10 +32,13 @@ div.container{
 }
 
 div.left{
+    position: fixed;
     text-align: right;
-    margin-left: 300px;
+    margin-left: 65px;
+    width: 35%;
 }
 div.right{
+    position:fixed;
     text-align: left;
     margin-left: 1175px;
 
@@ -44,7 +47,7 @@ div.right{
 div.leftTwitter{
     position: fixed;
     text-align: right;
-    margin-left: 635px;
+    margin-left: 605px;
     font-size:16pt;
     margin-top: 503px;
     letter-spacing: 0pt;

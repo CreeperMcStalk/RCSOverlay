@@ -26,7 +26,6 @@
     <div class="leftCharacter">
       <transition name="fade" mode="out-in">
         <span class="leftCharacter char" :key="info.p1_char">
-          <span :key="info.p1_char" v-html="info.p1_char"></span>
           <img class="character_icon" :src="char_1_img" onerror='this.style.display = "none"'/>
         </span>
       </transition>
@@ -34,12 +33,28 @@
     
     <div class='leftPort'>
       <transition name="fade" mode="out-in">
-          <span class="leftCharacter char" :key="info.p1_char">
-              <span :key="info.p1_port" v-html="info.p1_port"></span>
-            <img class="character_icon" :src="p1_port_img" onerror='this.style.display = "none"'/>
+          <span :key="info.p1_port_color">
+              <img class="portIcon" :src="p1_port_img" onerror='this.style.display = "none"'/>
           </span>
         </transition>
-    </div>
+      </div>
+
+      <div class='leftCharacter' style="z-index: 4">
+          <transition name="fade" mode="out-in">
+              <span :key="info.p1_char">
+                  <img class="characterIcon" :src="char_1_img" onerror='this.style.display = "none"'/>
+              </span>
+            </transition>
+          </div>
+
+          <div class="rightCharacter" style="z-index: 4">
+              <transition name="fade" mode="out-in">
+                <span class="rightCharacter char" :key="info.p2_char">
+                  <img class="character_icon reverse" :src="char_2_img" onerror='this.style.display = "none"'/>
+                </span>
+              </transition>
+            </div>
+    
 
       <div class="leftScore skewed-rev score">
         <transition name="fade" mode="out-in">
@@ -69,11 +84,11 @@
         </transition>
       </div>
 
-      <div class="rightCharacter">
+      <div class="rightPort">
         <transition name="fade" mode="out-in">
-          <span class="char" :key="info.p2_char">
-            <img class="character_icon" :src="char_2_img" onerror='this.style.display = "none"'/>
-          </span>
+            <span :key="info.p2_port_color">
+                <img class="portIcon reverse" :src="p2_port_img" onerror='this.style.display = "none"'/>
+            </span>
         </transition>
       </div>
 
