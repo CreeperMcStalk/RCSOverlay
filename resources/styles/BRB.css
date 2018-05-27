@@ -3,3 +3,8 @@ body{
     font-size: 150pt;
     font-color: white;
 }
+
+div.message{
+    margin: auto 0;
+    
+}

@@ -21,66 +21,72 @@ div.roundcol{
     text-shadow: 1ch;
 }
 
+img.portIcon{
+    height: 70px;
+}
+
 div.leftPort{
     position:fixed;
-    margin-left: 600px;
-    margin-top: 1015px;
-
+    margin-left: 392px;
+    margin-top: 945px;
 }
 
 
 div.rightPort{
     position:fixed;
-    margin-top:1015px;
-    margin-left:1182px;
+    margin-top: 945px;
+    margin-left:1355px;
 }
 
 div.leftPlayer{
     position: fixed;
-    margin-left: 402px;
-    margin-top: 1027px;
+    margin-left: 142px;
+    margin-top: 960px;
     justify-content: left;
     z-index: -2;
+    font-size: 22pt;
+
 }
 
 div.rightPlayer{
     position: fixed;
-    margin-left: 1265px;
-    margin-top: 1025px;
+    margin-left: 1520px;
+    margin-top: 960px;
     text-align: right;
     z-index: -2;
+    font-size: 22pt;
 }
 
 div.leftScore{
     position: fixed;
-    margin-left: 755px;
-    margin-top: 1015px;
+    margin-left: 582px;
+    margin-top: 939px;
     justify-content: left;
 }
 
 div.rightScore{
     position: fixed;
-    margin-left: 1135px;
-    margin-top: 1015px;
+    margin-left: 1298px;
+    margin-top: 939px;
     justify-content: right;
 }
 
 div.leftCharacter{
     position: fixed;
-    margin-top:1016px;
-    margin-left:600px;
+    margin-top: 945px;
+    margin-left:400px;
     z-index: 0;
 }
 
 div.rightCharacter{
     position: fixed;
-    margin-top:1015px;
-    margin-left:1200px;
+    margin-top: 945px;
+    margin-left:1360px;
     z-index: 0;
 }
 
 div.score{
-    font-size: 32pt;
+    font-size: 50pt;
     font-weight: 100;
 }
 
@@ -89,6 +95,6 @@ img.portIcon{
 }
 
 img.characterIcon{
-
+    height: 70px;
     z-index: 0;
 }

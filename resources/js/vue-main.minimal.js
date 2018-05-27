@@ -12,8 +12,9 @@ const STYLES_DIR    = RESOURCES_DIR + '/styles';
 const VIDEOS_DIR    = RESOURCES_DIR + '/videos';
 
 //These paths are relative to the Overlay file
-const CHARACTER_DIR = '../../Overlays/Characters'
+const CHARACTER_DIR = '../../Overlays/Characters/'
 const PORT_DIR = '../../Overlays/Ports/';
+const FLAG_DIR = '../../Overlays/Flags/64flat/'
 const MELEE_CHAR_DIR = CHARACTER_DIR + '/Melee/';
 const SMASH4_CHAR_DIR = CHARACTER_DIR + '/Smash 4/';
 
@@ -134,6 +135,30 @@ var app = new Vue({
     },
     p4_port_img_s4: function(){
       return PORT_DIR + this.info.p4_port_color_s4 + '.png';
+    },
+    p1_flag_img: function(){
+      return FLAG_DIR + this.info.p1_flag_img + '.png';
+    },
+    p2_flag_img: function(){
+      return FLAG_DIR + this.info.p2_flag_img + '.png';
+    },
+    p3_flag_img: function(){
+      return FLAG_DIR + this.info.p3_flag_img + '.png';
+    },
+    p4_flag_img: function(){
+      return FLAG_DIR + this.info.p4_flag_img + '.png';
+    },
+    p1_flag_img_s1: function(){
+      return FLAG_DIR + this.info.p1_flag_img + '.png';
+    },
+    p2_flag_img_s2: function(){
+      return FLAG_DIR + this.info.p2_flag_img + '.png';
+    },
+    p3_flag_img_s3: function(){
+      return FLAG_DIR + this.info.p3_flag_img + '.png';
+    },
+    p4_flag_img_s4: function(){
+      return FLAG_DIR + this.info.p4_flag_img + '.png';
     },
     formattedDate: function() {
       return months[this.timestamp.getMonth() + 1] + ' ' +
