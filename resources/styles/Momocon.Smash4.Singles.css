@@ -66,20 +66,34 @@ div.rightScore{
 
 div.leftCharacter{
     position: fixed;
+    margin-top:35px;
+    margin-left:613px;
+    z-index:4;
 }
 
 div.rightCharacter{
     position: fixed;
+    margin-top:35px;
+    margin-left:1190px;
+    z-index:4;
 }
 
 div.rightPort{
     position: fixed;
+    margin-top:35px;
+    margin-left:1164px;
 }
 
 div.leftPort{
-
     position:fixed;
+    margin-top:35px;
+    margin-left:633px;
 }
+
+img.portIcon{
+    height:50px;
+}
+
 div.score{
     font-size: 50pt;
     font-weight: 100;

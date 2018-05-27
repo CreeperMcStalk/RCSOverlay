@@ -32,12 +32,12 @@
     </div>
 
     <div class="leftPort">
-      <transition name="fade" mode="out-in">
-        <span class="leftCharacter gradient-container" :key="info.p1_port_s4">
-          
-        </span>
-      </transition>
-    </div>
+        <transition name="fade" mode="out-in">
+            <span class="" :key="info.p1_port_color_s4">
+              <img class='portIcon' :src="p1_port_img_s4" onerror='this.style.display = "none"' / >
+            </span>
+        </transition>
+      </div>
 
     <div class="leftScore skewed-rev score">
       <transition name="fade" mode="out-in">
@@ -71,6 +71,14 @@
       </div>
     </div>
 
+    <div class="rightPort">
+        <transition name="fade" mode="out-in">
+            <span class="char" :key="info.p2_port_color_s4">
+              <img class='portIcon reverse' :src="p2_port_img_s4" onerror='this.style.display = "none"' / >
+            </span>
+        </transition>
+      </div>
+
     <div class="rightScore score skewed">
       <transition name="fade" mode="out-in">
         <span class="score" :key="info.p2_games_s4" v-html="info.p2_games_s4"></span>
@@ -80,7 +88,7 @@
     <div class="rightCharacter">
       <transition name="fade" mode="out-in">
         <span class="char" :key="info.p2_char_s4">
-          <img class="character_icon" :src="char_2_img_s4" onerror='this.style.display = "none"'/>
+          <img class="character_icon reverse" :src="char_2_img_s4" onerror='this.style.display = "none"'/>
         </span>
       </transition>
     </div>
