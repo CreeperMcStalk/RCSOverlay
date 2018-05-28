@@ -1,0 +1,67 @@
+html{
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+
+div.comm_container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    right:0;
+    margin-top:815px;
+    margin-right: 203px;
+
+    width:25%;
+    height:15%;
+
+    font-size:23pt;
+    color: white;
+}
+
+div.comm_title{
+    position: fixed;
+    margin-top: 6px;
+
+    color:#2776f4;
+    font-size:35pt;
+}
+
+div.comms{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+div.comm1{
+    display: flex;
+    justify-content: space-between;
+    margin-top:68px;
+    width: 100%;
+}
+
+div.comm1_name{
+}
+
+div.comm1_twitter{
+}
+
+div.comm2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -5px
+}
+

@@ -1,0 +1,105 @@
+html{
+    letter-spacing: 3px;
+}
+
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+
+.dot:before{
+    content: ' \25CF';
+    font-size: 22px;
+    color: #0d5ee0;
+}
+
+div.serving_container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    margin-left: 135px;
+    margin-top: 560px;
+
+    width: 3%;
+    height: 13%;
+
+    background-color: teal;
+}
+
+div.p1serving{
+    position: fixed;
+    margin-top: 40px;
+}
+
+div.p2serving{
+    position: fixed;
+
+}
+
+div.round_container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    margin-left: 145px;
+    margin-top: 538px;
+    
+    color: white;
+    
+    width:30%;
+    height:5%;
+    font-size: 22pt;
+}
+
+div.player_container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    margin-left: 180px;
+    margin-top: 575px;
+
+    color: #0d5ee0;
+
+    width: 21%;
+    height: 10%;
+
+    font-size: 16pt;
+}
+
+div.player1{
+    position: fixed;
+    margin-top: 13px;
+}
+
+div.player2{
+    position: fixed;
+    margin-top: 40px;
+}
+
+div.score_container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    margin-left: 400px;
+    margin-top: 575px;
+
+    color: white;
+
+    width: 10%;
+    height: 10%;
+
+    font-size: 14pt;
+}

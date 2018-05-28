@@ -14,7 +14,8 @@ const VIDEOS_DIR    = RESOURCES_DIR + '/videos';
 //These paths are relative to the Overlay file
 const CHARACTER_DIR = '../../Overlays/Characters/'
 const PORT_DIR = '../../Overlays/Ports/';
-const FLAG_DIR = '../../Overlays/Flags/64flat/'
+const FLAG_DIR = '../../Overlays/Flags/64flat/';
+const EYES_DIR = '../../CIlvanis Masks/Crops/'
 const MELEE_CHAR_DIR = CHARACTER_DIR + '/Melee/';
 const SMASH4_CHAR_DIR = CHARACTER_DIR + '/Smash 4/';
 
@@ -137,28 +138,52 @@ var app = new Vue({
       return PORT_DIR + this.info.p4_port_color_s4 + '.png';
     },
     p1_flag_img: function(){
-      return FLAG_DIR + this.info.p1_flag_img + '.png';
+      return FLAG_DIR + this.info.p1_country + '.png';
     },
     p2_flag_img: function(){
-      return FLAG_DIR + this.info.p2_flag_img + '.png';
+      return FLAG_DIR + this.info.p2_country + '.png';
     },
     p3_flag_img: function(){
-      return FLAG_DIR + this.info.p3_flag_img + '.png';
+      return FLAG_DIR + this.info.p3_country + '.png';
     },
     p4_flag_img: function(){
-      return FLAG_DIR + this.info.p4_flag_img + '.png';
+      return FLAG_DIR + this.info.p4_country + '.png';
     },
     p1_flag_img_s1: function(){
-      return FLAG_DIR + this.info.p1_flag_img + '.png';
+      return FLAG_DIR + this.info.p1_country_p4 + '.png';
     },
     p2_flag_img_s2: function(){
-      return FLAG_DIR + this.info.p2_flag_img + '.png';
+      return FLAG_DIR + this.info.p2_country_p4 + '.png';
     },
     p3_flag_img_s3: function(){
-      return FLAG_DIR + this.info.p3_flag_img + '.png';
+      return FLAG_DIR + this.info.p3_country_p4 + '.png';
     },
     p4_flag_img_s4: function(){
-      return FLAG_DIR + this.info.p4_flag_img + '.png';
+      return FLAG_DIR + this.info.p4_country_p4 + '.png';
+    },
+    p1_eyes_img_s4: function(){
+      return EYES_DIR + this.info.p1_eyes_s4 + '.png';
+    },
+    p2_eyes_img_s4: function(){
+      return EYES_DIR + this.info.p2_eyes_s4 + '.png';
+    },
+    p3_eyes_img_s4: function(){
+      return EYES_DIR + this.info.p3_eyes_s4 + '.png';
+    },
+    p4_eyes_img_s4: function(){
+      return EYES_DIR + this.info.p4_eyes_s4 + '.png';
+    },
+    p1_eyes_img_s42: function(){
+      return (EYES_DIR + this.info.p1_name_s4.replace(/[\s]*<T>[\s\S]*<\/T>[\s]*/, '')).trim() + '.png';
+    },
+    p2_eyes_img_s42: function(){
+      return (EYES_DIR + this.info.p2_name_s4.replace(/[\s]*<T>[\s\S]*<\/T>[\s]*/, '')).trim() + '.png';
+    },
+    p3_eyes_img_s42: function(){
+      return (EYES_DIR + this.info.p3_name_s4.replace(/[\s]*<T>[\s\S]*<\/T>[\s]*/, '')).trim() + '.png';
+    },
+    p4_eyes_img_s42: function(){
+      return (EYES_DIR + this.info.p4_name_s4.replace(/[\s]*<T>[\s\S]*<\/T>[\s]*/, '')).trim() + '.png';
     },
     formattedDate: function() {
       return months[this.timestamp.getMonth() + 1] + ' ' +

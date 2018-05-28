@@ -47,10 +47,11 @@ div.right{
 div.leftTwitter{
     position: fixed;
     text-align: right;
-    margin-left: 675px;
+    margin-left: 180px;
     font-size:16pt;
     margin-top: 503px;
     letter-spacing: 0pt;
+    width: 30%;
 }
 div.rightTwitter{
     position: fixed;
