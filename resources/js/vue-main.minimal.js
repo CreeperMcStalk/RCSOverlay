@@ -12,11 +12,12 @@ const STYLES_DIR    = RESOURCES_DIR + '/styles';
 const VIDEOS_DIR    = RESOURCES_DIR + '/videos';
 
 //These paths are relative to the Overlay file
-const CHARACTER_DIR = '../../Overlays/Characters/'
+//const CHARACTER_DIR = '../../Overlays/Characters/'
+const CHARACTER_DIR = '../resources/images/Characters/'
 const PORT_DIR = '../../Overlays/Ports/';
 const FLAG_DIR = '../../Overlays/Flags/64flat/';
 const EYES_DIR = '../../CIlvanis Masks/Crops/'
-const MELEE_CHAR_DIR = CHARACTER_DIR + '/Melee/';
+const MELEE_CHAR_DIR = CHARACTER_DIR; // + '/Melee/';
 const SMASH4_CHAR_DIR = CHARACTER_DIR + '/Smash 4/';
 
 var POLL_INTERVAL = 500;
@@ -89,6 +90,9 @@ var app = new Vue({
   watch: {
   },
   computed: {
+    game_header: function(){
+      return this.info.event_round + ' - ' + this.info.best_of_x;
+    },
     char_1_img: function(){
       return MELEE_CHAR_DIR + this.info.p1_char + '.png';
     },

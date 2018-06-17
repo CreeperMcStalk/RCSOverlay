@@ -6,10 +6,40 @@
   <title>Function Lower Third</title>
   <link rel="stylesheet" type="text/css" href="../node_modules/vue2-animate/dist/vue2-animate.css" />
   <link rel="stylesheet" type="text/css" href="../resources/styles/base.css" />
-  <link rel="stylesheet" type="text/css" href="../resources/styles/LowerThird.css" />
+  <!--<link rel="stylesheet" type="text/css" href="../resources/styles/LowerThird.css" />-->
 
   <script src="../node_modules/vue/dist/vue.js"></script>
   <script src="../node_modules/axios/dist/axios.js"></script>
+
+  <style>
+    body{
+        font-weight: bold;
+        font-family: "Khand Medium";
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        background-image: url('../resources/images/Overlays/WTT/WTTLowerThird.png');
+    }
+
+    div.column{
+        width: 1000px;
+        float: left;
+    }
+
+    div.round{
+        position:fixed;
+        margin-left: 200px;
+        margin-top:795px;
+        font-size:62pt;
+    }
+
+    div.event{
+        position:fixed;
+        margin-left:390px;
+        margin-top:900px;
+        font-size:24pt;
+        color:white;
+    }
+  </style>
 </head>
 
 <body>
@@ -17,13 +47,13 @@
 
     <div class="round">
       <transition name="fade" mode="out-in">
-        <span :key="info.event_round" v-html="info.event_round"></span>
+        <span :key="info.event_round" v-html="info.lower_third_l1"></span>
       </transition>
     </div>
 
     <div class="event">
       <transition name="fade" mode="out-in">
-        <span :key="info.event_name" v-html="info.event_name"></span>
+        <span :key="info.event_name" v-html="info.lower_third_l2"></span>
       </transition>
 
       <transition name="fade" mode="out-in">

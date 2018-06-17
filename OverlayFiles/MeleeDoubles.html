@@ -6,10 +6,63 @@
   <title>Title</title>
   <link rel="stylesheet" type="text/css" href="../node_modules/vue2-animate/dist/vue2-animate.css" />
   <link rel="stylesheet" type="text/css" href="../resources/styles/base.css" />
-  <link rel="stylesheet" type="text/css" href="../resources/styles/MeleeDoubles.css" />
+  <!--<link rel="stylesheet" type="text/css" href="../resources/styles/MeleeDoubles.css" />-->
 
   <script src="../node_modules/vue/dist/vue.js"></script>
   <script src="../node_modules/axios/dist/axios.js"></script>
+
+  <style>
+    body{
+        font-weight: 200;
+        font-family: "Khand Medium";
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    div.leftCol{
+        float:left;
+        width:610px;
+        position:relative;
+    }
+
+    div.team1{
+        position: fixed;
+        margin-top: 434px;
+        margin-left: 10px;
+        font-size: 24pt;
+    }
+
+    div.team1Score{
+        position: fixed;
+        margin-top: 432px;
+        margin-left: 575px;
+        font-size: 24pt;
+    }
+
+    div.team2{
+        position: fixed;
+        margin-top: 822px;
+        margin-left: 10px;
+        font-size: 24pt;
+    }
+
+    div.team2Score{
+        position: fixed;
+        margin-top: 822px;
+        margin-left: 575px;
+        font-size: 24pt;
+    }
+
+    div.roundCol{
+        float:left;
+        width:1310px;
+        position:fixed;
+        margin-left:610px;
+        text-align:center;
+        margin-top:15px;
+        font-size:24pt;
+    }
+  </style>
 </head>
 
 <body>
@@ -51,6 +104,6 @@
 </body>
 
 <!-- This needs to be loaded after the dom -->
-<script src="../resources/js/vue-main.js"></script>
+<script src="../resources/js/vue-main.minimal.js"></script>
 
 </html>
