@@ -10,6 +10,14 @@
   opacity: 0;
 }
 
+.on-top{
+  z-index: 5 !important;
+}
+
+.on-bottom{
+  z-index: -5 !important;
+}
+
 img.reverse{
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
@@ -17,6 +25,19 @@ img.reverse{
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: "FlipH";
+}
+
+video.reverse{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+img.reverse-horizontal{
+  transform: rotateX(180deg);
 }
 
 @font-face {
