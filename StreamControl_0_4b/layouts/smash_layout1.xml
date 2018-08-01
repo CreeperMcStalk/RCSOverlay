@@ -324,7 +324,7 @@
 				</comboBox>
 				<lineEdit id='c2_p10_score' x='415' y='270' width='30' height='20'>#</lineEdit>
 				<checkBox id='c2_p10_out' x='450' y='272' width='20' height='20'></checkBox>
-
+				
 		</tab>
 	</tabSet>
 </layout>
