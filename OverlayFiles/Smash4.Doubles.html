@@ -4,358 +4,164 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <link rel="stylesheet" type="text/css" href="../node_modules/vue2-animate/dist/vue2-animate.css" />
-  <link rel="stylesheet" type="text/css" href="../resources/styles/base.css" />
-  <link rel="stylesheet" type="text/css" href="../resources/styles/masks.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="../resources/styles/smash4.Doubles.css" /> -->
+  <link rel="stylesheet" type="text/css" href="./node_modules/vue2-animate/dist/vue2-animate.css" />
+  <link rel="stylesheet" type="text/css" href="./resources/styles/base.css" />
+  <!--<link rel="stylesheet" type="text/css" href="./resources/styles/s4_singles.css" />-->
 
-  <script src="../node_modules/vue/dist/vue.js"></script>
-  <script src="../node_modules/axios/dist/axios.js"></script>
-  
+  <script src="./node_modules/vue/dist/vue.js"></script>
+  <script src="./node_modules/axios/dist/axios.js"></script>
+
   <style>
-    img.flag{
-      height: 43px;
-    }
+	html{
+		text-align: center;
+	}
 
-    img.characterIcon{
-      height: 37px;
-    }
+	.player{
+		position:fixed;
+		margin-top: 43px;
 
-    img.portIcon{
-      height: 37px;
-    }
-    
-    div.playercol{
-      position:fixed;
-      width: 13%;
-    }
+		font-size: 32pt;
+		color: #fdf8ea;
+	}
 
-    div.roundcol{
-        position: fixed;
-        display: flex;
-        justify-content: center;
-    }
+	.score{
+		top: 0;
+		position:fixed;
+		margin-top: 38px;
 
-    div.round{
-        position: fixed;
-        color:  #f5cb0d;
-        font-size: 16pt;
-        text-align: right;
-        width:20%;
-        margin-left: 375px;
-        margin-top: 127px;
-        font-weight: 100;
-        letter-spacing: -1pt;
-    }
+		font-size: 40pt;
+		color: #393939;
+		text-shadow: 0;
+	}
 
-    div.tournament-section{
-        position: fixed;
-        color:  #f5cb0d;
-        font-size: 16pt;
-        text-align: left;
-        margin-left: 1160px;
-        margin-top: 127px;
-        font-weight: 100;
-    }
+	.info{
+		top: 0;
+		position:fixed;
+		margin-top: 93px;
 
-    /* NAMES */
-    div.leftPlayer1{
-        position: fixed;
-        margin-left: 500px;
-        margin-top: 40px;
-        font-size: 15pt;
-        z-index: 2;
-    }
-    div.leftPlayer2{
-        position: fixed;
-        margin-left: 513px;
-        margin-top: 85px;
-        font-size: 15pt;
-        z-index: 2;
-    }
-    div.rightPlayer3{
-        position: fixed;
-        margin-left: 1167px;
-        margin-top: 40px;
-        text-align: right;
-        font-size: 15pt;
-        width: 13%;
-        z-index: 2;
-    }
-    div.rightPlayer4{
-        position: fixed;
-        margin-left: 1155px;
-        margin-top: 85px;
-        text-align: right;
-        font-size: 15pt;
-        width: 13%;
-        z-index: 2;
-    }
+		font-size:18pt;
+		color: #e3e3e3;
+	}
 
-    /* SCORES */
-    div.leftScore{
-        position: fixed;
-        margin-left: 762px;
-        margin-top: 35px;
-        text-align: left;
-    }
-    div.rightScore{
-        position: fixed;
-        margin-left: 1119px;
-        margin-top: 35px;
-        justify-content: right;
-    }
-    div.score{
-        font-size: 50pt;
-        font-weight: 100;
-    }
+	div.container{
+		display:flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
 
-    /* CHARACTERS */
-    div.leftCharacter1{
-        position: fixed;
-        margin-top: 35px;
-        margin-left: 650px;
-        z-index: -2;
+	div.players{
+		display:flex;
+		justify-content: space-between;
+		margin-top: 43px;
+		/* DOUBLES */
+		width: 57%;
 
-    }
-    div.leftCharacter2{
-        position: fixed;
-        margin-top: 78px;
-        margin-left: 665px;
-        z-index: -2;
-    }
-    div.rightCharacter3{
-        position: fixed;
-        margin-top: 35px;
-        margin-left: 1190px;
-        z-index: -2;
-    }
-    div.rightCharacter4{
-        position: fixed;
-        margin-top: 78px;
-        margin-left: 1175px;
-        z-index: -2;
-    }
+		/* SINGLES */
+		/*width: 46%;
+	*/
+		font-size: 32pt;
+		color: #fdf8ea;
+	}
 
-    /* PORTS */
-    div.leftPort1{
-        position: fixed;
-        margin-top: 35px;
-        margin-left: 652px;;
-        z-index: -3;
-    }
+	div.playercol{
+		position:fixed;
+		display: flex;
+		justify-content: center;
 
-    div.leftPort2{
-        position: fixed;
-        margin-top: 78px;
-        margin-left: 666px;
-        z-index: -3;
-    }
-    div.rightPort3{
-        position: fixed;
-        margin-top: 35px;
-        margin-left: 1177px;
-        z-index: -3;
-    }
-    div.rightPort4{
-        position: fixed;
-        margin-top: 78px;
-        margin-left: 1162px;
-        z-index: -3;
-    }
+		margin-top: 44px;
+		width: 25%;
 
-    /* IMAGE */
-    div.leftImage1{
-      position:fixed;
-      margin-top: 29px;
-      margin-left: 434px;
-    }
-    div.leftImage2{
-      position:fixed;
-      margin-top: 73px;
-      margin-left: 449px;
-    }
-    div.rightImage3{
-      position:fixed;
-      margin-top: 29px;
-      margin-left: 1423px;
-    }
-    div.rightImage4{
-      position:fixed;
-      margin-top: 73px;
-      margin-left: 1408px;
-    }
+		font-size: 32pt;
+		color: #fdf8ea;
+	}
+
+
+	div.infos{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 9px;
+
+		font-size:18pt;
+		color: #e3e3e3;
+	}
+
+
+
+	div.player1{
+		text-align: center;
+		margin-left: 325px;
+	}
+
+	div.player2{
+		margin-left: 1110px;
+	}
+
+	div.player1score{
+		margin-left: 780px;
+	}
+
+	div.player2score{
+		margin-left: 1115px;
+	}
+
+	div.round{
+		margin-left: 575px;
+	}
+
+	div.bracket{
+		margin-left: 1175px;
+	}
   </style>
 </head>
 
 <body>
   <div id="app">
-
-    <!-- LEFT PLAYER 1 -->
-    <div class="leftPlayer1">
-      <div class="skewed-rev">
-        <transition name="fade" mode="out-in">
-          <span class="name " :key="player1NameplateS4" v-html="player1NameplateS4"></span>
-        </transition>
-      </div>
-    </div>
-
-    <div class="leftCharacter1">
-      <transition name="fade" mode="out-in">
-        <span class="leftCharacter char" :key="player1CharacterS4">
-          <img class="characterIcon" :src="player1CharacterS4" onerror='this.style.display = "none"'/>
-        </span> 
-      </transition>
-    </div>
-
-    <div class="leftPort1">
-      <transition name="fade" mode="out-in">
-          <span class="leftCharacter char" :key="player1PortImgS4">
-            <img class='portIcon' :src="player1PortImgS4" onerror='this.style.display = "none"' / >
-          </span>
-      </transition>
-    </div>
-
-    <div class="leftImage1 flag-mask-left">
-      <transition name="fade" mode="out-in">
-          <span class="leftCharacter char" :key="player1ImageS4">
-            <img class='flag' :src="player1ImageS4"  onerror='this.style.display = "none"' / >
-          </span>
-      </transition>
-    </div>
-
-    <!-- LEFT PLAYER 2 -->
-    <div class="leftPlayer2">
-        <div class="skewed-rev">
+    <!-- FIXED -->
+        <div class="player1score score">
             <transition name="fade" mode="out-in">
-            <span class="name " :key="player2NameplateS4" v-html="player2NameplateS4"></span>
+                <span class="score" :key="info.p1_games" v-html="info.p1_games"></span>
             </transition>
         </div>
-    </div>
 
-    <div class="leftCharacter2">
-      <transition name="fade" mode="out-in">
-          <span class="leftCharacter char" :key="player2CharacterS4">
-            <img class='characterIcon' :src="player2CharacterS4" onerror='this.style.display = "none"' />
-          </span>
-      </transition>
-    </div>
-
-    <div class="leftPort2">
-      <transition name="fade" mode="out-in">
-          <span class="leftCharacter char" :key="player2PortImgS4">
-            <img class='portIcon' :src="player2PortImgS4" onerror='this.style.display = "none"' / >
-          </span>
-      </transition>
-    </div>
-
-    <div class="leftImage2 flag-mask-left">
-      <transition name="fade" mode="out-in">
-          <span class="leftCharacter char" :key="player2ImageS4">
-            <img class='flag' :src="player2ImageS4" onerror='this.style.display = "none"' / >
-          </span>
-      </transition>
-    </div>
-
-    <!-- LEFT SCORE -->
-    <div class="leftScore skewed-rev score">
-      <transition name="fade" mode="out-in">
-        <span class="score" :key="info.team1_games_s4" v-html="info.team1_games_s4"></span>
-      </transition>
-    </div>
-
-    <!-- MIDDLE -->
-    <div class="round">
-        <div class="skewed-rev ">
-        <transition name="fade" mode="out-in">
-            <span class="round" :key="info.event_round" v-html="info.event_round"></span>
-        </transition>
+        <div class="player2score score">
+            <transition name="fade" mode="out-in">
+                <span class="score" :key="info.p2_games" v-html="info.p2_games"></span>
+            </transition>
         </div>
-    </div>
 
-    <div class="tournament-section skewed">
-      <transition name="fade" mode="out-in">
-        <span :key="info.event_name" v-html="info.event_name"></span>
-      </transaction>
-    </div>
+        <div class="round info">
+            <transition name="fade" mode="out-in">
+                <span class="round" :key="game_header" v-html="game_header"></span>
+            </transition>
+        </div>
 
-    <!-- RIGHT SCORE -->
-    <div class="rightScore score skewed">
-        <transition name="fade" mode="out-in">
-          <span class="score" :key="info.team2_games_s4" v-html="info.team2_games_s4"></span>
-        </transition>
-      </div>
+        <div class="bracket info">
+            <transition name="fade" mode="out-in">
+                <span class="bracket" :key="info.smashggUrl" v-html="info.smashggUrl"></span>
+            </transition>
+        </div>
+    <!-- FIXED -->
 
-    <!-- RIGHT PLAYER 3 -->
-    <div class="rightPlayer3">
-      <div class="skewed">
-        <transition name="fade" mode="out-in">
-          <span class="name" :key="player3NameplateS4" v-html="player3NameplateS4" ></span>
-        </transition>
-      </div>
-    </div>
+    <div class="container">
+        <div class='players'>
+            <div>
+                <transition name="fade" mode="out-in">
+                    <span class="name" :key="player1NameplateS4" v-html="player1NameplateS4"></span>
+                </transition>
+            </div>
 
-    <div class="rightCharacter3">
-      <transition name="fade" mode="out-in">
-          <span class="leftCharacter char" :key="player3CharacterS4">
-            <img class='characterIcon' :src="player3CharacterS4" onerror='this.style.display = "none"' / >
-          </span>
-      </transition>
-    </div>
-
-    <div class="rightPort3">
-      <transition name="fade" mode="out-in">
-          <span class="leftCharacter char" :key="player3PortImgS4">
-            <img class='portIcon reverse' :src="player3PortImgS4" onerror='this.style.display = "none"' / >
-          </span>
-      </transition>
-    </div>
-
-    <div class="rightImage3 flag-mask-right">
-      <transition name="fade" mode="out-in">
-          <span class="leftCharacter char" :key="player3ImageS4">
-            <img class='flag' :src="player3ImageS4" onerror='this.style.display = "none"' / >
-          </span>
-      </transition>
-    </div>
-
-    <!-- RIGHT PLAYER 4 -->
-    <div class="rightPlayer4">
-      <div class="skewed">
-          <transition name="fade" mode="out-in">
-          <span class="name" :key="player4NameplateS4" v-html="player4NameplateS4" ></span>
-          </transition>
-      </div>
-    </div>
-    
-    <div class="rightCharacter4">
-      <transition name="fade" mode="out-in">
-          <span class="leftCharacter char" :key="player4CharacterS4">
-            <img class='characterIcon' :src="player4CharacterS4" onerror='this.style.display = "none"' / >
-          </span>
-      </transition>
-    </div>
-
-    <div class="rightPort4">
-      <transition name="fade" mode="out-in">
-          <span class="leftCharacter char" :key="player4PortImgS4">
-            <img class='portIcon reverse' :src="player4PortImgS4" onerror='this.style.display = "none"' / >
-          </span>
-      </transition>
-    </div>
-      
-    <div class="rightImage4 flag-mask-right">
-      <transition name="fade" mode="out-in">
-          <span class="leftCharacter char" :key="player4ImageS4">
-            <img class='flag' :src="player4ImageS4" onerror='this.style.display = "none"' / >
-          </span>
-      </transition>
+            <div>
+                <transition name="fade" mode="out-in">
+                    <span class="name" :key="player2NameplateS4" v-html="player2NameplateS4"></span>
+                </transition>
+            </div>
+        </div>
     </div>
 
   </div>
 </body>
-
 <!-- This needs to be loaded after the dom -->
-<script src="../resources/js/vue-main.minimal.js"></script>
+<script src="./resources/js/vue-main.js"></script>
 
 </html>
