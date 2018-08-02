@@ -14,9 +14,18 @@
   <style>
 	div.character1{
 		position: fixed;
+		bottom: 0;
+		left: 0;
+		margin-left: -400px;
 	}
 	div.character2{
 		position: fixed;
+		bottom: 0;
+		right: 0;
+		margin-right: -400px;
+	}
+	video.character{
+		height: 500pt;
 	}
   </style>
 </head>
@@ -26,13 +35,13 @@
 
 	<div class='character1'>
 		<transition mode='out-in' name='fade'>
-			<img :src='player1CharacterWebmS4' :key='player1CharacterWebmS4' />
+			<video class='character' :src='player1CharacterWebmS4' :key='player1CharacterWebmS4' autoplay loop />
 		</transition>
 	</div>
 	
 	<div class='character2'>
 		<transition mode='out-in' name='fade'>
-			<img :src='player2CharacterWebmS4' :key='player2CharacterWebmS4' />
+			<video class='character reverse' :src='player2CharacterWebmS4' :key='player2CharacterWebmS4' autoplay loop />
 		</transition>
 	</div>
 
