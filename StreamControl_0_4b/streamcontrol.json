@@ -95,7 +95,7 @@
     "lower_third_l2": "Smash 4 Singles Champion!",
     "lower_third_l3": "Thanks for watching!",
     "p1_char": "None",
-    "p1_char_s4": "None",
+    "p1_char_s4": "Jigglypuff",
     "p1_country": "None",
     "p1_country_s4": "None",
     "p1_country_text": "USA",
@@ -113,7 +113,7 @@
     "p1_twitter": "LIQUID_HBOX",
     "p1_twitter_s4": "Z3ro",
     "p2_char": "None",
-    "p2_char_s4": "None",
+    "p2_char_s4": "Luigi",
     "p2_country": "None",
     "p2_country_s4": "None",
     "p2_country_text": "USA",
@@ -170,6 +170,6 @@
     "team1_games_s4": "0",
     "team2_games": "0",
     "team2_games_s4": "0",
-    "timestamp": "1533174510",
+    "timestamp": "1533177494",
     "toggle_crews": "0"
 }
