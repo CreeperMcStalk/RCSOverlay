@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <link rel="stylesheet" type="text/css" href="./node_modules/vue2-animate/dist/vue2-animate.css" />
-  <link rel="stylesheet" type="text/css" href="./resources/styles/base.css" />
+  <link rel="stylesheet" type="text/css" href="../node_modules/vue2-animate/dist/vue2-animate.css" />
+  <link rel="stylesheet" type="text/css" href="../resources/styles/base.css" />
   <!--<link rel="stylesheet" type="text/css" href="./resources/styles/s4_singles.css" />-->
 
-  <script src="./node_modules/vue/dist/vue.js"></script>
-  <script src="./node_modules/axios/dist/axios.js"></script>
+  <script src="../node_modules/vue/dist/vue.js"></script>
+  <script src="../node_modules/axios/dist/axios.js"></script>
 
   <style>
 	html{
@@ -27,9 +27,9 @@
 	.score{
 		top: 0;
 		position:fixed;
-		margin-top: 38px;
+		margin-top: 8px;
 
-		font-size: 40pt;
+		font-size: 28pt;
 		color: #393939;
 		text-shadow: 0;
 	}
@@ -89,79 +89,97 @@
 
 
 	div.player1{
-		text-align: center;
-		margin-left: 325px;
+		position: fixed;
+		text-align: right;
+		width: 24%;
+		margin-left: 360px;
+		margin-top: 20px;
+		font-size: 24pt;
+		letter-spacing: 1pt;
 	}
 
 	div.player2{
-		margin-left: 1110px;
+		position:fixed;
+		text-align: left;
+		margin-left: 1100px;
+		margin-top: 20px;
+		font-size: 24pt;
+		letter-spacing: 1pt;
+		
 	}
 
 	div.player1score{
-		margin-left: 780px;
+		margin-left: 867px;
+
 	}
 
 	div.player2score{
-		margin-left: 1115px;
+		margin-left: 1028px;
 	}
 
 	div.round{
-		margin-left: 575px;
+		position: fixed;
+		width: 25%;
+		text-align: right;
+		margin-left: 385px;
+		margin-top: 61px;
+		font-size: 15pt;
+		letter-spacing: .5pt;
 	}
 
-	div.bracket{
-		margin-left: 1175px;
+	div.tournament{
+		position: fixed;
+		text-align: left;
+		margin-left: 1055px;
+		margin-top: 61px;
+		font-size: 15pt;
+		letter-spacing: .5pt;
 	}
   </style>
 </head>
 
 <body>
   <div id="app">
-    <!-- FIXED -->
-        <div class="player1score score">
-            <transition name="fade" mode="out-in">
-                <span class="score" :key="info.p1_games" v-html="info.p1_games"></span>
-            </transition>
-        </div>
+	<div class="player1score skewed score">
+		<transition name="fade" mode="out-in">
+			<span class="score" :key="info.p1_games" v-html="info.p1_games"></span>
+		</transition>
+	</div>
 
-        <div class="player2score score">
-            <transition name="fade" mode="out-in">
-                <span class="score" :key="info.p2_games" v-html="info.p2_games"></span>
-            </transition>
-        </div>
+	<div class="player2score skewed-rev score">
+		<transition name="fade" mode="out-in">
+			<span class="score" :key="info.p2_games" v-html="info.p2_games"></span>
+		</transition>
+	</div>
 
-        <div class="round info">
-            <transition name="fade" mode="out-in">
-                <span class="round" :key="game_header" v-html="game_header"></span>
-            </transition>
-        </div>
+	<div class="round info skewed">
+		<transition name="fade" mode="out-in">
+			<span class="round" :key="info.event_round" v-html="info.event_round"></span>
+		</transition>
+	</div>
 
-        <div class="bracket info">
-            <transition name="fade" mode="out-in">
-                <span class="bracket" :key="info.smashggUrl" v-html="info.smashggUrl"></span>
-            </transition>
-        </div>
-    <!-- FIXED -->
+	<div class="tournament info skewed-rev">
+		<transition name="fade" mode="out-in">
+			<span class="tournament" :key="info.event_name" v-html="info.event_name"></span>
+		</transition>
+	</div>
+	
 
-    <div class="container">
-        <div class='players'>
-            <div>
-                <transition name="fade" mode="out-in">
-                    <span class="name" :key="player1NameplateS4" v-html="player1NameplateS4"></span>
-                </transition>
-            </div>
+	<div class='player1 skewed'>
+		<transition name="fade" mode="out-in">
+			<span class="name" :key="player1NameplateS4" v-html="player1NameplateS4"></span>
+		</transition>
+	</div>
 
-            <div>
-                <transition name="fade" mode="out-in">
-                    <span class="name" :key="player2NameplateS4" v-html="player2NameplateS4"></span>
-                </transition>
-            </div>
-        </div>
-    </div>
+	<div class='player2 skewed-rev'>
+		<transition name="fade" mode="out-in">
+			<span class="name" :key="player2NameplateS4" v-html="player2NameplateS4"></span>
+		</transition>
+	</div>
 
   </div>
 </body>
 <!-- This needs to be loaded after the dom -->
-<script src="./resources/js/vue-main.js"></script>
+<script src="../resources/js/vue-main.minimal.js"></script>
 
 </html>
