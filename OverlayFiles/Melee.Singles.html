@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="../node_modules/vue2-animate/dist/vue2-animate.css" />
+  <link rel="stylesheet" type="text/css" href="../resources/styles/base.css" />
+  <!--<link rel="stylesheet" type="text/css" href="../resources/styles/MeleeGame.css" />-->
+
+  <script src="../node_modules/vue/dist/vue.js"></script>
+  <script src="../node_modules/axios/dist/axios.js"></script>
+
+  <style>
+	body{
+		font-family: "Khand Medium";
+		font-weight: 200;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	/** COLUMN AREAS **/
+	div.leftCol{
+		float:left;
+		width: 305px;
+	}
+
+	div.center{
+		float:left;
+		width:1310px;
+		margin-left:305px;
+	}
+
+	div.rightCol{
+		float:left;
+		width:305px;
+	}
+
+	/** SCOREBOARD **/
+	div.roundboard{
+		float:none;
+		margin-top:16px;
+		text-align:center;
+		kerning: 10pt;
+	}
+
+	/** NESTED COLUMN AREAS **/
+
+	/** LEFT **/
+	div.leftCharacter{
+		float: right;
+		margin-top: 950px;
+		transform: scaleX(-1);
+		position:fixed;
+		z-index: -99999;
+	}
+
+	div.leftSmashTag{
+		width:305px;
+		position:fixed;
+		text-align:center;
+		margin-top:941px;
+		font-size: 27pt;
+	}
+
+	div.leftScore{
+		float: right;
+		margin-top:1010px;
+		margin-left:259px;
+		font-size:55px;
+		font-weight:"bold";
+		position:fixed;
+	}
+
+
+	/** RIGHT **/
+	div.rightCharacter{
+		float: left;
+		margin-top: 950px;
+		position:fixed;
+		z-index: -99999;
+	}
+
+
+	div.rightSmashTag{
+		width:305px;
+		position:fixed;
+		text-align: center;
+		margin-top:941px;
+		font-size: 27pt;
+	}
+
+	/*
+	div.rightSmashTag{
+		float: left;
+		text-align: center;
+		margin-top:945px;
+		font-size: 27pt;
+		position:fixed;
+	}
+	*/
+
+	div.rightScore{
+		float: left;
+		margin-top:1010px;
+		margin-left:25px;
+		font-size:55px;
+		position:fixed;
+	}
+
+	/** IMAGES **/
+	img.leftCharacter{
+		transform: scaleX(-1);
+	}
+
+	img.character_icon{
+		height: 140px;
+	}
+  </style>
+</head>
+
+<body>
+  <div id="app">
+
+    <div class="leftCol">
+      <div class="leftSmashTag">
+        <transition name="fade" mode="out-in">
+          <span class="name" :key="info.p1_name" v-html="info.p1_name"></span>
+        </transition>
+      </div>
+
+      <div class="leftCharacter">
+        <transition name="fade" mode="out-in">
+          <span class="leftCharacter char" :key="info.p1_char">
+            <img class="character_icon" :src="char_1_img"/>
+          </span>
+        </transition>
+      </div>
+
+      <div class="leftScore">
+        <transition name="fade" mode="out-in">
+          <span class="score" :key="info.p1_games" v-html="info.p1_games"></span>
+        </transition>
+      </div>
+    </div>
+
+
+    <div class="center">
+      <div class="roundboard">
+        <transition name="fade" mode="out-in">
+          <span class="round" :key="game_header" v-html="game_header"></span>
+        </transition>
+      </div>
+    </div>
+
+
+    <div class="rightCol">
+      <div class="rightSmashTag">
+        <transition name="fade" mode="out-in">
+          <span class="name" :key="info.p2_name" v-html="info.p2_name" ></span>
+        </transition>
+      </div>
+
+      <div class="rightScore">
+        <transition name="fade" mode="out-in">
+          <span class="score" :key="info.p2_games" v-html="info.p2_games"></span>
+        </transition>
+      </div>
+
+      <div class="rightCharacter">
+        <transition name="fade" mode="out-in">
+          <span class="char" :key="info.p2_char">
+            <img class="character_icon" :src="char_2_img"/>
+          </span>
+        </transition>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<!-- This needs to be loaded after the dom -->
+<script src="../resources/js/vue-main.minimal.js"></script>
+
+</html>
