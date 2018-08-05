@@ -50,7 +50,6 @@
 	div.leftCharacter{
 		float: right;
 		margin-top: 950px;
-		transform: scaleX(-1);
 		position:fixed;
 		z-index: -99999;
 	}
@@ -109,9 +108,6 @@
 	}
 
 	/** IMAGES **/
-	img.leftCharacter{
-		transform: scaleX(-1);
-	}
 
 	img.character_icon{
 		height: 140px;
@@ -125,14 +121,14 @@
     <div class="leftCol">
       <div class="leftSmashTag">
         <transition name="fade" mode="out-in">
-          <span class="name" :key="info.p1_name" v-html="info.p1_name"></span>
+          <span class="name" :key="player1Nameplate" v-html="player1Nameplate"></span>
         </transition>
       </div>
 
       <div class="leftCharacter">
         <transition name="fade" mode="out-in">
-          <span class="leftCharacter char" :key="info.p1_char">
-            <img class="character_icon" :src="char_1_img"/>
+          <span class="leftCharacter char" :key="player1Character">
+            <img class="character_icon" :src="player1Character"/>
           </span>
         </transition>
       </div>
@@ -148,7 +144,7 @@
     <div class="center">
       <div class="roundboard">
         <transition name="fade" mode="out-in">
-          <span class="round" :key="game_header" v-html="game_header"></span>
+          <span class="round" :key="gameHeader" v-html="gameHeader"></span>
         </transition>
       </div>
     </div>
@@ -157,7 +153,7 @@
     <div class="rightCol">
       <div class="rightSmashTag">
         <transition name="fade" mode="out-in">
-          <span class="name" :key="info.p2_name" v-html="info.p2_name" ></span>
+          <span class="name" :key="player2Nameplate" v-html="player2Nameplate" ></span>
         </transition>
       </div>
 
@@ -169,8 +165,8 @@
 
       <div class="rightCharacter">
         <transition name="fade" mode="out-in">
-          <span class="char" :key="info.p2_char">
-            <img class="character_icon" :src="char_2_img"/>
+          <span class="char" :key="player2Character">
+            <img class="character_icon reverse" :src="player2Character"/>
           </span>
         </transition>
       </div>
