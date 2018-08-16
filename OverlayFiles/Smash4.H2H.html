@@ -24,6 +24,25 @@
 		right: 0;
 		margin-right: -400px;
 	}
+	div.player1{
+		position: fixed;
+		text-align: right;
+		width: 24%;
+		margin-left: 220px;
+		margin-top: 990px;
+		font-size: 32pt;
+		letter-spacing: 1pt;
+	}
+
+	div.player2{
+		position:fixed;
+		text-align: left;
+		margin-left: 1260px;
+		margin-top: 990px;
+		font-size: 32pt;
+		letter-spacing: 1pt;
+		
+	}
 	video.character{
 		height: 500pt;
 	}
@@ -45,6 +64,17 @@
 		</transition>
 	</div>
 
+	<div class='player1 skewed-rev'>
+		<transition name="fade" mode="out-in">
+			<span class="name" :key="player1NameplateS4" v-html="player1NameplateS4"></span>
+		</transition>
+	</div>
+
+	<div class='player2 skewed'>
+		<transition name="fade" mode="out-in">
+			<span class="name" :key="player2NameplateS4" v-html="player2NameplateS4"></span>
+		</transition>
+	</div> 
   </div>
 </body>
 <!-- This needs to be loaded after the dom -->
