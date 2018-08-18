@@ -46,6 +46,36 @@
 	video.character{
 		height: 500pt;
 	}
+
+	/* Enter and leave animations can use different */
+	/* durations and timing functions.              */
+	.slide-fade-enter-active {
+		transition: all .8s ease;
+	}
+	.slide-fade-leave-active {
+		transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+	}
+	.slide-fade-enter, .slide-fade-leave-to
+	/* .slide-fade-leave-active below version 2.1.8 */ {
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+
+	/* Enter and leave animations can use different */
+	/* durations and timing functions.              */
+	.slide-fade-reverse-enter-active {
+		transition: all .8s ease;
+	}
+	.slide-fade-reverse-leave-active {
+		transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+	}
+	.slide-fade-reverse-enter, .slide-fade-reverse-leave-to
+	/* .slide-fade-leave-active below version 2.1.8 */ {
+		transform: translateX(-50px); 
+		opacity: 0;
+	}
+	
+
   </style>
 </head>
 
@@ -53,15 +83,17 @@
   <div id="app">
 
 	<div class='character1'>
-		<transition mode='out-in' name='fade'>
+		<transition mode='out-in' name='slide-fade'>
 			<video class='character' :src='player1CharacterWebmS4' :key='player1CharacterWebmS4' autoplay loop />
 		</transition>
 	</div>
 	
 	<div class='character2'>
-		<transition mode='out-in' name='fade'>
-			<video class='character reverse' :src='player2CharacterWebmS4' :key='player2CharacterWebmS4' autoplay loop />
-		</transition>
+		<div style="transform:scaleX(-1)" >
+			<transition mode='out-in' name='slide-fade-reverse'>
+				<video class='character' :src='player2CharacterWebmS4' :key='player2CharacterWebmS4' autoplay loop />
+			</transition>
+		</div>
 	</div>
 
 	<div class='player1 skewed-rev'>
