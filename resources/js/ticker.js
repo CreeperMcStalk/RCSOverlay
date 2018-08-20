@@ -12,3 +12,23 @@ function getJSON(){
 }
 setInterval(getJSON, 1000);
 
+function load(){
+	let aggregator = new ggResults.SetAggregator(
+		data.ticker_type,
+		data.ticker_tournamentId,
+		data.ticker_eventId,
+		data.ticker_phaseId,
+		data.ticker_groupId
+	);
+	aggregator.getSets(cb)
+}
+
+let EventBucket = new ggResults.Bucket();
+function cb(err, set){
+	EventBucket.add(set.eventName, set);
+
+}
+
+setInterval(function(){
+	EventBucket.keys().forEach()
+}, data.ticker_interval)
