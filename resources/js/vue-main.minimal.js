@@ -182,16 +182,6 @@ function getImageS4(info, playerNumber){
   }
 }
 
-function getTeamTag(){
-  let s = '';
-  let names = [];
-  for(var prop in arguments){ names.push(arguments[prop] )}
-  names.forEach((e, i) => {
-    i == (names.length - 1) ? s += e : s += e + ' & ';
-  })
-  return s;
-}
-
 /**
  * Vue Application
  */
@@ -268,11 +258,7 @@ var app = new Vue({
     player1CharacterWebmS4:function(){ return getS4MUCharacter(this.info.p1_char_s4) },
     player2CharacterWebmS4:function(){ return getS4MUCharacter(this.info.p2_char_s4) },
     player3CharacterWebmS4:function(){ return getS4MUCharacter(this.info.p3_char_s4) },
-    player4CharacterWebmS4:function(){ return getS4MUCharacter(this.info.p4_char_s4) },  
-    team1: function(){ return getTeamTag(this.info.p1_name, this.info.p2_name) },
-    team2: function(){ return getTeamTag(this.info.p3_name, this.info.p4_name) },   
-    team1S4: function(){ return getTeamTag(this.info.p1_name_s4, this.info.p2_name_s4) },
-    team2S4: function(){ return getTeamTag(this.info.p3_name_s4, this.info.p4_name_s4) },
+    player4CharacterWebmS4:function(){ return getS4MUCharacter(this.info.p4_char_s4) },    
     player1Character: function(){
       return getMeleeChar(this.info.p1_char);
     },

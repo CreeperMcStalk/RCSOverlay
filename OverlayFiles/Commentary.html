@@ -12,114 +12,102 @@
   <script src="../node_modules/axios/dist/axios.js"></script>
 
   <style>
-      body{
-        font-weight: 600;
-        font-family: "Khand Medium";
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        background-image: url('C:/Users/RCScookiE/Documents/RCSOverlay/resources/images/Overlays/NaCl/NaClAugust/NaClLowerThird2.png');
+    /*centered*/
+    div.container-center{
+        display:flex;
+        position:fixed;
+        justify-content: center;
+        text-align:center;
+        margin-top: 850px;
+
+        width:35%;
+    }
+
+    div.left-centered{
+        margin-left: 500px;
+    }
+
+    div.right-centered{
+        margin-left: 1300px;
+    }
+
+    div.leftTwitter-centered{
+        margin-top: 10px;
+    }
+    div.rightTwitter-centered{
+        margin-top: 10px;
+    }
+
+    /*non centered*/
+    div.container{
+        position:fixed;
+        margin-top: 435px;
+        font-size:40pt;
     }
 
     div.left{
-        position:relative;
-        float:left;
-        width:50%;
-        text-align:right;
-
+        position: fixed;
+        text-align: right;
+        margin-left: 65px;
+        width: 35%;
     }
-
     div.right{
-        position:relative;
-        float:left;
-        width:50%;
-        text-align:left;
+        position:fixed;
+        text-align: left;
+        margin-left: 1175px;
+
     }
-
-
-    div.leftComm{
-        position:relative;
-        margin-top:855px;
-        margin-right:70px;
-        font-size:30pt;
-    }
-
-    div.rightComm{
-        position:relative;
-        margin-top:855px;
-        margin-left:70px;
-        font-size:30pt;
-    }
-
 
     div.leftTwitter{
-        position: relative;
-        /*margin-top:920px;*/
-        margin-top: 0px;
-        margin-right:70px;
-        font-size:20pt;
+        position: fixed;
+        text-align: right;
+        margin-left: 180px;
+        font-size:16pt;
+        margin-top: 503px;
+        letter-spacing: 0pt;
+        width: 30%;
     }
-
     div.rightTwitter{
-        position:relative;
-        /*margin-top:920px;*/
-        margin-top: 0px;
-        margin-left:70px;
-        font-size:20pt;
+        position: fixed;
+        text-align: left;
+        font-size:16pt;
+        margin-top: 503px;
+        margin-left: 1165px;
+        letter-spacing: 0pt;
     }
-
-
-    /*
-    div.column{
-        width: 1000px;
-        float: left;
-    }
-    div.commentators{
-        position:fixed;
-        margin-left: 200px;
-        margin-top:810px;
-        font-size:55pt;
-    }
-    div.twitter{
-        position:fixed;
-        margin-left:390px;
-        margin-top:905px;
-        font-size:24pt;
-        color:white;
-    }
-    */
   </style>
 </head>
 
 <body>
   <div id="app">
+    <div class='container'>
+        
+        <div class="container left skewed-rev">
+            <transition name="fade" mode="out-in">
+                <span class="round" :key="info.event_comm" v-html="info.event_comm"></span>
+            </transition>
+        </div>
 
-    <div class="left">
-        <div class="leftComm">
+        <div class="container right skewed">
             <transition name="fade" mode="out-in">
-            <span class="commName" :key="info.event_comm" v-html="info.event_comm"></span>
+                <span class="round" :key="info.event_comm2" v-html="info.event_comm2"></span>
             </transition>
         </div>
-        <div class="leftTwitter">
+
+        <div class="container leftTwitter skewed-rev">
             <transition name="fade" mode="out-in">
-            <span class="twitter" :key="info.event_comm_twitter" v-html="info.event_comm_twitter"></span>
+                <span class="round" :key="info.event_comm_twitter" v-html="info.event_comm_twitter"></span>
             </transition>
         </div>
-        </div>
-    
-        <div class="right">
-        <div class="rightComm">
+
+        <div class="container rightTwitter skewed">
             <transition name="fade" mode="out-in">
-            <span class="commName" :key="info.event_comm2" v-html="info.event_comm2"></span>
+                <span class="round" :key="info.event_comm2_twitter" v-html="info.event_comm2_twitter"></span>
             </transition>
         </div>
-        <div class="rightTwitter">
-            <transition name="fade" mode="out-in">
-            <span class="twitter" :key="info.event_comm2_twitter" v-html="info.event_comm2_twitter"></span>
-            </transition>
-        </div>
-        </div>
-    
+
     </div>
+  </div>
 </body>
 
 <!-- This needs to be loaded after the dom -->

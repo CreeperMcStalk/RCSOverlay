@@ -22,7 +22,6 @@
     "axios": "^0.16.1",
     "bootstrap": "^3.3.7",
     "moment": "^2.22.2",
-    "smashgg-recent-results": "^1.0.4",
     "vue": "^2.3.2",
     "vue2-animate": "^1.0.4"
   },
